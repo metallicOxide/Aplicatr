@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ## Server setup
 
 ```bash
-./app.py
+python app.py
 ```
 
 ## Keeping environment consistent with new installed packages during development
