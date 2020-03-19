@@ -15,7 +15,7 @@ source env/bin/activate
 pip install -r requirements.txt
 '''
 
-## Server setup
+## Server setup:
 '''
 ./app.py
 '''
@@ -23,4 +23,9 @@ pip install -r requirements.txt
 ## Keeping environment consistent with new installed packages during development:
 '''
 pip freeze > requirements.txt
+'''
+
+## Deactivate python virtual environment:
+'''
+deactivate
 '''
