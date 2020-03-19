@@ -1,6 +1,5 @@
-from flask import Flask, request
-from flask_restplus import Api, Resource, fields
-import json
+from flask import Flask
+from flask_restplus import Resource, Api
 
 app = Flask(__name__)
 api = Api(app)

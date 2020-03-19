@@ -4,9 +4,10 @@
   "description": "",
   "main": ".eslintrc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "cd packages/website && npm install",
-    "website start": "cd packages/website && npm run serve"
+    "test": "echo Test!",
+    "website-install": "cd packages/website && npm install",
+    "website-start": "cd packages/website && npm run serve",
+    "website-start-prod": "cd packages/website && npm run build"
   },
   "repository": {
     "type": "git",
