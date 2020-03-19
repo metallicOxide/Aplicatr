@@ -22,25 +22,31 @@ npm run website-start
 
 1) Open up another terminal
 
-2) Activate python virtual environment
+2) Install virtualenv
+
+```bash
+pip install virtualenv
+```
+
+3) Activate python virtual environment
 
 ```bash
 source packages/server/env/bin/activate
 ```
 
-3) Install server dependencies
+4) Install server dependencies
 
 ```bash
 (cd packages/server && pip install -r requirements.txt)
 ```
 
-4) Start server
+5) Start server
 
 ```bash
 (cd packages/server && python app.py)
 ```
 
-5) Deactivate python virtual environment when finished development
+6) Deactivate python virtual environment when finished development
 
 ```bash
 deactivate
