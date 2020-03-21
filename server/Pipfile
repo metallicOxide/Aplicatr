@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+flask = "*"
+werkzeug = {version = ">=0.16,<1.0"}
+requests = "*"
+bs4 = "*"
+flask-restplus = "*"
+
+[requires]
+python_version = "3.7"

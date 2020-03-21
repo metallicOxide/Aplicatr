@@ -1,37 +1,21 @@
 # job-scrapper server
 
-Open up a new terminal first
-
-## Always enable python virtual environment
+## Ensure pipenv installed
 
 ```bash
-pip3 install virtualenv
+pip3 install pipenv
 ```
 
+## Startup flow
+
 ```bash
-source env/bin/activate
+pipenv install
+pipenv run python3 app.py
 ```
 
-## Create python envrionment
+## Adding new dependencies to project
 
 ```bash
-pip3 install -r requirements.txt
-```
-
-## Server setup
-
-```bash
-python app.py
-```
-
-## Keeping environment consistent with new installed packages during development
-
-```bash
-pip3 freeze > requirements.txt
-```
-
-## Deactivate python virtual environment
-
-```bash
-deactivate
+pipenv install [package]
+pipenv lock
 ```

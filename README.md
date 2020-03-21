@@ -22,32 +22,20 @@ npm run website-start
 
 1) Open up another terminal
 
-2) Install virtualenv
+2) Ensure pipenv installed
 
 ```bash
-pip3 install virtualenv
+(cd server && pip3 install pipenv)
 ```
 
-3) Activate python virtual environment
+3) Install python server virtual environment dependencies
 
 ```bash
-source server/env/bin/activate
+(cd server && pipenv install)
 ```
 
-4) Install server dependencies
+4) Start server in virtual shell environment
 
 ```bash
-(cd server && pip3 install -r requirements.txt)
-```
-
-5) Start server
-
-```bash
-(cd server && python app.py)
-```
-
-6) Deactivate python virtual environment when finished development
-
-```bash
-deactivate
+(cd server && pipenv run python3 app.py)
 ```
