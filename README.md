@@ -25,7 +25,7 @@ npm run website-start
 2) Install virtualenv
 
 ```bash
-pip install virtualenv
+pip3 install virtualenv
 ```
 
 3) Activate python virtual environment
@@ -37,7 +37,7 @@ source server/env/bin/activate
 4) Install server dependencies
 
 ```bash
-(cd server && pip install -r requirements.txt)
+(cd server && pip3 install -r requirements.txt)
 ```
 
 5) Start server
