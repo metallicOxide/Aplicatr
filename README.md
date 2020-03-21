@@ -31,19 +31,19 @@ pip install virtualenv
 3) Activate python virtual environment
 
 ```bash
-source packages/server/env/bin/activate
+source server/env/bin/activate
 ```
 
 4) Install server dependencies
 
 ```bash
-(cd packages/server && pip install -r requirements.txt)
+(cd server && pip install -r requirements.txt)
 ```
 
 5) Start server
 
 ```bash
-(cd packages/server && python app.py)
+(cd server && python app.py)
 ```
 
 6) Deactivate python virtual environment when finished development

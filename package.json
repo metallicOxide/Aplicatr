@@ -5,9 +5,9 @@
   "main": ".eslintrc.js",
   "scripts": {
     "test": "echo Test!",
-    "website-install": "cd packages/website && npm install",
-    "website-start": "cd packages/website && npm run serve",
-    "website-start-prod": "cd packages/website && npm run build"
+    "website-install": "cd website && npm install",
+    "website-start": "cd website && npm run serve",
+    "website-start-prod": "cd website && npm run build"
   },
   "repository": {
     "type": "git",
