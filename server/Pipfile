@@ -11,6 +11,10 @@ werkzeug = {version = ">=0.16,<1.0"}
 requests = "*"
 bs4 = "*"
 flask-restplus = "*"
+selenium = "*"
+pylint = "*"
+selenium-requests = "*"
+requestium = "*"
 
 [requires]
 python_version = "3.7"
