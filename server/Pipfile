@@ -14,6 +14,8 @@ pylint = "*"
 requests-html = "*"
 flask-restx = "*"
 requests = "*"
+ics = "*"
+typing = "*"
 
 [requires]
 python_version = "3.7"

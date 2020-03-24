@@ -2,12 +2,14 @@ from bs4 import BeautifulSoup
 import os
 from requests_html import HTMLSession
 import sys
+from typing import List, Dict, Any
 from pprint import pprint
+
 
 username = 'z5120423'
 password = 'mBo2135879orange'
 
-def login():
+def login() -> HTMLSession:
     print("Creating session...")
     sesh = HTMLSession()
 
@@ -34,7 +36,7 @@ def login():
     
     return sesh
 
-def extractData(sesh):
+def extractData(sesh: HTMLSession) -> List[Dict]:
     print("Extracting all job listings...")
     jobBoard = sesh.get('https://careersonline.unsw.edu.au/students/jobs/Search?text=&typeofwork=-1&location=&page=1&take=1000')
     jobSoup = BeautifulSoup(jobBoard.content, features='html.parser')
@@ -48,6 +50,7 @@ def extractData(sesh):
             } 
             for listing in jobSoup.find_all("div", {"class": 'list-group-item'})]
     pprint(jobs)
+    return jobs
         
 sesh = login()
 extractData(sesh)
