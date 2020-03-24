@@ -5,11 +5,10 @@ import sys
 from typing import List, Dict, Any
 from pprint import pprint
 
+username = os.environ['UNSW_USERNAME']
+password = os.environ['UNSW_PASSWORD']
 
-username = 'z5120423'
-password = 'mBo2135879orange'
-
-def login() -> HTMLSession:
+def login() -> (HTMLSession):
     print("Creating session...")
     sesh = HTMLSession()
 
