@@ -1,10 +1,5 @@
 # job-scrapper serve
 
-## Install firefox and geckodriver
-
-[Firefox Installation](https://cli.vuejs.org/config/).
-[Geckodriver Installation](https://askubuntu.com/a/871077).
-
 ## Install Pipenv
 
 ```bash

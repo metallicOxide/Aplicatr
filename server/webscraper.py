@@ -1,146 +1,54 @@
-# from requests import Session
 from bs4 import BeautifulSoup
 import os
-
-from requestium import Session, Keys
-
-from seleniumrequests import Firefox # Allows you to launch/initialise a browser.
-from selenium import webdriver
-from selenium.webdriver.firefox.options import Options # To make browser headless
-from selenium.webdriver.common.by import By # Allows you to search for things using specific parameters.
-from selenium.webdriver.support.ui import WebDriverWait # Allows you to wait for a page to load.
-from selenium.webdriver.support import expected_conditions as EC # Specify what you are looking for on a specific page in order to determine that the webpage has loaded.
-from selenium.common.exceptions import TimeoutException # Handling a timeout situation.
+from requests_html import HTMLSession
+import sys
+from pprint import pprint
 
 username = 'z5120423'
 password = 'mBo2135879orange'
 
-def login0():
-    '''
-    Logs into dashboard, but unable to parse subsequent dynamically generated content
-    '''
-    with Session() as sesh:
-        loginPage = sesh.get('https://careersonline.unsw.edu.au/students/login')
+def login():
+    print("Creating session...")
+    sesh = HTMLSession()
 
-        soup = BeautifulSoup(loginPage.content, "html.parser")
-        requestVerificationToken = soup.find("input", {'name': '__RequestVerificationToken'}).get('value')
-        print (requestVerificationToken)
-        loginPayload = {
-            'LDAPUsername': username, 
-            'LDAPPassword': password,
-            '__RequestVerificationToken': requestVerificationToken
-        }
+    print("Extracting login page tokens...")
+    loginPage = sesh.get('https://careersonline.unsw.edu.au/students/login')
+    soup = BeautifulSoup(loginPage.content, "html.parser")
+    requestVerificationToken = soup.find("input", {'name': '__RequestVerificationToken'}).get('value')
+    loginPayload = {
+        'LDAPUsername': username, 
+        'LDAPPassword': password,
+        '__RequestVerificationToken': requestVerificationToken
+    }
+    
+    print("Logging in to the UNSW careers online portal...")
+    setCookies = sesh.post('https://careersonline.unsw.edu.au/providers/ldap/Login/1', data=loginPayload)
+    if not setCookies.ok: 
+        print("Error setting cookies, exiting...")
+        sys.exit()
+    login = sesh.post('https://careersonline.unsw.edu.au/')
+    if not login.ok: 
+        print("Error logging in, exiting...")
+        sys.exit()
+    print("Logged into UNSW careers online portal!")
+    
+    return sesh
+
+def extractData(sesh):
+    print("Extracting all job listings...")
+    jobBoard = sesh.get('https://careersonline.unsw.edu.au/students/jobs/Search?text=&typeofwork=-1&location=&page=1&take=1000')
+    jobSoup = BeautifulSoup(jobBoard.content, features='html.parser')
+    
+    jobs = [{
+                'title': listing.find('a').get_text().replace('\\r\\n', '').strip(),
+                'link': listing.find('a')['href'],
+                'summary': listing.find('p', {'class': 'job-list-summary'}).get_text(strip=True),
+                'closing_date': listing.find('div', {'class': 'job-list-close'}).get_text(strip=True).replace('Closes- ', ''),
+                'location': listing.find('div', {'class': 'job-list-location'}).get_text(strip=True)
+            } 
+            for listing in jobSoup.find_all("div", {"class": 'list-group-item'})]
+    pprint(jobs)
         
-        sesh.post('https://careersonline.unsw.edu.au/providers/ldap/Login/1', data=loginPayload)
-        response = sesh.post('https://careersonline.unsw.edu.au/')
-        html = response.content
-        soup = BeautifulSoup(html, features="html.parser")
-        print(soup)
-
-
-def login1():
-    '''
-    The library requestium feels like too many dependencies, very easily 
-    broken. Right now, cookies expiry broken and not work
-    '''
+sesh = login()
+extractData(sesh)
     
-    s = Session(webdriver_path='./chromedriver', 
-                   browser='chrome', 
-                   default_timeout=15)
-    s.driver.get('https://careersonline.unsw.edu.au/students/login')
-    requestVerificationToken = s.driver.find_element_by_name(name='__RequestVerificationToken').get_attribute('value')
-    loginPayload = {
-        'LDAPUsername': username, 
-        'LDAPPassword': password,
-        '__RequestVerificationToken': requestVerificationToken
-    }
-    s.transfer_driver_cookies_to_session()
-    s.post('https://careersonline.unsw.edu.au/providers/ldap/Login/1', data=loginPayload)
-    s.post('https://careersonline.unsw.edu.au/')
-    
-    for cookie in s.cookies:
-        s.driver.add_cookie({
-            'name': cookie.name, 
-            'value': cookie.value,
-            'domain': cookie.domain
-        }) 
-    print(s.driver.page_source)     
-
-def post(driver, path, params):
-    driver.execute_script(
-        '''
-        let path = arguments[0];
-        let params = arguments[1];
-        method='post';
-        // The rest of this code assumes you are not using a library.
-        // It can be made less wordy if you use one.
-        const form = document.createElement('form');
-        form.method = method;
-        form.action = path;
-
-        for (const key in params) {
-            if (params.hasOwnProperty(key)) {
-            const hiddenField = document.createElement('input');
-            hiddenField.type = 'hidden';
-            hiddenField.name = key;
-            hiddenField.value = params[key];
-
-            form.appendChild(hiddenField);
-            }
-        }
-
-        document.body.appendChild(form);
-        form.submit();
-        ''',
-        path, params
-    )
-    return driver
-
-def login2():
-    ''' Ideally use selenium, but no easy straightforward way to make a post requests '''
-    # https://stackoverflow.com/questions/5660956/is-there-any-way-to-start-with-a-post-request-using-selenium
-    options = Options()
-    options.headless = True
-    browser = webdriver.Firefox(firefox_options=options)
-    browser.get('https://careersonline.unsw.edu.au/students/login')
-    requestVerificationToken = browser.find_element_by_name(name='__RequestVerificationToken').get_attribute('value')
-    loginPayload = {
-        'LDAPUsername': username, 
-        'LDAPPassword': password,
-        '__RequestVerificationToken': requestVerificationToken
-    }
-    browser = post(browser, )
-
-login()
-    
-
-
-/**
- * sends a request to the specified url from a form. this will change the window location.
- * @param {string} path the path to send the post request to
- * @param {object} params the paramiters to add to the url
- * @param {string} [method=post] the method to use on the form
- */
-
-function post(path, params, method='post') {
-
-  // The rest of this code assumes you are not using a library.
-  // It can be made less wordy if you use one.
-  const form = document.createElement('form');
-  form.method = method;
-  form.action = path;
-
-  for (const key in params) {
-    if (params.hasOwnProperty(key)) {
-      const hiddenField = document.createElement('input');
-      hiddenField.type = 'hidden';
-      hiddenField.name = key;
-      hiddenField.value = params[key];
-
-      form.appendChild(hiddenField);
-    }
-  }
-
-  document.body.appendChild(form);
-  form.submit();
-}
