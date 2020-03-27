@@ -39,3 +39,12 @@ pipenv install
 ```bash
 pipenv run python3 -m server
 ```
+
+
+### If using WSL
+
+pipenv install --python={{Path_To_Python}}
+
+{{Path_To_Python}} = which Python
+
+pipenv run python3 -m server
