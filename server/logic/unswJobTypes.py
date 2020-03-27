@@ -1,6 +1,7 @@
+import sys
+import os
+from typing import List, Dict
 
-# We should seperate job types based on 
-# unis, these options are only avaliable for unsw
 JobTypes = {
   "any": -1,
   "part-time-casual-employment": 1138,
@@ -20,3 +21,9 @@ JobTypes = {
   "indigenous-program": 1176,
   "equal-opportunity-program": 1177
 }
+
+def getUnswJobTypes() -> (List[Dict]):
+    return [{'jobType': jobType, 'jobId': JobTypes[jobType]} for jobType in JobTypes]
+
+
+

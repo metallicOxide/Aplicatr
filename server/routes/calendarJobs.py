@@ -1,7 +1,7 @@
 from flask import Flask, request, send_file
 from flask_restx import Resource, Api, fields, marshal
 from server.app import api, app
-from server.logic.cal import generateCalendarDeadlines, createCalendar
+from server.logic.calendarMake import generateCalendarDeadlines, createCalendar
 
 job_model = api.model('Job_Model', {
   'title': fields.String,

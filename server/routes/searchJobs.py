@@ -2,8 +2,7 @@ from flask import Flask, request, send_file
 from flask_restx import Resource, Api, fields
 from server.app import api, app
 from server.logic.unswScraper import extractData, login
-from server.logic.unswJobTypes import JobTypes
-from server.logic.unswJobTypeService import getAllUNSWJobTypes
+from server.logic.unswJobTypes import JobTypes, getUnswJobTypes
 
 search_model = api.model('Search_Model', {
   'Username': fields.String,
@@ -13,14 +12,13 @@ search_model = api.model('Search_Model', {
   'Location': fields.String,
 }, required=True)
 
-@api.route('/getJobTypes')
-class GetAllUNSWJobTypes(Resource):
-  @api.doc(description='Get the avaliable job types for UNSW.')
-  @api.response(400, 'Invalid input or error processing data encountered.')
-  @api.response(404, 'Error connecting to data source.')
-  @api.response(200, 'Data sucessfully processed and returned.')
+@api.route('/jobs/types/unsw')
+class UnswJobTypes(Resource):
+  @api.doc(description='Get the available job types for UNSW.')
+  @api.response(200, 'Data successfully returned.')
   def get(self):
-    jobTypeList = getAllUNSWJobTypes()
+    # TODO: Job types shouldn't be hardcoded, should fetch from website itself
+    jobTypeList = getUnswJobTypes()
     return {'jobTypes' : jobTypeList} , 200
 
 @api.route('/jobs')

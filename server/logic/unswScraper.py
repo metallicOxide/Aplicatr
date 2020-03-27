@@ -5,7 +5,7 @@ import sys
 from typing import List, Dict, Any, Text
 from pprint import pprint
 from datetime import datetime
-from .unswJobTypes import JobTypes
+from server.logic.unswJobTypes import JobTypes
 
 def login(username: Text = '', password: Text = '') -> (HTMLSession):
   print("Creating session...")
