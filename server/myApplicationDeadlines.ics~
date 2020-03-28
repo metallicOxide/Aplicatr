@@ -1,892 +1,1606 @@
 BEGIN:VCALENDAR
+PRODID:-//K Desktop Environment//NONSGML libkcal 4.3//EN
 VERSION:2.0
-PRODID:ics.py - http://git.io/lLljaA
+X-KDE-ICAL-IMPLEMENTATION-VERSION:1.0
 BEGIN:VEVENT
-DESCRIPTION:This role is open for internship as a Business Development Representative. Based in Sydney.
-LOCATION:Sydney
-DTSTART:20200407T120000Z
-SUMMARY:Business Development Representative Intern COPY
-UID:41490fca-8c14-4a5d-8834-9350c178b4d1@4149.org
-URL:/students/jobs/detail/433563/business-development-represent
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Amazon Web Services (AWS)\, the largest consumer cloud offering in the world\, is looking for graduate network engineers to join\, learn\, and grow with our Sydney engineering team!
-LOCATION:Sydney
-DTSTART:20201231T120000Z
-SUMMARY:Graduate Network Development Engineer - Amazon Web Services
-UID:d8ca4014-e9e7-4df6-be6e-ed43a3381d06@d8ca.org
-URL:/students/jobs/detail/425323/graduate-network-development-e
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This is an entry-level sales role and will provide you with the opportunity to join a thriving organisation in the heart of the Sydney CBD.
-LOCATION:Sydney
-DTSTART:20200401T120000Z
-SUMMARY:Business Development Representative - EOI
-UID:c01be676-8c41-421a-8812-76e540c112d5@c01b.org
-URL:/students/jobs/detail/431217/business-development-represent
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Are you in your penultimate year of a Computer Science\, Computer/Software/Electrical/Mechatronic Engineering or similarly technical degree? Do you want to solve complex problems with code at one of Australia’s ‘Best Places to Work’ this summer?
-LOCATION:Sydney
-DTSTART:20200413T120000Z
-SUMMARY:2020 - 21 Software Developer Internship
-UID:845120e6-4cc9-4f6a-9bf1-4e0cffdd60be@8451.org
-URL:/students/jobs/detail/429662/2020-21-software-developer-int
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Looking to become a top-notch social media expert & marketer ? We're looking for an additional performance-driven marketing trainee to join the team.
-LOCATION:Sydney
-DTSTART:20200412T120000Z
-SUMMARY:Junior Trainee- Digital Marketing Campaigns & Social Media - Marketing Agency in Sydney CBD
-UID:a9ef4a43-a2d3-4592-9f63-d250f221fbe7@a9ef.org
-URL:/students/jobs/detail/431648/junior-trainee-digital-marketi
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are seeking passionate university students\, graduates\, tutors and teachers to become a casual instructor\, teaching children under 15 years of age\, basic software programming and robotics skills in Hornsby\, St Ives\, Berowra\, North Ryde and Eastwood.
-LOCATION:BrisbaneGold CoastMelbourneSydney
-DTSTART:20200409T120000Z
-SUMMARY:Coding and Robotics Instructor
-UID:08315666-c627-4133-9c4a-1ee717cb4384@0831.org
-URL:/students/jobs/detail/433446/coding-and-robotics-instructor
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Seeking capable PhD students for casual eResearch Trainer positions
-LOCATION:Sydney
-DTSTART:20200403T120000Z
-SUMMARY:Casual eResearch Trainer
-UID:50ac6688-c53c-4244-a7d8-6b2000397b8b@50ac.org
-URL:/students/jobs/detail/433167/casual-eresearch-trainer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Produce rigorous\, conflict-free research that lifts the lid on Superannuation fund performance\, fees and insurance. Help turn this analysis into action by collaborating with Journalists and Advocates to back reform and make the system easier for people to understand.
-LOCATION:Marrickville
-DTSTART:20200407T120000Z
-SUMMARY:Postgraduate Researcher & Data Analyst
-UID:cc3b043a-ebf0-4bdb-adf4-155e3505e8d2@cc3b.org
-URL:/students/jobs/detail/433562/postgraduate-researcher-and-da
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Are you penultimate year student with a passion for data driven problem solving? Do you want to work in an informal\, collaborative and dynamic environment? If so\, Optiver is the right place for you!
-LOCATION:Sydney
-DTSTART:20200413T120000Z
-SUMMARY:2020 - 21 Quantitative Research Internship
-UID:fe00c0db-4470-43e3-b2e0-96e822182164@fe00.org
-URL:/students/jobs/detail/429663/2020-21-quantitative-research-
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Xiaomi Corporation 2020 Global Campus Recruitment 小米2020全球招聘
-LOCATION:China
-DTSTART:20200527T120000Z
-SUMMARY:Xiaomi Corporation 2020 Global Campus Recruitment 小米2020全球招聘
-UID:46b2bf79-b8b9-4abe-9e07-caed92b7cda5@46b2.org
-URL:/students/jobs/detail/434577/xiaomi-corporation-2020-global
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are seeking Junior Developers to join our innovative and growing technology in our Sydney office. In this role you will work alongside our trading and software team to design and implement elegant solutions to complex and interesting problems.
-LOCATION:Sydney
-DTSTART:20201120T120000Z
-SUMMARY:Junior Developer - Python
-UID:e7210f06-2bb5-44f5-86fc-be7424012065@e721.org
-URL:/students/jobs/detail/427880/junior-developer-python
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:As a Graduate Trader with Flow Traders you will follow an initial 4 to 6 months intensive in-house training program in our Headquarters in Amsterdam\, the Netherlands\, covering all intricate details of our trading processes after which you will relocate to the Hong Kong office.
-LOCATION:Hong Kong
-DTSTART:20200430T120000Z
-SUMMARY:Graduate Trader
-UID:96220956-6858-4072-bd72-e4b2cca5cd67@9622.org
-URL:/students/jobs/detail/421732/graduate-trader
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Entry-level position at a leading management consulting and data analytics firm advising the financial services industry. We offer a competitive salary and benefits package.
-LOCATION:Sydney
-DTSTART:20200417T120000Z
-SUMMARY:Associate Management Consultant
-UID:7197c47f-b272-465c-80cb-073d53d0ecc9@7197.org
-URL:/students/jobs/detail/431826/associate-management-consultan
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Lockheed Martin Australia Graduate Development Program
-LOCATION:AdelaideWilliamtown
-DTSTART:20200419T120000Z
-SUMMARY:Lockheed Martin Australia Graduate Development Program
-UID:66a14641-2e4a-4a5a-b399-ea346f78092d@66a1.org
-URL:/students/jobs/detail/429764/lockheed-martin-australia-grad
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Exam Success is hiring a casual essay helper to: score essays using our in-house built ranking software and provide video feedback on essays using our set structure.  We are a flexible employer and full training is provided.
-LOCATION:Australia
-DTSTART:20200630T120000Z
-SUMMARY:Online Writing Tutor
-UID:eb74ea03-8963-41bc-ae3f-067d31e495ed@eb74.org
-URL:/students/jobs/detail/429431/online-writing-tutor
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are looking for tutors to prepare students for the GAMSAT. $50/hour.
-LOCATION:Sydney
-DTSTART:20200403T120000Z
-SUMMARY:GAMSAT Tutor/Content Developer
-UID:25993dd3-6393-4a65-b599-05ef03e01a04@2599.org
-URL:/students/jobs/detail/432401/gamsat-tutor-content-developer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Telecommunication Development
-LOCATION:China
-DTSTART:20200331T120000Z
-SUMMARY:Telecommunication Development-China mobile (chengdu)
-UID:70a36d87-5580-4744-9eee-5c4bdb424bc6@70a3.org
-URL:/students/jobs/detail/431970/telecommunication-development-
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:APS Level 4/5-6 (S&T Level 3-4) \r\n$67\,100 - $92\,150 (plus super)\r\nFishermans Bend\, VIC
-LOCATION:Melbourne
-DTSTART:20200409T120000Z
-SUMMARY:Mathematical Modeller
-UID:4bc625cc-1cb8-4c65-98b8-4047523704cb@4bc6.org
-URL:/students/jobs/detail/434951/mathematical-modeller
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This is the best position for\r\n\r\nA natural communicator and music lover\r\nSomeone who knows what it takes to work in a great tight-knit team\r\nA problem solver\r\nSomeone who adores ambitious students and love making them happy\r\nYou like the flexibility to work weekdays or weekends
-LOCATION:BurwoodParramattaSydney
-DTSTART:20200404T120000Z
-SUMMARY:Customer Service Champion
-UID:fe4e1156-c157-486b-86a4-240658336c0b@fe4e.org
-URL:/students/jobs/detail/432165/customer-service-champion
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:In this exciting role\, you will have the opportunity to design and build signal processing algorithms that will enable millions of users around the world to experience Dolby technologies.
-LOCATION:North Sydney
-DTSTART:20200430T120000Z
-SUMMARY:DSP Engineer
-UID:26598954-c385-44fe-865e-116f8729c44b@2659.org
-URL:/students/jobs/detail/426643/dsp-engineer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are looking for an Assistant to support the investment teams in our growing Sydney office.
-LOCATION:Sydney
-DTSTART:20200423T120000Z
-SUMMARY:Assistant
-UID:917fd7be-cf32-43c0-981e-a3d5db02b04f@917f.org
-URL:/students/jobs/detail/431122/assistant
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Part- Time 2-3 days\r\nUniform & Promotional Products Company with Christian Values.\r\nYou must have excellent English spoken & written skills with a flair to network with potential clients apart from accounting skills.\r\nYou will need a car as poor public transport to Dural & live within 40 min radius
-LOCATION:Dural
-DTSTART:20200401T120000Z
-SUMMARY:Accounts / Business Support Officer Part - Time
-UID:2a4f0f16-f4b1-4cf8-9cb0-b1dcbd6e32a5@2a4f.org
-URL:/students/jobs/detail/420051/accounts-business-support-offi
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Technical Consulting Engineer to commence Aug 2020
-LOCATION:St Leonards
-DTSTART:20200507T120000Z
-SUMMARY:Technical Consulting Engineer (Full Time) Graduate
-UID:4681bd27-b80c-49b3-9a7d-f8e9f5fb85f0@4681.org
-URL:/students/jobs/detail/425194/technical-consulting-engineer-
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Harmonic provides the supply chain infrastructure that enables media companies to engage & prosper in today’s demanding and ever-changing video economy. We are the worldwide leader to provide solutions to our customers with differentiating video capabilities to deploy on a global scale.
-LOCATION:Hong Kong
-DTSTART:20200410T120000Z
-SUMMARY:Software Development Engineer in Test (HK)
-UID:783ffa00-a808-4861-8875-cca53a302f9c@783f.org
-URL:/students/jobs/detail/433818/software-development-engineer-
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are seeking Development Interns to join our innovative and growing technology in our Sydney office. In this role you will work alongside our trading and software team to design and implement elegant solutions to complex and interesting problems.
-LOCATION:Sydney
-DTSTART:20201120T120000Z
-SUMMARY:Development Internship - Python\, Summer 2020/2021
-UID:9d941b11-a05c-4b19-b570-62aa1d70ba15@9d94.org
-URL:/students/jobs/detail/403117/development-internship-python-
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:IMC is a leading global market maker\, using algorithmic trading and advanced technology to buy and sell securities on multiple trading venues worldwide. We provide liquidity to the financial markets\, driving efficiencies for buyers and sellers.
-LOCATION:Sydney
-DTSTART:20200409T120000Z
-SUMMARY:Software Engineer Intern
-UID:7b227d3c-6d7b-4277-9d70-787f7b9e4b85@7b22.org
-URL:/students/jobs/detail/429194/software-engineer-intern
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Lead change with some of Australia’s biggest beverage brands. You’ll build new business capabilities and learn to become a leader in the industry\, as you help build CUB’s future through technology.
-LOCATION:Melbourne
-DTSTART:20200412T120000Z
-SUMMARY:Technology Management Trainee
-UID:5988f141-aa5e-4c9b-9f11-2f72e71f0e88@5988.org
-URL:/students/jobs/detail/431446/technology-management-trainee
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are looking for a Full-Time PR Assistant who wants to work in the fast-growing Medtech Industry. \r\n\r\nPen CS is a leader in innovative eHealth and clinical software. You will be working with a company that is passionate about improving patient outcomes and building a healthy Australia.
-LOCATION:Sydney
-DTSTART:20200413T120000Z
-SUMMARY:PR Assistant
-UID:22c1e66a-b749-4b94-aac2-2512acdae69c@22c1.org
-URL:/students/jobs/detail/433549/pr-assistant
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Rio Tinto 2021 Graduate Programme Australia
-LOCATION:Bell BayBrisbaneGladstonePerthPilbaraWeipa
-DTSTART:20200412T120000Z
-SUMMARY:Rio Tinto 2021 Graduate Programme Australia
-UID:c09ba617-9223-483e-9db3-9555b7fa45b6@c09b.org
-URL:/students/jobs/detail/431264/rio-tinto-2021-graduate-progra
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are seeking passionate university students\, graduates\, tutors and teachers to become a casual instructor\, teaching children under 14 years of age\, basic software programming and robotics skills in Hornsby\, St Ives\, Berowra\, North Ryde and Eastwood.
-LOCATION:BrisbaneGold CoastMelbourneSydney
-DTSTART:20200331T120000Z
-SUMMARY:Coding and Robotics Tutors
-UID:ce35ef25-d485-4215-8e7a-617d0e3a959c@ce35.org
-URL:/students/jobs/detail/429390/coding-and-robotics-tutors
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are seeking Development Interns to join our innovative and growing technology in our Sydney office. In this role you will work alongside our trading and software team to design and implement elegant solutions to complex and interesting problems.
-LOCATION:Sydney
-DTSTART:20201120T120000Z
-SUMMARY:Development Internship - User Interface (C#\, Web) - Summer 2020/2021
-UID:1608e51f-b0a1-43a7-b116-cbd3306fed5c@1608.org
-URL:/students/jobs/detail/428331/development-internship-user-in
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Are you a penultimate year student with a passion for data driven problem solving? Do you like challenges and want to kick start your career at one of Australia’s ‘Best Places To Work’?
-LOCATION:Sydney
-DTSTART:20200413T120000Z
-SUMMARY:2020 - 21 Performance Researcher Internship
-UID:a68aeed4-4e8c-42bf-ba44-3dd296a8a12b@a68a.org
-URL:/students/jobs/detail/429655/2020-21-performance-researcher
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Dolby is currently seeking talented graduate students and junior engineers across Software Engineering\, Electrical Engineering\, Computer Science to join a cutting edge QA Team in our Consumer Entertainment Group. You will be responsible for the testing of world-leading audio processing technologies.
-LOCATION:North Sydney
-DTSTART:20200405T120000Z
-SUMMARY:Graduate Software Engineer in Test
-UID:d9ff9f39-a530-498d-990c-b8a3e31861f2@d9ff.org
-URL:/students/jobs/detail/432349/graduate-software-engineer-in-
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This is an opportunity for drafting student/undergraduate to gain first hand experience working on mechanical design projects. Permanent position at Yennora. Flexible time to meet study commitments.
-LOCATION:Yennora
-DTSTART:20200515T120000Z
-SUMMARY:Junior CAD Drafter
-UID:cbe1c610-d216-4a67-bc7b-7f79e38865f2@cbe1.org
-URL:/students/jobs/detail/434238/junior-cad-drafter
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Dolby is currently seeking talented undergraduate students for a practically focused paid internship. In this role you will develop reliable\, scalable and secure web-services and applications using AWS and other cloud infrastructure.
-LOCATION:North Sydney
-DTSTART:20200406T120000Z
-SUMMARY:Intern Full Stack Software Engineer - Cloud Services
-UID:c357a977-b1c0-4f63-a040-d1dece33172b@c357.org
-URL:/students/jobs/detail/433582/intern-full-stack-software-eng
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jane Street is a proprietary trading firm that operates around the clock and around the globe. We bring a deep understanding of markets\, a scientific approach\, and innovative technology to bear on the problem of trading profitably in the world's highly competitive financial markets.
-LOCATION:Hong Kong
-DTSTART:20200515T120000Z
-SUMMARY:Software Engineer
-UID:29234c0e-28b4-4aae-96a7-caee25768107@2923.org
-URL:/students/jobs/detail/433781/software-engineer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:software Development
-LOCATION:China
-DTSTART:20200331T120000Z
-SUMMARY:software Development-China mobile (chengdu)
-UID:f13072bb-838b-480a-9487-a709f41f8fb4@f130.org
-URL:/students/jobs/detail/431963/software-development-china-mob
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:If you have a strong passion for creation\, a desire for completion of projects\, a constantly updated mind and a steady and tenacious persistence\, welcome to join us and grow with us: Crazy creation\, prudent practice!
-LOCATION:China
-DTSTART:20201231T120000Z
-SUMMARY:ASSISTANT ARCHITECT - China Academy of Building Research\, Beijing
-UID:d5c8bfa8-b61e-44b8-8f8a-c75a1a655075@d5c8.org
-URL:/students/jobs/detail/424961/assistant-architect-china-acad
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Are you a final year student or recent graduate of a Computer Science or Computer/Software/Electrical/Mechatronic Engineering degree? Want to work on technology at the core of our success?
-LOCATION:Sydney
-DTSTART:20200413T120000Z
-SUMMARY:Graduate Software Developer - 2020 or 2021
-UID:077cb38e-bd71-4396-8c1b-20e24f6d9c7b@077c.org
-URL:/students/jobs/detail/429661/graduate-software-developer-20
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:An excellent entry level opportunity where you will be trained in the use of our Atlassian toolset to manage the deployment of software
-LOCATION:North Sydney
-DTSTART:20200331T120000Z
-SUMMARY:Software Build and Release Engineer
-UID:c8f9e385-6743-4f67-a611-10f70a9a9bb1@c8f9.org
-URL:/students/jobs/detail/431749/software-build-and-release-eng
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We’re hiring software engineers – home or office based – full-time\, parttime\r\nand casual roles available.
-LOCATION:Sydney
-DTSTART:20201031T120000Z
-SUMMARY:Junior & Senior Software Engineers
-UID:d0731df4-059d-46de-aac4-b013a64fdb9f@d073.org
-URL:/students/jobs/detail/418993/junior-and-senior-software-eng
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:ShaanGu Group Spring Recruitment 陕西鼓风机有限公司
-LOCATION:China
-DTSTART:20200501T120000Z
-SUMMARY:ShaanGu Group Spring Recruitment 陕西鼓风机有限公司
-UID:a7530eb1-22f0-45ca-a0f5-3f3b16e90b2c@a753.org
-URL:/students/jobs/detail/433331/shaangu-group-spring-recruitme
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Dolby is currently seeking talented undergraduate students for a practically focused paid internship. As an Intern DSP Software Engineer you will be responsible for the design\, implementation and the testing of Dolby algorithms and software.
-LOCATION:North Sydney
-DTSTART:20200406T120000Z
-SUMMARY:Intern DSP Software Engineers
-UID:c9655afa-796a-4ae7-bff3-ff288e9cc526@c965.org
-URL:/students/jobs/detail/433581/intern-dsp-software-engineers
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:JSTI 苏交科 - Assistant Engineer
-LOCATION:China
-DTSTART:20200531T120000Z
-SUMMARY:JSTI 苏交科 - Assistant Engineer
-UID:567ffda9-cccc-4bbc-969d-b86d2a6c3565@567f.org
-URL:/students/jobs/detail/433768/jsti-assistant-engineer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Have you just completed or about to complete your degree in Software Engineering\, Computer Science or something else tech-y? Then this is for you!
-LOCATION:Melbourne
-DTSTART:20200419T120000Z
-SUMMARY:2021 Technology Graduate Program
-UID:d92886cf-98dc-4e7f-bc4b-63100107619f@d928.org
-URL:/students/jobs/detail/430926/2021-technology-graduate-progr
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Are you a final year student or recent graduate of a Computer Science or Computer/Software/Electrical/Mechatronic Engineering degree? Want to work on technology at the core of our success?
-LOCATION:Sydney
-DTSTART:20200413T120000Z
-SUMMARY:Graduate Production Engineer 2020 or 2021
-UID:57eb3487-1360-45de-b4d6-ecd647c8bfd8@57eb.org
-URL:/students/jobs/detail/429660/graduate-production-engineer-2
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:ResMed is now accepting Expression of Interests for Engineer Students who wish to apply for Internship.
-LOCATION:Bella Vista
-DTSTART:20200430T120000Z
-SUMMARY:Expression of Interest - Engineering Internship
-UID:11db4416-21be-4c05-bfcc-be2a9b5f313e@11db.org
-URL:/students/jobs/detail/433932/expression-of-interest-enginee
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Internship for a software engineer to work on the backend systems and servers of a virtual reality game. Requires no game development experience\, however strong computer science knowledge is a must.
-LOCATION:Sydney
-DTSTART:20200501T120000Z
-SUMMARY:Software Engineer Internship
-UID:a48da1a6-d4a6-4e4e-8f06-84adeee17993@a48d.org
-URL:/students/jobs/detail/433637/software-engineer-internship
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Summer Internship applications are now open at Displayr to candidates completing a Software Engineering or Computer Science degree.
-LOCATION:Glebe
-DTSTART:20200505T120000Z
-SUMMARY:2020 – 21 Summer Internship | Software Engineering or Computer Science
-UID:71dac5cb-63e7-4a2b-b6bf-4d9109e1f383@71da.org
-URL:/students/jobs/detail/432372/2020-21-summer-internship-soft
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Since launch in August 2013\, Canva has grown exponentially\, amassing over 10 million users in over 100 languages\, making us one of the world's fastest-growing technology companies. We're growing rapidly and building a product that users really love.
-LOCATION:Sydney
-DTSTART:20201130T120000Z
-SUMMARY:Graduate Software Engineer (Java Backend
-UID:51bfc548-da19-46ff-84bc-04c3c4247bed@51bf.org
-URL:/students/jobs/detail/424904/graduate-software-engineer-jav
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Are you a final year student or recent graduate with a passion for data driven problem solving? Do you like challenges and want to kick start your career at one of Australia’s ‘Best Places to Work’?
-LOCATION:Sydney
-DTSTART:20200413T120000Z
-SUMMARY:Graduate Performance Researcher – 2020 or 2021
-UID:33145f7d-1495-4a40-8331-be9b008b3433@3314.org
-URL:/students/jobs/detail/429654/graduate-performance-researche
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:The internship division organizes and monitors hundreds of placements at the Sydney Centre each year. As an Internships Coordinator\, you will act as the primary contact for internship services and for students interning with professional businesses across Sydney.
-LOCATION:Sydney
-DTSTART:20200331T120000Z
-SUMMARY:Internships Coordinator
-UID:fe5cb3e9-bb1a-43d4-b0bd-0b68fdb54eed@fe5c.org
-URL:/students/jobs/detail/425335/internships-coordinator
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Dolby is currently seeking talented undergraduate students for a practically focused paid internship. As an intern Software Developer in Test you will learn the intricate details of our Voice Conferencing software and have the opportunity to design and build complex system tests.
-LOCATION:North Sydney
-DTSTART:20200406T120000Z
-SUMMARY:Intern Software Engineer in Test
-UID:48bf86c5-3e4e-4d2f-86e9-e9e4da90685d@48bf.org
-URL:/students/jobs/detail/433580/intern-software-engineer-in-te
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are seeking Junior Developers to join our innovative and growing technology in our Sydney office. In this role you will work alongside our trading and software team to design and implement elegant solutions to complex and interesting problems.
-LOCATION:Sydney
-DTSTART:20201120T120000Z
-SUMMARY:Junior Developer - User Interface (C#\, Web)
-UID:5b253a52-aaff-489c-abce-faf84dbc3963@5b25.org
-URL:/students/jobs/detail/428330/junior-developer-user-interfac
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Interested in working in Japan as an IT Engineer? \r\nRakuten is Global internet service company with employees from more than 70+ countries.\r\nFor the Engineers\, more than 50% of the employees are from abroad with global culture.\r\nOur common language is English so no need to have Japanese skills!
-LOCATION:Japan
-DTSTART:20200401T120000Z
-SUMMARY:Software Engineer
-UID:1269a0a9-a338-4402-a339-8ed9da59ea21@1269.org
-URL:/students/jobs/detail/429721/software-engineer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are a global FinTech in the buy now pay later space. Here at Zip\, we’re continuously developing our products to stay ahead of the game. Our mission is to become the first payment solution of choice\, everywhere\, every day!
-LOCATION:Sydney
-DTSTART:20200419T120000Z
-SUMMARY:Tech Graduate
-UID:b5c5d2af-5d63-45f7-b80b-72e1c0cafedb@b5c5.org
-URL:/students/jobs/detail/431682/tech-graduate
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Product Design
-LOCATION:China
-DTSTART:20200330T120000Z
-SUMMARY:Product Design-China mobile (chengdu)
-UID:52e8b0d5-a97d-4a4b-bbd9-0fcecaa9711f@52e8.org
-URL:/students/jobs/detail/431853/product-design-china-mobile-ch
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Consulting Engineer graduate role to commence Aug 2020
-LOCATION:St Leonards
-DTSTART:20200507T120000Z
-SUMMARY:Consulting Engineer (Full Time) Graduate
-UID:3ae95416-45f4-4d83-b406-6f6ddc3731fa@3ae9.org
-URL:/students/jobs/detail/425195/consulting-engineer-full-time-
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:A Software Development Engineer (CM) who will be involved in automate platform/application builds\, engaged and work with a variety of most popular IaaS providers etc.\, AWS\, GCP\, Azure\, learn of Continuous Integration / Continuous Deliver to design automated solutions for project teams to build.
-LOCATION:Hong Kong
-DTSTART:20200410T120000Z
-SUMMARY:Software Development Engineer (Configuration Management)
-UID:b8552c0f-60fa-40da-ac37-10a5154a9def@b855.org
-URL:/students/jobs/detail/433815/software-development-engineer-
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:New Oriental Education& Technology Group 2020 Overseas Campus Recruiting 新东方教育科技集团2020全球招聘
-LOCATION:China
-DTSTART:20200520T120000Z
-SUMMARY:New Oriental Education& Technology Group 2020 Overseas Campus Recruiting 新东方教育科技集团2020全球招聘
-UID:92f28125-0139-4068-9de9-710bca209846@92f2.org
-URL:/students/jobs/detail/433992/new-oriental-educationand-tech
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Technology is integral to virtually everything the D. E. Shaw group does\, which is why we seek exceptional software developers with a range of quantitative and programming abilities.
-LOCATION:United States of America
-DTSTART:20200430T120000Z
-SUMMARY:Software Developer
-UID:1c982817-efe1-4065-b3f8-d6d2fafe75ea@1c98.org
-URL:/students/jobs/detail/405433/software-developer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Want to gain experience in information technology? Want to do something that makes a difference? A unique opportunity exists at the Children's Cancer Institute to join their Technology Services Helpdesk team as an intern!
-LOCATION:Randwick
-DTSTART:20200403T120000Z
-SUMMARY:Technology Services Helpdesk Intern
-UID:b3b6fa82-217e-41ec-8a20-5b83de90ca54@b3b6.org
-URL:/students/jobs/detail/432213/technology-services-helpdesk-i
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:China Telecommunications Corporation ("China Telecom")\, one of the world's largest providers of integrated telecommunication services，ranked 141st in the Fortune Global 500 in 2019，China Telecom Global Limited ("CTG") is a wholly-owned subsidiary of China Telecom.
-LOCATION:China
-DTSTART:20200515T120000Z
-SUMMARY:China Telecom Global Limited 2020 Global Recruitment中国电信国际有限公司2020全球招聘
-UID:7c55f67b-2ff0-4439-bf4f-13a3e64f3f31@7c55.org
-URL:/students/jobs/detail/433747/china-telecom-global-limited-2
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Dendra Systems is looking for an enthusiastic graduate to join our growing team as a junior GIS data processor
-LOCATION:Sydney
-DTSTART:20200501T120000Z
-SUMMARY:Junior GIS Data Processor
-UID:aafec26a-fb39-4a59-b212-dab2fe82b4ee@aafe.org
-URL:/students/jobs/detail/429261/junior-gis-data-processor
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Selected applicants are sponsored and invited in Japan to attend interviews with various global Japanese companies in a 1-week period. \r\nALL EXPENSES PAID. (round trip air tickets\, accommodation\, and transportation in Japan are covered)
-LOCATION:Japan
-DTSTART:20200409T120000Z
-SUMMARY:IT\, App & Software Developers\, Data Engineering Jobs in Japan (graduating students also welcome)
-UID:df9e6f14-7205-41ed-9a68-4b1379588954@df9e.org
-URL:/students/jobs/detail/434873/it-app-and-software-developers
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Dolby is currently seeking talented undergraduate students for a practically focused paid internship. In this role you will work with automation and test engineers responsible for validation and verification of DSP algorithms used across all Dolby Voice Conferencing products.
-LOCATION:North Sydney
-DTSTART:20200406T120000Z
-SUMMARY:Intern DSP Software Engineer in Test
-UID:5a850963-8550-46f1-8653-9551b7976456@5a85.org
-URL:/students/jobs/detail/433587/intern-dsp-software-engineer-i
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Full Time IT Engineer role to commence June/July 2020
-LOCATION:St Leonards
-DTSTART:20200407T120000Z
-SUMMARY:IT Engineer (Full Time)
-UID:edb584ee-21b9-4673-b3a2-4d0719fb4dcf@edb5.org
-URL:/students/jobs/detail/425193/it-engineer-full-time
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are looking for a talented technologist to join our IT/Enterprise team as a Systems Administrator.
-LOCATION:United States of America
-DTSTART:20200430T120000Z
-SUMMARY:Systems: Systems Administrator
-UID:afe63286-fa14-4aca-9ae1-8a372e28cfd4@afe6.org
-URL:/students/jobs/detail/409755/systems-systems-administrator
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Want to work for one of Australia's largest solar energy websites? Are you a capable writer and have a desire to learn Search Engine Optimisation techniques? We are looking for someone to help write content for our website\, and improve on our existing web database to improve search visibility.
-LOCATION:Manly
-DTSTART:20200420T120000Z
-SUMMARY:Digital Marketer - Graduate / Intern
-UID:e4621361-1b9c-4d15-820d-99548a2a7e60@e462.org
-URL:/students/jobs/detail/433950/digital-marketer-graduate-inte
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are seeking Development Interns to join our innovative and growing technology in our Sydney office. In this role you will work alongside our trading and software team to design and implement elegant solutions to complex and interesting problems.
-LOCATION:Sydney
-DTSTART:20201120T120000Z
-SUMMARY:Development Internship - C++\, Summer 2020/2021
-UID:9e6bc612-b993-494d-946d-640ec193cb03@9e6b.org
-URL:/students/jobs/detail/425940/development-internship-c-summe
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Design and install building control systems\r\nBackground in Electrical engineering\r\nKnowledge in BMS\, ELV system control and Security
-LOCATION:Hong Kong
-DTSTART:20201231T120000Z
-SUMMARY:Field Service Engineer
-UID:5a1d2d50-7975-469e-a487-42870be5187e@5a1d.org
-URL:/students/jobs/detail/417668/field-service-engineer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:If you have a strong passion for creation\, a desire for completion of projects\, a constantly updated mind and a steady and tenacious persistence\, welcome to join us and grow with us: Crazy creation\, prudent practice!
-LOCATION:China
-DTSTART:20201231T120000Z
-SUMMARY:SENIOR ARCHITECT - China Academy of Building Research\, Beijing
-UID:cd3cf08f-aa1c-4892-9b4a-83fb7ed904eb@cd3c.org
-URL:/students/jobs/detail/424959/senior-architect-china-academy
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Design\, build and integration of automation solutions for a global company\r\nIntegration of hardware and software into complex machinery\r\nEstablished Technology Company
-LOCATION:Sydney
-DTSTART:20200331T120000Z
-SUMMARY:Graduate PLC/Software Engineer - Mechatronics Focus
-UID:1e92310b-967d-42fe-ae7e-82ef539f0a58@1e92.org
-URL:/students/jobs/detail/424993/graduate-plc-software-engineer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We're looking for a talented Graduate/Junior Developer to join our team\, located in Macquarie Park\, Sydney. The role will primarily focus on Java development for the backend as well as Typescript web development for the frontend component of our technology stack.
-LOCATION:Macquarie Park
-DTSTART:20200331T120000Z
-SUMMARY:Graduate / Junior Developer
-UID:f5e9c4f7-2534-4af9-9df9-b31609376c0c@f5e9.org
-URL:/students/jobs/detail/431092/graduate-junior-developer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:6 month full-time IT Engineer internship commencing July 2020
-LOCATION:Sydney
-DTSTART:20200407T120000Z
-SUMMARY:IT Engineer Intern
-UID:12ef1df8-bcca-4694-89ed-22041d43cce0@12ef.org
-URL:/students/jobs/detail/425191/it-engineer-intern
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Quants at the D. E. Shaw group apply mathematical techniques and write software to develop\, analyze\, and implement statistical models for our computerized financial trading strategies.
-LOCATION:United States of America
-DTSTART:20200430T120000Z
-SUMMARY:Quantitative Analyst
-UID:ba8fecd6-4500-4a99-be22-48a885519395@ba8f.org
-URL:/students/jobs/detail/405437/quantitative-analyst
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Are you in your penultimate year of a Computer Science or Software/Electrical/Mechatronic Engineering degree? Do you want to work on real world FPGA projects and solve challenging problems this summer at one of Australia’s ‘Best Places to Work’?
-LOCATION:Sydney
-DTSTART:20200413T120000Z
-SUMMARY:2020 - 21 FPGA Developer Internship
-UID:d8ede7fa-6023-4ee6-bac5-339e917d94af@d8ed.org
-URL:/students/jobs/detail/429666/2020-21-fpga-developer-interns
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:If you have a strong passion for creation\, a desire for completion of projects\, a constantly updated mind and a steady and tenacious persistence\, welcome to join us and grow with us: Crazy creation\, prudent practice!
-LOCATION:China
-DTSTART:20201231T120000Z
-SUMMARY:Interior Designer (Beijing)
-UID:ffe517ac-891a-43e6-8793-11278bdbee7b@ffe5.org
-URL:/students/jobs/detail/427163/interior-designer-beijing
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:As a Solutions Engineer\, you will grow to partner with VMware Sales and Partner representatives and will be responsible for finding opportunities for customer transformation with accounts while identifying issues that may affect customer satisfaction or local VMware business expectations.
-LOCATION:Sydney
-DTSTART:20200531T120000Z
-SUMMARY:Graduate Solution Engineer
-UID:6b31cb0a-0dde-46f0-8e94-ba1592b79853@6b31.org
-URL:/students/jobs/detail/433640/graduate-solution-engineer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:FDM are seeking several high calibre graduates to fulfil roles within Software Development and DevOps. You will be provided with specialist training before being place out on site with our leading clients.
-LOCATION:Australia
-DTSTART:20200417T120000Z
-SUMMARY:Graduate Technical Consultant - Software Development
-UID:2e6d7cd1-2943-4ea8-81cc-4d69ac94ec18@2e6d.org
-URL:/students/jobs/detail/434699/graduate-technical-consultant-
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Join us for a unique 6-8 week internship in Japan that will offer you both personal and professional development opportunities. Experience working in a Japanese company that prides itself on cultivating an internationally diverse culture.
-LOCATION:Japan
-DTSTART:20201231T120000Z
-SUMMARY:[Internship] Software Engineer (Tokyo\, Japan)
-UID:1c0b60ae-1b40-4edd-b4e4-fa4834118c54@1c0b.org
-URL:/students/jobs/detail/425656/internship-software-engineer-t
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Are you passionate about digital technologies? Do you have a knack for problem solving?\r\n\r\nWork on things that matter with a digital or technical career in the Australian Government.\r\n\r\nApply once to access many digital and technical roles.
-LOCATION:BrisbaneCanberra CityMelbourneSydney
-DTSTART:20200403T120000Z
-SUMMARY:2021 Australian Government Digital Graduate Program
-UID:ae031729-1445-42cb-b3b5-6c3ff15fdc18@ae03.org
-URL:/students/jobs/detail/431337/2021-australian-government-dig
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:ResMed is now accepting Expressions of Interest for Graduate Engineers
-LOCATION:Bella Vista
-DTSTART:20200430T120000Z
-SUMMARY:Expression of Interest as Graduate Engineer
-UID:24dae851-5fe2-432b-8da2-3a93f610d803@24da.org
-URL:/students/jobs/detail/433934/expression-of-interest-as-grad
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Marketing and Operation
-LOCATION:China
-DTSTART:20200331T120000Z
-SUMMARY:Marketing and Operation-China mobile (chengdu)
-UID:946636df-17cb-4534-af1d-cebb0d45bb30@9466.org
-URL:/students/jobs/detail/431978/marketing-and-operation-china-
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Intuit is a design-driven company and designers help lead the way. Designers are responsible for delivering the soul of Intuit’s products and services. We’re inspired by the courage\, passion\, and entrepreneurial spirit of our small-business customers.
-LOCATION:Sydney
-DTSTART:20200331T120000Z
-SUMMARY:Intern Interaction Design
-UID:58edb5a3-11ba-4875-8bc1-84d96667ffe5@58ed.org
+DTSTAMP:20200328T152610Z
 URL:/students/jobs/detail/433732/intern-interaction-design
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:The Project Coordinator role is junior level project specialist\, leading project activity\, communicating and planning tracking for projects in partnership with our Enterprise customers.  You will manage project activity and ultimately draw technical delivery projects to a successful conclusion.
-LOCATION:melbourneSydney
-DTSTART:20200531T120000Z
-SUMMARY:Graduate Project Coordinator\, Professional Services
-UID:e77756a2-91ed-4d03-8dc1-f5b641f7a2fa@e777.org
-URL:/students/jobs/detail/433643/graduate-project-coordinator-p
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Feral Interactive is looking for talented programmers to join our outstanding game development team. We take great pride in developing superb versions of the best games that the industry has to offer and integrating them perfectly into the target operating systems.
-LOCATION:United Kingdom
-DTSTART:20201231T120000Z
-SUMMARY:C/C++ Cross Platform Game Programmer
-UID:70952414-53c7-456a-bc71-cf243ee26e5d@7095.org
-URL:/students/jobs/detail/425737/c-c-cross-platform-game-progra
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jane Street is a proprietary trading firm that operates around the clock and around the globe. We bring a deep understanding of markets\, a scientific approach\, and innovative technology to bear on the problem of trading profitably in the world's highly competitive financial markets.
-LOCATION:Hong Kong
-DTSTART:20200515T120000Z
-SUMMARY:Software Engineer – Summer Internship (December 2020 – February 2021)
-UID:61e03135-e453-4374-9d85-c5e46553e875@61e0.org
-URL:/students/jobs/detail/433778/software-engineer-summer-inter
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Are you in your penultimate year of a Computer Science\, Computer/Software/Electrical/Mechatronic Engineering or similarly technical degree? Do you want to solve complex problems with code at one of Australia’s ‘Best Places to Work’ this summer?
+CREATED:20200328T152610Z
+UID:58edb5a3-11ba-4875-8bc1-84d96667ffe5@58ed.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Intuit is a design-driven company and designers help lead the 
+ way. Designers are responsible for delivering the soul of Intuit’s 
+ products and services. We’re inspired by the courage\, passion\, and 
+ entrepreneurial spirit of our small-business customers.
+SUMMARY:Intern Interaction Design
 LOCATION:Sydney
-DTSTART:20200413T120000Z
-SUMMARY:2020 - 21 Production Engineer Internship
-UID:3115aa4a-9557-4a98-8653-359020fe26f7@3115.org
-URL:/students/jobs/detail/429659/2020-21-production-engineer-in
+DTSTART;TZID=UTC:20200331T120000
+TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:We are seeking Junior Developers to join our innovative and growing technology in our Sydney office. In this role you will work alongside our trading and software team to design and implement elegant solutions to complex and interesting problems.
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/425191/it-engineer-intern
+CREATED:20200328T152610Z
+UID:12ef1df8-bcca-4694-89ed-22041d43cce0@12ef.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:6 month full-time IT Engineer internship commencing July 
+ 2020
+SUMMARY:IT Engineer Intern
 LOCATION:Sydney
-DTSTART:20201120T120000Z
-SUMMARY:Junior Developer - C++
-UID:767b5db1-8cb1-478c-9bae-3840187e1a1d@767b.org
-URL:/students/jobs/detail/427879/junior-developer-c
+DTSTART;TZID=UTC:20200407T120000
+TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Have a passion for algorithms\, statistics\, memory optimisation\, speed and crypto? Do you want REAL world experience working with one of the industry’s best Engineers and Architects? Our founder worked for Amazon\, Macquarie and several household names. Learn from the best!
-LOCATION:Sydney
-DTSTART:20200505T120000Z
-SUMMARY:Junior Software Engineer (part time)
-UID:50a82529-1b07-4176-a5bb-e1a2e9474cb9@50a8.org
-URL:/students/jobs/detail/426074/junior-software-engineer-part-
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are a small Plumbing company looking for a casual administrative assistant to help with light office duties.Flexible hours and opportunity to work as part of a small team in the trades services industry
-LOCATION:Waverley
-DTSTART:20200406T120000Z
-SUMMARY:Business Administration - Casual
-UID:ab5a6206-bfa8-4cd5-820d-5c540f6ccb08@ab5a.org
-URL:/students/jobs/detail/433460/business-administration-casual
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Since launch in August 2013\, Canva has grown exponentially\, amassing over 10 million users in over 100 languages\, making us one of the world's fastest-growing technology companies. We're growing rapidly and building a product that users really love.
-LOCATION:Sydney
-DTSTART:20201130T120000Z
-SUMMARY:Graduate Software Engineer (Javascript Frontend)
-UID:dd3def94-beeb-4ca6-8aa1-88ec408933cb@dd3d.org
-URL:/students/jobs/detail/424902/graduate-software-engineer-jav
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are currently in search of a Full Stack Software Developer to build and maintain customer-facing and internal software. You'll help to develop key solutions for our customers\, and offer them excellent technical support.
-LOCATION:North Strathfield
-DTSTART:20200630T120000Z
-SUMMARY:Software Developer
-UID:cf4042c6-14d5-4569-9107-0da6476e2b69@cf40.org
-URL:/students/jobs/detail/425146/software-developer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:China Telecom Global Limited 2020 Recruitment 中国电信国际有限公司春季招聘\r\n\r\nChina Telecommunications Corporation ("China Telecom")\, one of the world's largest providers of integrated telecommunication services，ranked 141st in the Fortune Global 500 in 2019
-LOCATION:China
-DTSTART:20200409T120000Z
-SUMMARY:China Telecom Global Limited 2020 Recruitment 中国电信国际有限公司春季招聘
-UID:f8b7ddf1-c8fa-46d8-95b6-aa3249f58aea@f8b7.org
-URL:/students/jobs/detail/433691/china-telecom-global-limited-2
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Penultimate or final year student? Graduate & Internship Opportunities at BHP open NOW!
-LOCATION:AdelaideBrisbaneMelbournePerth
-DTSTART:20200403T120000Z
-SUMMARY:BHP 2021 Graduate and 2020 Internship Positions
-UID:b16ecdf8-5655-45c0-8c6c-50f92397d82e@b16e.org
-URL:/students/jobs/detail/433185/bhp-2021-graduate-and-2020-int
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Web Development
-LOCATION:China
-DTSTART:20200331T120000Z
-SUMMARY:Web Development-China mobile (chengdu)
-UID:3bd59575-ab0b-460d-9806-90ee3fa8d5b4@3bd5.org
-URL:/students/jobs/detail/431973/web-development-china-mobile-c
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Dolby is currently seeking talented undergraduate students for a practically focused paid internship. In this exciting role\, you will have the opportunity to design and build the latest audio and video software\, using your engineering creativity to develop solutions to technical problems.
-LOCATION:North Sydney
-DTSTART:20200406T120000Z
-SUMMARY:Intern C++ Software Engineer
-UID:de0d773f-4b35-4af7-87bd-f7f39ad609c2@de0d.org
-URL:/students/jobs/detail/433586/intern-c-software-engineer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Harmonic is the worldwide leader in video delivery infrastructure solutions to provide our customers with differentiating video capabilities to deploy on a global scale to engage & prosper the video economy. We are seeking for passionate Software Development Engineers to join our team in Hong Kong.
-LOCATION:Hong Kong
-DTSTART:20200410T120000Z
-SUMMARY:Software Development Engineer (HK)
-UID:c2fd7074-87d1-4a4d-8ddc-3ad51d3edd30@c2fd.org
-URL:/students/jobs/detail/433816/software-development-engineer-
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Graduate Software Developer
-LOCATION:Sydney
-DTSTART:20201130T120000Z
-SUMMARY:Graduate Software Developer
-UID:76bcc279-75e3-47af-af91-c4414ce96d2e@76bc.org
-URL:/students/jobs/detail/429007/graduate-software-developer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We are looking for tutors to help write GAMSAT-style MCQs in humanities\, biology\, chemistry and physics.
-LOCATION:Sydney
-DTSTART:20200403T120000Z
-SUMMARY:3.1 GAMSAT Content Developer
-UID:846d5da8-c36f-45fa-a7db-a26b059bb201@846d.org
-URL:/students/jobs/detail/432400/3-1-gamsat-content-developer
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:The Naval Civilian Engineer Development Program offers a challenging\, inspiring and unique work environment. The program ensures you receive a holistic development program\, giving you the opportunity to strive both personally and professionally.
-LOCATION:Canberra
-DTSTART:20200404T120000Z
-SUMMARY:Naval Civilian Engineer Development Program
-UID:8d47f558-4fd2-4e12-a458-25eab9b0b71c@8d47.org
-URL:/students/jobs/detail/431454/naval-civilian-engineer-develo
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:If you have a strong passion for creation\, a desire for completion of projects\, a constantly updated mind and a steady and tenacious persistence\, welcome to join us and grow with us: Crazy creation\, prudent practice!
-LOCATION:China
-DTSTART:20201231T120000Z
-SUMMARY:ARCHITECT INTERN - China Academy of Building Research\, Beijing
-UID:b153815f-f15b-49c8-9e88-a868e90797f2@b153.org
-URL:/students/jobs/detail/424962/architect-intern-china-academy
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Qualtrics is on the look-out for an exceptional finance/accounting graduate or student keen to launch their career in accounting at a fast-paced\, hyper-growth SaaS company. We will be offering an immense amount of training to the right candidate\, including the opportunity to train at our U.S HQ.
-LOCATION:Sydney
-DTSTART:20200331T120000Z
-SUMMARY:Accounts Receivable Specialist
-UID:e0f553b0-2172-460a-8982-f335eec9430d@e0f5.org
-URL:/students/jobs/detail/430724/accounts-receivable-specialist
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:KordaMentha are seeking graduates with a different mindset to join the Forensic Technology teams across Australia. Kick start your career now!
-LOCATION:BrisbaneMelbourneSydney
-DTSTART:20200329T120000Z
-SUMMARY:2021 Graduate Program - Forensic Technology
-UID:de6beec3-6325-4387-bf66-dd4857a3dd9d@de6b.org
-URL:/students/jobs/detail/429252/2021-graduate-program-forensic
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We’re excited about making a difference to our community\, creating value and exceeding our customers’ expectations – and we’re looking for graduates who feel the same way.
-LOCATION:MelbourneSydney
-DTSTART:20200420T120000Z
-SUMMARY:NAB Graduate Program 2021
-UID:9717fdcf-b4cf-4f55-bb6e-76cbffc8e933@9717.org
-URL:/students/jobs/detail/433597/nab-graduate-program-2021
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Join us to be part of our much celebrated community - where our existing graduates have rated their experience\, and compared to other programs\, we ranked in the top 35 graduate employers in Australia due to the care\, support and opportunity we offer.
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/434699/graduate-technical-consultant-
+CREATED:20200328T152610Z
+UID:2e6d7cd1-2943-4ea8-81cc-4d69ac94ec18@2e6d.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:FDM are seeking several high calibre graduates to fulfil 
+ roles within Software Development and DevOps. You will be provided with 
+ specialist training before being place out on site with our leading 
+ clients.
+SUMMARY:Graduate Technical Consultant - Software Development
 LOCATION:Australia
-DTSTART:20200406T120000Z
-SUMMARY:Capgemini Graduate Program 2020
-UID:bd7f9287-d9d7-4a78-bda8-23f0c0f172b1@bd7f.org
-URL:/students/jobs/detail/433558/capgemini-graduate-program-202
+DTSTART;TZID=UTC:20200417T120000
+TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Join a high tech\, high growth\, innovative startup\r\nImmediate start\r\nRF/SDR product
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429252/2021-graduate-program-forensic
+CREATED:20200328T152610Z
+UID:de6beec3-6325-4387-bf66-dd4857a3dd9d@de6b.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:KordaMentha are seeking graduates with a different mindset to 
+ join the Forensic Technology teams across Australia. Kick start your 
+ career now!
+SUMMARY:2021 Graduate Program - Forensic Technology
+LOCATION:BrisbaneMelbourneSydney
+DTSTART;TZID=UTC:20200329T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431749/software-build-and-release-eng
+CREATED:20200328T152610Z
+UID:c8f9e385-6743-4f67-a611-10f70a9a9bb1@c8f9.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:An excellent entry level opportunity where you will be 
+ trained in the use of our Atlassian toolset to manage the deployment of 
+ software
+SUMMARY:Software Build and Release Engineer
+LOCATION:North Sydney
+DTSTART;TZID=UTC:20200331T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429764/lockheed-martin-australia-grad
+CREATED:20200328T152610Z
+UID:66a14641-2e4a-4a5a-b399-ea346f78092d@66a1.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Lockheed Martin Australia Graduate Development Program
+SUMMARY:Lockheed Martin Australia Graduate Development Program
+LOCATION:AdelaideWilliamtown
+DTSTART;TZID=UTC:20200419T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429194/software-engineer-intern
+CREATED:20200328T152610Z
+UID:7b227d3c-6d7b-4277-9d70-787f7b9e4b85@7b22.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:IMC is a leading global market maker\, using algorithmic 
+ trading and advanced technology to buy and sell securities on multiple 
+ trading venues worldwide. We provide liquidity to the financial markets\, 
+ driving efficiencies for buyers and sellers.
+SUMMARY:Software Engineer Intern
 LOCATION:Sydney
-DTSTART:20200331T120000Z
-SUMMARY:Electronics Engineer - RF/SDR FPGA & Software
-UID:d962eaba-5aa9-4de0-9370-909d495df133@d962.org
-URL:/students/jobs/detail/424994/electronics-engineer-rf-sdr-fp
+DTSTART;TZID=UTC:20200409T120000
+TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:9 Week Paid Internship in Singapore commencing June 2018. Flights & accommodation will also be paid.  Seeking students due to graduate between December 2020– July 2021.
-LOCATION:Singapore
-DTSTART:20200330T120000Z
-SUMMARY:Field Sales Engineer
-UID:f58470a0-9ed8-4df5-80c2-44cb86cf3703@f584.org
-URL:/students/jobs/detail/421755/field-sales-engineer
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433446/coding-and-robotics-instructor
+CREATED:20200328T152610Z
+UID:08315666-c627-4133-9c4a-1ee717cb4384@0831.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are seeking passionate university students\, graduates\, 
+ tutors and teachers to become a casual instructor\, teaching children 
+ under 15 years of age\, basic software programming and robotics skills in 
+ Hornsby\, St Ives\, Berowra\, North Ryde and Eastwood.
+SUMMARY:Coding and Robotics Instructor
+LOCATION:BrisbaneGold CoastMelbourneSydney
+DTSTART;TZID=UTC:20200409T120000
+TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:If you have a strong passion for creation\, a desire for completion of projects\, a constantly updated mind and a steady and tenacious persistence\, welcome to join us and grow with us: Crazy creation\, prudent practice!
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431446/technology-management-trainee
+CREATED:20200328T152610Z
+UID:5988f141-aa5e-4c9b-9f11-2f72e71f0e88@5988.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Lead change with some of Australia’s biggest beverage 
+ brands. You’ll build new business capabilities and learn to become 
+ a leader in the industry\, as you help build CUB’s future through 
+ technology.
+SUMMARY:Technology Management Trainee
+LOCATION:Melbourne
+DTSTART;TZID=UTC:20200412T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431853/product-design-china-mobile-ch
+CREATED:20200328T152610Z
+UID:52e8b0d5-a97d-4a4b-bbd9-0fcecaa9711f@52e8.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Product Design
+SUMMARY:Product Design-China mobile (chengdu)
 LOCATION:China
-DTSTART:20201231T120000Z
-SUMMARY:ARCHITECT - China Academy of Building Research\, Beijing
-UID:9e7311bb-96f6-4d2e-b07d-0070755921c9@9e73.org
-URL:/students/jobs/detail/424960/architect-china-academy-of-bui
+DTSTART;TZID=UTC:20200330T120000
+TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Full Time Desktop Engineer position to commence July 2020
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429721/software-engineer
+CREATED:20200328T152610Z
+UID:1269a0a9-a338-4402-a339-8ed9da59ea21@1269.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Interested in working in Japan as an IT Engineer? \nRakuten 
+ is Global internet service company with employees from more than 70+ 
+ countries.\nFor the Engineers\, more than 50% of the employees are from 
+ abroad with global culture.\nOur common language is English so no need to 
+ have Japanese skills!
+SUMMARY:Software Engineer
+LOCATION:Japan
+DTSTART;TZID=UTC:20200401T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/432165/customer-service-champion
+CREATED:20200328T152610Z
+UID:fe4e1156-c157-486b-86a4-240658336c0b@fe4e.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:This is the best position for\n\nA natural communicator and 
+ music lover\nSomeone who knows what it takes to work in a great 
+ tight-knit team\nA problem solver\nSomeone who adores ambitious students 
+ and love making them happy\nYou like the flexibility to work weekdays or 
+ weekends
+SUMMARY:Customer Service Champion
+LOCATION:BurwoodParramattaSydney
+DTSTART;TZID=UTC:20200404T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/421732/graduate-trader
+CREATED:20200328T152610Z
+UID:96220956-6858-4072-bd72-e4b2cca5cd67@9622.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:As a Graduate Trader with Flow Traders you will follow an 
+ initial 4 to 6 months intensive in-house training program in our 
+ Headquarters in Amsterdam\, the Netherlands\, covering all intricate 
+ details of our trading processes after which you will relocate to the 
+ Hong Kong office.
+SUMMARY:Graduate Trader
+LOCATION:Hong Kong
+DTSTART;TZID=UTC:20200430T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/434577/xiaomi-corporation-2020-global
+CREATED:20200328T152610Z
+UID:46b2bf79-b8b9-4abe-9e07-caed92b7cda5@46b2.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Xiaomi Corporation 2020 Global Campus Recruitment 
+ 小米2020全球招聘
+SUMMARY:Xiaomi Corporation 2020 Global Campus Recruitment 
+ 小米2020全球招聘
+LOCATION:China
+DTSTART;TZID=UTC:20200527T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433580/intern-software-engineer-in-te
+CREATED:20200328T152610Z
+UID:48bf86c5-3e4e-4d2f-86e9-e9e4da90685d@48bf.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Dolby is currently seeking talented undergraduate students 
+ for a practically focused paid internship. As an intern Software 
+ Developer in Test you will learn the intricate details of our Voice 
+ Conferencing software and have the opportunity to design and build 
+ complex system tests.
+SUMMARY:Intern Software Engineer in Test
+LOCATION:North Sydney
+DTSTART;TZID=UTC:20200406T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431264/rio-tinto-2021-graduate-progra
+CREATED:20200328T152610Z
+UID:c09ba617-9223-483e-9db3-9555b7fa45b6@c09b.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Rio Tinto 2021 Graduate Programme Australia
+SUMMARY:Rio Tinto 2021 Graduate Programme Australia
+LOCATION:Bell BayBrisbaneGladstonePerthPilbaraWeipa
+DTSTART;TZID=UTC:20200412T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433768/jsti-assistant-engineer
+CREATED:20200328T152610Z
+UID:567ffda9-cccc-4bbc-969d-b86d2a6c3565@567f.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:JSTI 苏交科 - Assistant Engineer
+SUMMARY:JSTI 苏交科 - Assistant Engineer
+LOCATION:China
+DTSTART;TZID=UTC:20200531T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431217/business-development-represent
+CREATED:20200328T152610Z
+UID:c01be676-8c41-421a-8812-76e540c112d5@c01b.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:This is an entry-level sales role and will provide you with 
+ the opportunity to join a thriving organisation in the heart of the 
+ Sydney CBD.
+SUMMARY:Business Development Representative - EOI
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200401T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/424960/architect-china-academy-of-bui
+CREATED:20200328T152610Z
+UID:9e7311bb-96f6-4d2e-b07d-0070755921c9@9e73.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:If you have a strong passion for creation\, a desire for 
+ completion of projects\, a constantly updated mind and a steady and 
+ tenacious persistence\, welcome to join us and grow with us: Crazy 
+ creation\, prudent practice!
+SUMMARY:ARCHITECT - China Academy of Building Research\, Beijing
+LOCATION:China
+DTSTART;TZID=UTC:20201231T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429659/2020-21-production-engineer-in
+CREATED:20200328T152610Z
+UID:3115aa4a-9557-4a98-8653-359020fe26f7@3115.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Are you in your penultimate year of a Computer Science\, 
+ Computer/Software/Electrical/Mechatronic Engineering or similarly 
+ technical degree? Do you want to solve complex problems with code at one 
+ of Australia’s ‘Best Places to Work’ this summer?
+SUMMARY:2020 - 21 Production Engineer Internship
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200413T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/432213/technology-services-helpdesk-i
+CREATED:20200328T152610Z
+UID:b3b6fa82-217e-41ec-8a20-5b83de90ca54@b3b6.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Want to gain experience in information technology? Want to do 
+ something that makes a difference? A unique opportunity exists at the 
+ Children's Cancer Institute to join their Technology Services Helpdesk 
+ team as an intern!
+SUMMARY:Technology Services Helpdesk Intern
+LOCATION:Randwick
+DTSTART;TZID=UTC:20200403T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431826/associate-management-consultan
+CREATED:20200328T152610Z
+UID:7197c47f-b272-465c-80cb-073d53d0ecc9@7197.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Entry-level position at a leading management consulting and 
+ data analytics firm advising the financial services industry. We offer a 
+ competitive salary and benefits package.
+SUMMARY:Associate Management Consultant
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200417T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/427163/interior-designer-beijing
+CREATED:20200328T152610Z
+UID:ffe517ac-891a-43e6-8793-11278bdbee7b@ffe5.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:If you have a strong passion for creation\, a desire for 
+ completion of projects\, a constantly updated mind and a steady and 
+ tenacious persistence\, welcome to join us and grow with us: Crazy 
+ creation\, prudent practice!
+SUMMARY:Interior Designer (Beijing)
+LOCATION:China
+DTSTART;TZID=UTC:20201231T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433818/software-development-engineer-
+CREATED:20200328T152610Z
+UID:783ffa00-a808-4861-8875-cca53a302f9c@783f.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Harmonic provides the supply chain infrastructure that 
+ enables media companies to engage & prosper in today’s demanding and 
+ ever-changing video economy. We are the worldwide leader to provide 
+ solutions to our customers with differentiating video capabilities to 
+ deploy on a global scale.
+SUMMARY:Software Development Engineer in Test (HK)
+LOCATION:Hong Kong
+DTSTART;TZID=UTC:20200410T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429666/2020-21-fpga-developer-interns
+CREATED:20200328T152610Z
+UID:d8ede7fa-6023-4ee6-bac5-339e917d94af@d8ed.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Are you in your penultimate year of a Computer Science or 
+ Software/Electrical/Mechatronic Engineering degree? Do you want to work 
+ on real world FPGA projects and solve challenging problems this summer at 
+ one of Australia’s ‘Best Places to Work’?
+SUMMARY:2020 - 21 FPGA Developer Internship
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200413T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433549/pr-assistant
+CREATED:20200328T152610Z
+UID:22c1e66a-b749-4b94-aac2-2512acdae69c@22c1.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are looking for a Full-Time PR Assistant who wants to work 
+ in the fast-growing Medtech Industry. \n\nPen CS is a leader in 
+ innovative eHealth and clinical software. You will be working with a 
+ company that is passionate about improving patient outcomes and building 
+ a healthy Australia.
+SUMMARY:PR Assistant
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200413T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/430724/accounts-receivable-specialist
+CREATED:20200328T152610Z
+UID:e0f553b0-2172-460a-8982-f335eec9430d@e0f5.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Qualtrics is on the look-out for an exceptional 
+ finance/accounting graduate or student keen to launch their career in 
+ accounting at a fast-paced\, hyper-growth SaaS company. We will be 
+ offering an immense amount of training to the right candidate\, including 
+ the opportunity to train at our U.S HQ.
+SUMMARY:Accounts Receivable Specialist
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200331T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433167/casual-eresearch-trainer
+CREATED:20200328T152610Z
+UID:50ac6688-c53c-4244-a7d8-6b2000397b8b@50ac.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Seeking capable PhD students for casual eResearch Trainer 
+ positions
+SUMMARY:Casual eResearch Trainer
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200403T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433950/digital-marketer-graduate-inte
+CREATED:20200328T152610Z
+UID:e4621361-1b9c-4d15-820d-99548a2a7e60@e462.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Want to work for one of Australia's largest solar energy 
+ websites? Are you a capable writer and have a desire to learn Search 
+ Engine Optimisation techniques? We are looking for someone to help write 
+ content for our website\, and improve on our existing web database to 
+ improve search visibility.
+SUMMARY:Digital Marketer - Graduate / Intern
+LOCATION:Manly
+DTSTART;TZID=UTC:20200420T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431978/marketing-and-operation-china-
+CREATED:20200328T152610Z
+UID:946636df-17cb-4534-af1d-cebb0d45bb30@9466.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Marketing and Operation
+SUMMARY:Marketing and Operation-China mobile (chengdu)
+LOCATION:China
+DTSTART;TZID=UTC:20200331T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/434238/junior-cad-drafter
+CREATED:20200328T152610Z
+UID:cbe1c610-d216-4a67-bc7b-7f79e38865f2@cbe1.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:This is an opportunity for drafting student/undergraduate to 
+ gain first hand experience working on mechanical design projects. 
+ Permanent position at Yennora. Flexible time to meet study commitments.
+SUMMARY:Junior CAD Drafter
+LOCATION:Yennora
+DTSTART;TZID=UTC:20200515T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433582/intern-full-stack-software-eng
+CREATED:20200328T152610Z
+UID:c357a977-b1c0-4f63-a040-d1dece33172b@c357.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Dolby is currently seeking talented undergraduate students 
+ for a practically focused paid internship. In this role you will develop 
+ reliable\, scalable and secure web-services and applications using AWS 
+ and other cloud infrastructure.
+SUMMARY:Intern Full Stack Software Engineer - Cloud Services
+LOCATION:North Sydney
+DTSTART;TZID=UTC:20200406T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433778/software-engineer-summer-inter
+CREATED:20200328T152610Z
+UID:61e03135-e453-4374-9d85-c5e46553e875@61e0.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Jane Street is a proprietary trading firm that operates 
+ around the clock and around the globe. We bring a deep understanding of 
+ markets\, a scientific approach\, and innovative technology to bear on 
+ the problem of trading profitably in the world's highly competitive 
+ financial markets.
+SUMMARY:Software Engineer – Summer Internship (December 2020 – 
+ February 2021)
+LOCATION:Hong Kong
+DTSTART;TZID=UTC:20200515T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433816/software-development-engineer-
+CREATED:20200328T152610Z
+UID:c2fd7074-87d1-4a4d-8ddc-3ad51d3edd30@c2fd.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Harmonic is the worldwide leader in video delivery 
+ infrastructure solutions to provide our customers with differentiating 
+ video capabilities to deploy on a global scale to engage & prosper the 
+ video economy. We are seeking for passionate Software Development 
+ Engineers to join our team in Hong Kong.
+SUMMARY:Software Development Engineer (HK)
+LOCATION:Hong Kong
+DTSTART;TZID=UTC:20200410T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433643/graduate-project-coordinator-p
+CREATED:20200328T152610Z
+UID:e77756a2-91ed-4d03-8dc1-f5b641f7a2fa@e777.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:The Project Coordinator role is junior level project 
+ specialist\, leading project activity\, communicating and planning 
+ tracking for projects in partnership with our Enterprise customers.  You 
+ will manage project activity and ultimately draw technical delivery 
+ projects to a successful conclusion.
+SUMMARY:Graduate Project Coordinator\, Professional Services
+LOCATION:melbourneSydney
+DTSTART;TZID=UTC:20200531T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433331/shaangu-group-spring-recruitme
+CREATED:20200328T152610Z
+UID:a7530eb1-22f0-45ca-a0f5-3f3b16e90b2c@a753.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:ShaanGu Group Spring Recruitment 陕西鼓风机有限公司
+SUMMARY:ShaanGu Group Spring Recruitment 陕西鼓风机有限公司
+LOCATION:China
+DTSTART;TZID=UTC:20200501T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/425146/software-developer
+CREATED:20200328T152610Z
+UID:cf4042c6-14d5-4569-9107-0da6476e2b69@cf40.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are currently in search of a Full Stack Software Developer 
+ to build and maintain customer-facing and internal software. You'll help 
+ to develop key solutions for our customers\, and offer them excellent 
+ technical support.
+SUMMARY:Software Developer
+LOCATION:North Strathfield
+DTSTART;TZID=UTC:20200630T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/425940/development-internship-c-summe
+CREATED:20200328T152610Z
+UID:9e6bc612-b993-494d-946d-640ec193cb03@9e6b.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are seeking Development Interns to join our innovative and 
+ growing technology in our Sydney office. In this role you will work 
+ alongside our trading and software team to design and implement elegant 
+ solutions to complex and interesting problems.
+SUMMARY:Development Internship - C++\, Summer 2020/2021
+LOCATION:Sydney
+DTSTART;TZID=UTC:20201120T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/426074/junior-software-engineer-part-
+CREATED:20200328T152610Z
+UID:50a82529-1b07-4176-a5bb-e1a2e9474cb9@50a8.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Have a passion for algorithms\, statistics\, memory 
+ optimisation\, speed and crypto? Do you want REAL world experience 
+ working with one of the industry’s best Engineers and Architects? Our 
+ founder worked for Amazon\, Macquarie and several household names. Learn 
+ from the best!
+SUMMARY:Junior Software Engineer (part time)
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200505T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431092/graduate-junior-developer
+CREATED:20200328T152610Z
+UID:f5e9c4f7-2534-4af9-9df9-b31609376c0c@f5e9.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We're looking for a talented Graduate/Junior Developer to 
+ join our team\, located in Macquarie Park\, Sydney. The role will 
+ primarily focus on Java development for the backend as well as Typescript 
+ web development for the frontend component of our technology stack.
+SUMMARY:Graduate / Junior Developer
+LOCATION:Macquarie Park
+DTSTART;TZID=UTC:20200331T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/424904/graduate-software-engineer-jav
+CREATED:20200328T152610Z
+UID:51bfc548-da19-46ff-84bc-04c3c4247bed@51bf.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Since launch in August 2013\, Canva has grown exponentially\, 
+ amassing over 10 million users in over 100 languages\, making us one of 
+ the world's fastest-growing technology companies. We're growing rapidly 
+ and building a product that users really love.
+SUMMARY:Graduate Software Engineer (Java Backend
+LOCATION:Sydney
+DTSTART;TZID=UTC:20201130T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/425193/it-engineer-full-time
+CREATED:20200328T152610Z
+UID:edb584ee-21b9-4673-b3a2-4d0719fb4dcf@edb5.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Full Time IT Engineer role to commence June/July 2020
+SUMMARY:IT Engineer (Full Time)
 LOCATION:St Leonards
-DTSTART:20200407T120000Z
-SUMMARY:Desktop Engineer Full Time
-UID:ed345ce5-4f1a-4988-98e3-1bfcbb93fe4b@ed34.org
+DTSTART;TZID=UTC:20200407T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/424993/graduate-plc-software-engineer
+CREATED:20200328T152610Z
+UID:1e92310b-967d-42fe-ae7e-82ef539f0a58@1e92.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Design\, build and integration of automation solutions for a 
+ global company\nIntegration of hardware and software into complex 
+ machinery\nEstablished Technology Company
+SUMMARY:Graduate PLC/Software Engineer - Mechatronics Focus
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200331T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433185/bhp-2021-graduate-and-2020-int
+CREATED:20200328T152610Z
+UID:b16ecdf8-5655-45c0-8c6c-50f92397d82e@b16e.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Penultimate or final year student? Graduate & Internship 
+ Opportunities at BHP open NOW!
+SUMMARY:BHP 2021 Graduate and 2020 Internship Positions
+LOCATION:AdelaideBrisbaneMelbournePerth
+DTSTART;TZID=UTC:20200403T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429007/graduate-software-developer
+CREATED:20200328T152610Z
+UID:76bcc279-75e3-47af-af91-c4414ce96d2e@76bc.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Graduate Software Developer
+SUMMARY:Graduate Software Developer
+LOCATION:Sydney
+DTSTART;TZID=UTC:20201130T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/403117/development-internship-python-
+CREATED:20200328T152610Z
+UID:9d941b11-a05c-4b19-b570-62aa1d70ba15@9d94.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are seeking Development Interns to join our innovative and 
+ growing technology in our Sydney office. In this role you will work 
+ alongside our trading and software team to design and implement elegant 
+ solutions to complex and interesting problems.
+SUMMARY:Development Internship - Python\, Summer 2020/2021
+LOCATION:Sydney
+DTSTART;TZID=UTC:20201120T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429660/graduate-production-engineer-2
+CREATED:20200328T152610Z
+UID:57eb3487-1360-45de-b4d6-ecd647c8bfd8@57eb.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Are you a final year student or recent graduate of a Computer 
+ Science or Computer/Software/Electrical/Mechatronic Engineering degree? 
+ Want to work on technology at the core of our success?
+SUMMARY:Graduate Production Engineer 2020 or 2021
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200413T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
 URL:/students/jobs/detail/425192/desktop-engineer-full-time
+CREATED:20200328T152610Z
+UID:ed345ce5-4f1a-4988-98e3-1bfcbb93fe4b@ed34.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Full Time Desktop Engineer position to commence July 2020
+SUMMARY:Desktop Engineer Full Time
+LOCATION:St Leonards
+DTSTART;TZID=UTC:20200407T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433747/china-telecom-global-limited-2
+CREATED:20200328T152610Z
+UID:7c55f67b-2ff0-4439-bf4f-13a3e64f3f31@7c55.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:China Telecommunications Corporation ("China Telecom")\, one 
+ of the world's largest providers of integrated telecommunication 
+ services，ranked 141st in the Fortune Global 500 in 2019，China Telecom 
+ Global Limited ("CTG") is a wholly-owned subsidiary of China Telecom.
+SUMMARY:China Telecom Global Limited 2020 Global 
+ Recruitment中国电信国际有限公司2020全球招聘
+LOCATION:China
+DTSTART;TZID=UTC:20200515T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433562/postgraduate-researcher-and-da
+CREATED:20200328T152610Z
+UID:cc3b043a-ebf0-4bdb-adf4-155e3505e8d2@cc3b.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Produce rigorous\, conflict-free research that lifts the lid 
+ on Superannuation fund performance\, fees and insurance. Help turn this 
+ analysis into action by collaborating with Journalists and Advocates to 
+ back reform and make the system easier for people to understand.
+SUMMARY:Postgraduate Researcher & Data Analyst
+LOCATION:Marrickville
+DTSTART;TZID=UTC:20200407T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433597/nab-graduate-program-2021
+CREATED:20200328T152610Z
+UID:9717fdcf-b4cf-4f55-bb6e-76cbffc8e933@9717.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We’re excited about making a difference to our community\, 
+ creating value and exceeding our customers’ expectations – and 
+ we’re looking for graduates who feel the same way.
+SUMMARY:NAB Graduate Program 2021
+LOCATION:MelbourneSydney
+DTSTART;TZID=UTC:20200420T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/428331/development-internship-user-in
+CREATED:20200328T152610Z
+UID:1608e51f-b0a1-43a7-b116-cbd3306fed5c@1608.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are seeking Development Interns to join our innovative and 
+ growing technology in our Sydney office. In this role you will work 
+ alongside our trading and software team to design and implement elegant 
+ solutions to complex and interesting problems.
+SUMMARY:Development Internship - User Interface (C#\, Web) - Summer 
+ 2020/2021
+LOCATION:Sydney
+DTSTART;TZID=UTC:20201120T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431970/telecommunication-development-
+CREATED:20200328T152610Z
+UID:70a36d87-5580-4744-9eee-5c4bdb424bc6@70a3.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Telecommunication Development
+SUMMARY:Telecommunication Development-China mobile (chengdu)
+LOCATION:China
+DTSTART;TZID=UTC:20200331T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/420051/accounts-business-support-offi
+CREATED:20200328T152610Z
+UID:2a4f0f16-f4b1-4cf8-9cb0-b1dcbd6e32a5@2a4f.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Part- Time 2-3 days\nUniform & Promotional Products Company 
+ with Christian Values.\nYou must have excellent English spoken & written 
+ skills with a flair to network with potential clients apart from 
+ accounting skills.\nYou will need a car as poor public transport to Dural 
+ & live within 40 min radius
+SUMMARY:Accounts / Business Support Officer Part - Time
+LOCATION:Dural
+DTSTART;TZID=UTC:20200401T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/405437/quantitative-analyst
+CREATED:20200328T152610Z
+UID:ba8fecd6-4500-4a99-be22-48a885519395@ba8f.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Quants at the D. E. Shaw group apply mathematical techniques 
+ and write software to develop\, analyze\, and implement statistical 
+ models for our computerized financial trading strategies.
+SUMMARY:Quantitative Analyst
+LOCATION:United States of America
+DTSTART;TZID=UTC:20200430T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/424961/assistant-architect-china-acad
+CREATED:20200328T152610Z
+UID:d5c8bfa8-b61e-44b8-8f8a-c75a1a655075@d5c8.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:If you have a strong passion for creation\, a desire for 
+ completion of projects\, a constantly updated mind and a steady and 
+ tenacious persistence\, welcome to join us and grow with us: Crazy 
+ creation\, prudent practice!
+SUMMARY:ASSISTANT ARCHITECT - China Academy of Building Research\, 
+ Beijing
+LOCATION:China
+DTSTART;TZID=UTC:20201231T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433992/new-oriental-educationand-tech
+CREATED:20200328T152610Z
+UID:92f28125-0139-4068-9de9-710bca209846@92f2.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:New Oriental Education& Technology Group 2020 Overseas Campus 
+ Recruiting 新东方教育科技集团2020全球招聘
+SUMMARY:New Oriental Education& Technology Group 2020 Overseas Campus 
+ Recruiting 新东方教育科技集团2020全球招聘
+LOCATION:China
+DTSTART;TZID=UTC:20200520T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433781/software-engineer
+CREATED:20200328T152610Z
+UID:29234c0e-28b4-4aae-96a7-caee25768107@2923.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Jane Street is a proprietary trading firm that operates 
+ around the clock and around the globe. We bring a deep understanding of 
+ markets\, a scientific approach\, and innovative technology to bear on 
+ the problem of trading profitably in the world's highly competitive 
+ financial markets.
+SUMMARY:Software Engineer
+LOCATION:Hong Kong
+DTSTART;TZID=UTC:20200515T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/425656/internship-software-engineer-t
+CREATED:20200328T152610Z
+UID:1c0b60ae-1b40-4edd-b4e4-fa4834118c54@1c0b.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Join us for a unique 6-8 week internship in Japan that will 
+ offer you both personal and professional development opportunities. 
+ Experience working in a Japanese company that prides itself on 
+ cultivating an internationally diverse culture.
+SUMMARY:[Internship] Software Engineer (Tokyo\, Japan)
+LOCATION:Japan
+DTSTART;TZID=UTC:20201231T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431337/2021-australian-government-dig
+CREATED:20200328T152610Z
+UID:ae031729-1445-42cb-b3b5-6c3ff15fdc18@ae03.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Are you passionate about digital technologies? Do you have a 
+ knack for problem solving?\n\nWork on things that matter with a digital 
+ or technical career in the Australian Government.\n\nApply once to access 
+ many digital and technical roles.
+SUMMARY:2021 Australian Government Digital Graduate Program
+LOCATION:BrisbaneCanberra CityMelbourneSydney
+DTSTART;TZID=UTC:20200403T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433640/graduate-solution-engineer
+CREATED:20200328T152610Z
+UID:6b31cb0a-0dde-46f0-8e94-ba1592b79853@6b31.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:As a Solutions Engineer\, you will grow to partner with 
+ VMware Sales and Partner representatives and will be responsible for 
+ finding opportunities for customer transformation with accounts while 
+ identifying issues that may affect customer satisfaction or local VMware 
+ business expectations.
+SUMMARY:Graduate Solution Engineer
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200531T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/424902/graduate-software-engineer-jav
+CREATED:20200328T152610Z
+UID:dd3def94-beeb-4ca6-8aa1-88ec408933cb@dd3d.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Since launch in August 2013\, Canva has grown exponentially\, 
+ amassing over 10 million users in over 100 languages\, making us one of 
+ the world's fastest-growing technology companies. We're growing rapidly 
+ and building a product that users really love.
+SUMMARY:Graduate Software Engineer (Javascript Frontend)
+LOCATION:Sydney
+DTSTART;TZID=UTC:20201130T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/434873/it-app-and-software-developers
+CREATED:20200328T152610Z
+UID:df9e6f14-7205-41ed-9a68-4b1379588954@df9e.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Selected applicants are sponsored and invited in Japan to 
+ attend interviews with various global Japanese companies in a 1-week 
+ period. \nALL EXPENSES PAID. (round trip air tickets\, accommodation\, 
+ and transportation in Japan are covered)
+SUMMARY:IT\, App & Software Developers\, Data Engineering Jobs in Japan 
+ (graduating students also welcome)
+LOCATION:Japan
+DTSTART;TZID=UTC:20200409T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433558/capgemini-graduate-program-202
+CREATED:20200328T152610Z
+UID:bd7f9287-d9d7-4a78-bda8-23f0c0f172b1@bd7f.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Join us to be part of our much celebrated community - where 
+ our existing graduates have rated their experience\, and compared to 
+ other programs\, we ranked in the top 35 graduate employers in Australia 
+ due to the care\, support and opportunity we offer.
+SUMMARY:Capgemini Graduate Program 2020
+LOCATION:Australia
+DTSTART;TZID=UTC:20200406T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/428330/junior-developer-user-interfac
+CREATED:20200328T152610Z
+UID:5b253a52-aaff-489c-abce-faf84dbc3963@5b25.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are seeking Junior Developers to join our innovative and 
+ growing technology in our Sydney office. In this role you will work 
+ alongside our trading and software team to design and implement elegant 
+ solutions to complex and interesting problems.
+SUMMARY:Junior Developer - User Interface (C#\, Web)
+LOCATION:Sydney
+DTSTART;TZID=UTC:20201120T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/418993/junior-and-senior-software-eng
+CREATED:20200328T152610Z
+UID:d0731df4-059d-46de-aac4-b013a64fdb9f@d073.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We’re hiring software engineers – home or office based 
+ – full-time\, parttime\nand casual roles available.
+SUMMARY:Junior & Senior Software Engineers
+LOCATION:Sydney
+DTSTART;TZID=UTC:20201031T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433581/intern-dsp-software-engineers
+CREATED:20200328T152610Z
+UID:c9655afa-796a-4ae7-bff3-ff288e9cc526@c965.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Dolby is currently seeking talented undergraduate students 
+ for a practically focused paid internship. As an Intern DSP Software 
+ Engineer you will be responsible for the design\, implementation and the 
+ testing of Dolby algorithms and software.
+SUMMARY:Intern DSP Software Engineers
+LOCATION:North Sydney
+DTSTART;TZID=UTC:20200406T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/430926/2021-technology-graduate-progr
+CREATED:20200328T152610Z
+UID:d92886cf-98dc-4e7f-bc4b-63100107619f@d928.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Have you just completed or about to complete your degree in 
+ Software Engineering\, Computer Science or something else tech-y? Then 
+ this is for you!
+SUMMARY:2021 Technology Graduate Program
+LOCATION:Melbourne
+DTSTART;TZID=UTC:20200419T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/425335/internships-coordinator
+CREATED:20200328T152610Z
+UID:fe5cb3e9-bb1a-43d4-b0bd-0b68fdb54eed@fe5c.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:The internship division organizes and monitors hundreds of 
+ placements at the Sydney Centre each year. As an Internships 
+ Coordinator\, you will act as the primary contact for internship services 
+ and for students interning with professional businesses across Sydney.
+SUMMARY:Internships Coordinator
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200331T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429654/graduate-performance-researche
+CREATED:20200328T152610Z
+UID:33145f7d-1495-4a40-8331-be9b008b3433@3314.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Are you a final year student or recent graduate with a 
+ passion for data driven problem solving? Do you like challenges and want 
+ to kick start your career at one of Australia’s ‘Best Places to 
+ Work’?
+SUMMARY:Graduate Performance Researcher – 2020 or 2021
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200413T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429663/2020-21-quantitative-research-
+CREATED:20200328T152610Z
+UID:fe00c0db-4470-43e3-b2e0-96e822182164@fe00.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Are you penultimate year student with a passion for data 
+ driven problem solving? Do you want to work in an informal\, 
+ collaborative and dynamic environment? If so\, Optiver is the right place 
+ for you!
+SUMMARY:2020 - 21 Quantitative Research Internship
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200413T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433934/expression-of-interest-as-grad
+CREATED:20200328T152610Z
+UID:24dae851-5fe2-432b-8da2-3a93f610d803@24da.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:ResMed is now accepting Expressions of Interest for Graduate 
+ Engineers
+SUMMARY:Expression of Interest as Graduate Engineer
+LOCATION:Bella Vista
+DTSTART;TZID=UTC:20200430T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/427879/junior-developer-c
+CREATED:20200328T152610Z
+UID:767b5db1-8cb1-478c-9bae-3840187e1a1d@767b.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are seeking Junior Developers to join our innovative and 
+ growing technology in our Sydney office. In this role you will work 
+ alongside our trading and software team to design and implement elegant 
+ solutions to complex and interesting problems.
+SUMMARY:Junior Developer - C++
+LOCATION:Sydney
+DTSTART;TZID=UTC:20201120T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/432401/gamsat-tutor-content-developer
+CREATED:20200328T152610Z
+UID:25993dd3-6393-4a65-b599-05ef03e01a04@2599.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are looking for tutors to prepare students for the GAMSAT. 
+ $50/hour.
+SUMMARY:GAMSAT Tutor/Content Developer
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200403T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/424994/electronics-engineer-rf-sdr-fp
+CREATED:20200328T152610Z
+UID:d962eaba-5aa9-4de0-9370-909d495df133@d962.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Join a high tech\, high growth\, innovative 
+ startup\nImmediate start\nRF/SDR product
+SUMMARY:Electronics Engineer - RF/SDR FPGA & Software
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200331T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429390/coding-and-robotics-tutors
+CREATED:20200328T152610Z
+UID:ce35ef25-d485-4215-8e7a-617d0e3a959c@ce35.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are seeking passionate university students\, graduates\, 
+ tutors and teachers to become a casual instructor\, teaching children 
+ under 14 years of age\, basic software programming and robotics skills in 
+ Hornsby\, St Ives\, Berowra\, North Ryde and Eastwood.
+SUMMARY:Coding and Robotics Tutors
+LOCATION:BrisbaneGold CoastMelbourneSydney
+DTSTART;TZID=UTC:20200331T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431973/web-development-china-mobile-c
+CREATED:20200328T152610Z
+UID:3bd59575-ab0b-460d-9806-90ee3fa8d5b4@3bd5.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Web Development
+SUMMARY:Web Development-China mobile (chengdu)
+LOCATION:China
+DTSTART;TZID=UTC:20200331T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429655/2020-21-performance-researcher
+CREATED:20200328T152610Z
+UID:a68aeed4-4e8c-42bf-ba44-3dd296a8a12b@a68a.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Are you a penultimate year student with a passion for data 
+ driven problem solving? Do you like challenges and want to kick start 
+ your career at one of Australia’s ‘Best Places To Work’?
+SUMMARY:2020 - 21 Performance Researcher Internship
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200413T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/425195/consulting-engineer-full-time-
+CREATED:20200328T152610Z
+UID:3ae95416-45f4-4d83-b406-6f6ddc3731fa@3ae9.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Consulting Engineer graduate role to commence Aug 2020
+SUMMARY:Consulting Engineer (Full Time) Graduate
+LOCATION:St Leonards
+DTSTART;TZID=UTC:20200507T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/424962/architect-intern-china-academy
+CREATED:20200328T152610Z
+UID:b153815f-f15b-49c8-9e88-a868e90797f2@b153.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:If you have a strong passion for creation\, a desire for 
+ completion of projects\, a constantly updated mind and a steady and 
+ tenacious persistence\, welcome to join us and grow with us: Crazy 
+ creation\, prudent practice!
+SUMMARY:ARCHITECT INTERN - China Academy of Building Research\, Beijing
+LOCATION:China
+DTSTART;TZID=UTC:20201231T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429661/graduate-software-developer-20
+CREATED:20200328T152610Z
+UID:077cb38e-bd71-4396-8c1b-20e24f6d9c7b@077c.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Are you a final year student or recent graduate of a Computer 
+ Science or Computer/Software/Electrical/Mechatronic Engineering degree? 
+ Want to work on technology at the core of our success?
+SUMMARY:Graduate Software Developer - 2020 or 2021
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200413T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/432372/2020-21-summer-internship-soft
+CREATED:20200328T152610Z
+UID:71dac5cb-63e7-4a2b-b6bf-4d9109e1f383@71da.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Summer Internship applications are now open at Displayr to 
+ candidates completing a Software Engineering or Computer Science degree.
+SUMMARY:2020 – 21 Summer Internship | Software Engineering or Computer 
+ Science
+LOCATION:Glebe
+DTSTART;TZID=UTC:20200505T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/434951/mathematical-modeller
+CREATED:20200328T152610Z
+UID:4bc625cc-1cb8-4c65-98b8-4047523704cb@4bc6.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:APS Level 4/5-6 (S&T Level 3-4) \n$67\,100 - $92\,150 (plus 
+ super)\nFishermans Bend\, VIC
+SUMMARY:Mathematical Modeller
+LOCATION:Melbourne
+DTSTART;TZID=UTC:20200409T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/425323/graduate-network-development-e
+CREATED:20200328T152610Z
+UID:d8ca4014-e9e7-4df6-be6e-ed43a3381d06@d8ca.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Amazon Web Services (AWS)\, the largest consumer cloud 
+ offering in the world\, is looking for graduate network engineers to 
+ join\, learn\, and grow with our Sydney engineering team!
+SUMMARY:Graduate Network Development Engineer - Amazon Web Services
+LOCATION:Sydney
+DTSTART;TZID=UTC:20201231T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429662/2020-21-software-developer-int
+CREATED:20200328T152610Z
+UID:845120e6-4cc9-4f6a-9bf1-4e0cffdd60be@8451.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Are you in your penultimate year of a Computer Science\, 
+ Computer/Software/Electrical/Mechatronic Engineering or similarly 
+ technical degree? Do you want to solve complex problems with code at one 
+ of Australia’s ‘Best Places to Work’ this summer?
+SUMMARY:2020 - 21 Software Developer Internship
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200413T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/425194/technical-consulting-engineer-
+CREATED:20200328T152610Z
+UID:4681bd27-b80c-49b3-9a7d-f8e9f5fb85f0@4681.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Technical Consulting Engineer to commence Aug 2020
+SUMMARY:Technical Consulting Engineer (Full Time) Graduate
+LOCATION:St Leonards
+DTSTART;TZID=UTC:20200507T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/405433/software-developer
+CREATED:20200328T152610Z
+UID:1c982817-efe1-4065-b3f8-d6d2fafe75ea@1c98.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Technology is integral to virtually everything the D. E. Shaw 
+ group does\, which is why we seek exceptional software developers with a 
+ range of quantitative and programming abilities.
+SUMMARY:Software Developer
+LOCATION:United States of America
+DTSTART;TZID=UTC:20200430T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429431/online-writing-tutor
+CREATED:20200328T152610Z
+UID:eb74ea03-8963-41bc-ae3f-067d31e495ed@eb74.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Exam Success is hiring a casual essay helper to: score essays 
+ using our in-house built ranking software and provide video feedback on 
+ essays using our set structure.  We are a flexible employer and full 
+ training is provided.
+SUMMARY:Online Writing Tutor
+LOCATION:Australia
+DTSTART;TZID=UTC:20200630T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/426643/dsp-engineer
+CREATED:20200328T152610Z
+UID:26598954-c385-44fe-865e-116f8729c44b@2659.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:In this exciting role\, you will have the opportunity to 
+ design and build signal processing algorithms that will enable millions 
+ of users around the world to experience Dolby technologies.
+SUMMARY:DSP Engineer
+LOCATION:North Sydney
+DTSTART;TZID=UTC:20200430T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/425737/c-c-cross-platform-game-progra
+CREATED:20200328T152610Z
+UID:70952414-53c7-456a-bc71-cf243ee26e5d@7095.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Feral Interactive is looking for talented programmers to join 
+ our outstanding game development team. We take great pride in developing 
+ superb versions of the best games that the industry has to offer and 
+ integrating them perfectly into the target operating systems.
+SUMMARY:C/C++ Cross Platform Game Programmer
+LOCATION:United Kingdom
+DTSTART;TZID=UTC:20201231T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433586/intern-c-software-engineer
+CREATED:20200328T152610Z
+UID:de0d773f-4b35-4af7-87bd-f7f39ad609c2@de0d.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Dolby is currently seeking talented undergraduate students 
+ for a practically focused paid internship. In this exciting role\, you 
+ will have the opportunity to design and build the latest audio and video 
+ software\, using your engineering creativity to develop solutions to 
+ technical problems.
+SUMMARY:Intern C++ Software Engineer
+LOCATION:North Sydney
+DTSTART;TZID=UTC:20200406T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433563/business-development-represent
+CREATED:20200328T152610Z
+UID:41490fca-8c14-4a5d-8834-9350c178b4d1@4149.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:This role is open for internship as a Business Development 
+ Representative. Based in Sydney.
+SUMMARY:Business Development Representative Intern COPY
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200407T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431122/assistant
+CREATED:20200328T152610Z
+UID:917fd7be-cf32-43c0-981e-a3d5db02b04f@917f.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are looking for an Assistant to support the investment 
+ teams in our growing Sydney office.
+SUMMARY:Assistant
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200423T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/417668/field-service-engineer
+CREATED:20200328T152610Z
+UID:5a1d2d50-7975-469e-a487-42870be5187e@5a1d.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Design and install building control systems\nBackground in 
+ Electrical engineering\nKnowledge in BMS\, ELV system control and 
+ Security
+SUMMARY:Field Service Engineer
+LOCATION:Hong Kong
+DTSTART;TZID=UTC:20201231T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433691/china-telecom-global-limited-2
+CREATED:20200328T152610Z
+UID:f8b7ddf1-c8fa-46d8-95b6-aa3249f58aea@f8b7.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:China Telecom Global Limited 2020 Recruitment 
+ 中国电信国际有限公司春季招聘\n\nChina Telecommunications 
+ Corporation ("China Telecom")\, one of the world's largest providers of 
+ integrated telecommunication services，ranked 141st in the Fortune 
+ Global 500 in 2019
+SUMMARY:China Telecom Global Limited 2020 Recruitment 
+ 中国电信国际有限公司春季招聘
+LOCATION:China
+DTSTART;TZID=UTC:20200409T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/421755/field-sales-engineer
+CREATED:20200328T152610Z
+UID:f58470a0-9ed8-4df5-80c2-44cb86cf3703@f584.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:9 Week Paid Internship in Singapore commencing June 2018. 
+ Flights & accommodation will also be paid.  Seeking students due to 
+ graduate between December 2020– July 2021.
+SUMMARY:Field Sales Engineer
+LOCATION:Singapore
+DTSTART;TZID=UTC:20200330T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433460/business-administration-casual
+CREATED:20200328T152610Z
+UID:ab5a6206-bfa8-4cd5-820d-5c540f6ccb08@ab5a.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are a small Plumbing company looking for a casual 
+ administrative assistant to help with light office duties.Flexible hours 
+ and opportunity to work as part of a small team in the trades services 
+ industry
+SUMMARY:Business Administration - Casual
+LOCATION:Waverley
+DTSTART;TZID=UTC:20200406T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/432400/3-1-gamsat-content-developer
+CREATED:20200328T152610Z
+UID:846d5da8-c36f-45fa-a7db-a26b059bb201@846d.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are looking for tutors to help write GAMSAT-style MCQs in 
+ humanities\, biology\, chemistry and physics.
+SUMMARY:3.1 GAMSAT Content Developer
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200403T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431648/junior-trainee-digital-marketi
+CREATED:20200328T152610Z
+UID:a9ef4a43-a2d3-4592-9f63-d250f221fbe7@a9ef.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Looking to become a top-notch social media expert & marketer 
+ ? We're looking for an additional performance-driven marketing trainee to 
+ join the team.
+SUMMARY:Junior Trainee- Digital Marketing Campaigns & Social Media - 
+ Marketing Agency in Sydney CBD
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200412T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433637/software-engineer-internship
+CREATED:20200328T152610Z
+UID:a48da1a6-d4a6-4e4e-8f06-84adeee17993@a48d.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Internship for a software engineer to work on the backend 
+ systems and servers of a virtual reality game. Requires no game 
+ development experience\, however strong computer science knowledge is a 
+ must.
+SUMMARY:Software Engineer Internship
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200501T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433587/intern-dsp-software-engineer-i
+CREATED:20200328T152610Z
+UID:5a850963-8550-46f1-8653-9551b7976456@5a85.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Dolby is currently seeking talented undergraduate students 
+ for a practically focused paid internship. In this role you will work 
+ with automation and test engineers responsible for validation and 
+ verification of DSP algorithms used across all Dolby Voice Conferencing 
+ products.
+SUMMARY:Intern DSP Software Engineer in Test
+LOCATION:North Sydney
+DTSTART;TZID=UTC:20200406T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/429261/junior-gis-data-processor
+CREATED:20200328T152610Z
+UID:aafec26a-fb39-4a59-b212-dab2fe82b4ee@aafe.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Dendra Systems is looking for an enthusiastic graduate to 
+ join our growing team as a junior GIS data processor
+SUMMARY:Junior GIS Data Processor
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200501T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/427880/junior-developer-python
+CREATED:20200328T152610Z
+UID:e7210f06-2bb5-44f5-86fc-be7424012065@e721.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are seeking Junior Developers to join our innovative and 
+ growing technology in our Sydney office. In this role you will work 
+ alongside our trading and software team to design and implement elegant 
+ solutions to complex and interesting problems.
+SUMMARY:Junior Developer - Python
+LOCATION:Sydney
+DTSTART;TZID=UTC:20201120T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/432349/graduate-software-engineer-in-
+CREATED:20200328T152610Z
+UID:d9ff9f39-a530-498d-990c-b8a3e31861f2@d9ff.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:Dolby is currently seeking talented graduate students and 
+ junior engineers across Software Engineering\, Electrical Engineering\, 
+ Computer Science to join a cutting edge QA Team in our Consumer 
+ Entertainment Group. You will be responsible for the testing of 
+ world-leading audio processing technologies.
+SUMMARY:Graduate Software Engineer in Test
+LOCATION:North Sydney
+DTSTART;TZID=UTC:20200405T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/409755/systems-systems-administrator
+CREATED:20200328T152610Z
+UID:afe63286-fa14-4aca-9ae1-8a372e28cfd4@afe6.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are looking for a talented technologist to join our 
+ IT/Enterprise team as a Systems Administrator.
+SUMMARY:Systems: Systems Administrator
+LOCATION:United States of America
+DTSTART;TZID=UTC:20200430T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/424959/senior-architect-china-academy
+CREATED:20200328T152610Z
+UID:cd3cf08f-aa1c-4892-9b4a-83fb7ed904eb@cd3c.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:If you have a strong passion for creation\, a desire for 
+ completion of projects\, a constantly updated mind and a steady and 
+ tenacious persistence\, welcome to join us and grow with us: Crazy 
+ creation\, prudent practice!
+SUMMARY:SENIOR ARCHITECT - China Academy of Building Research\, Beijing
+LOCATION:China
+DTSTART;TZID=UTC:20201231T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431454/naval-civilian-engineer-develo
+CREATED:20200328T152610Z
+UID:8d47f558-4fd2-4e12-a458-25eab9b0b71c@8d47.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:The Naval Civilian Engineer Development Program offers a 
+ challenging\, inspiring and unique work environment. The program ensures 
+ you receive a holistic development program\, giving you the opportunity 
+ to strive both personally and professionally.
+SUMMARY:Naval Civilian Engineer Development Program
+LOCATION:Canberra
+DTSTART;TZID=UTC:20200404T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433932/expression-of-interest-enginee
+CREATED:20200328T152610Z
+UID:11db4416-21be-4c05-bfcc-be2a9b5f313e@11db.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:ResMed is now accepting Expression of Interests for Engineer 
+ Students who wish to apply for Internship.
+SUMMARY:Expression of Interest - Engineering Internship
+LOCATION:Bella Vista
+DTSTART;TZID=UTC:20200430T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431963/software-development-china-mob
+CREATED:20200328T152610Z
+UID:f13072bb-838b-480a-9487-a709f41f8fb4@f130.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:software Development
+SUMMARY:software Development-China mobile (chengdu)
+LOCATION:China
+DTSTART;TZID=UTC:20200331T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/433815/software-development-engineer-
+CREATED:20200328T152610Z
+UID:b8552c0f-60fa-40da-ac37-10a5154a9def@b855.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:A Software Development Engineer (CM) who will be involved in 
+ automate platform/application builds\, engaged and work with a variety of 
+ most popular IaaS providers etc.\, AWS\, GCP\, Azure\, learn of 
+ Continuous Integration / Continuous Deliver to design automated solutions 
+ for project teams to build.
+SUMMARY:Software Development Engineer (Configuration Management)
+LOCATION:Hong Kong
+DTSTART;TZID=UTC:20200410T120000
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20200328T152610Z
+URL:/students/jobs/detail/431682/tech-graduate
+CREATED:20200328T152610Z
+UID:b5c5d2af-5d63-45f7-b80b-72e1c0cafedb@b5c5.org
+LAST-MODIFIED:20200328T152610Z
+DESCRIPTION:We are a global FinTech in the buy now pay later space. Here 
+ at Zip\, we’re continuously developing our products to stay ahead of 
+ the game. Our mission is to become the first payment solution of choice\, 
+ everywhere\, every day!
+SUMMARY:Tech Graduate
+LOCATION:Sydney
+DTSTART;TZID=UTC:20200419T120000
+TRANSP:OPAQUE
 END:VEVENT
 END:VCALENDAR
