@@ -1,6 +1,6 @@
 from requests_html import HTMLSession
-from server.services.Jobs import Job, JobsList
 from abc import ABCMeta, abstractmethod
+from server.utils.Jobs import JobsList, Job
 
 class ScraperSession(metaclass=ABCMeta):
   '''

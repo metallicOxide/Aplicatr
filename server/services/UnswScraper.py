@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from typing import List, Dict, Any, Text
 from abc import ABCMeta, abstractmethod
 from server.models.ScraperSession import ScraperSession
-from server.services.Jobs import JobsList, Job
+from server.utils.Jobs import JobsList, Job
 from server.utils.SupportedPortals import SupportedPortals
 from datetime import datetime
 

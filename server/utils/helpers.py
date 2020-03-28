@@ -1,4 +1,4 @@
-from server.services.Jobs import JobsList, Job
+from server.utils.Jobs import JobsList, Job
 from typing import List, Dict
 from server.utils.SupportedPortals import SupportedPortals
 
