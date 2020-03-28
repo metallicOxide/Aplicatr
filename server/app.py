@@ -1,7 +1,7 @@
 from flask import Flask, request, send_file
 from flask_restx import Resource, Api, fields
 from server.logic.unswScraper import extractData, login, JobTypes
-from server.logic.cal import generateCalendarDeadlines, createCalendar
+from server.logic.calendarMake import generateCalendarDeadlines, createCalendar
 
 import os
 import getpass
