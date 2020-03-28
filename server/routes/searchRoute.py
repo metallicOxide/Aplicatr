@@ -13,7 +13,7 @@ search_model = api.model('Search_Model', {
 }, required=True)
 
 @api.route('/jobs')
-class SearchJobs(Resource):
+class SearchRoutes(Resource):
   @api.expect(search_model, validate=True)
   @api.doc(description='Extract job data using login credentials and search parameters.')
   @api.response(400, 'Invalid input or error processing data encountered.')

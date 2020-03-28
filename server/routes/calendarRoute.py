@@ -14,7 +14,7 @@ job_model = api.model('Job_Model', {
 })
 
 @api.route('/jobs/calendar')
-class CalendarJobs(Resource):
+class CalendarRoutes(Resource):
   @api.expect([job_model], validate=True)
   @api.doc(description="Generate ics file from jobs. This assumes the front-end would have processed all the jobs by user preferences for file generation.")
   @api.response(400, 'Invalid input or error processing data encountered.')
