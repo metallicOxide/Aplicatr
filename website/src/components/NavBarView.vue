@@ -2,7 +2,7 @@
   <div class="NavBar">
 
     <b-navbar toggleable="lg" type="dark" variant="primary">
-      <b-navbar-brand href="#">Job Calendar Gen</b-navbar-brand>
+      <b-navbar-brand href="#"><b>Job Calendar Gen</b></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -14,7 +14,7 @@
           <b-nav-item-dropdown right>
             <!-- Using 'button-content' slot -->
             <template v-slot:button-content>
-              <em>Hi, User</em>
+              <em><b>Hi, User</b></em>
             </template>
             <b-dropdown-item href="#">Sign Out</b-dropdown-item>
           </b-nav-item-dropdown>
@@ -25,10 +25,11 @@
 </template>
 
 <script lang="ts">
-  import { Vue } from 'vue-property-decorator';
+  import { Vue, Component } from 'vue-property-decorator';
 
-  export default class NavBar extends Vue {
-
+  @Component
+  export default class NavBarView extends Vue {
+    
   }
 </script>
 

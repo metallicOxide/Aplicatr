@@ -2,7 +2,7 @@
   <div id="app">
     <NavBarView/>
     <b-container>
-      <JobListView v-bind:jobList="jobList" v-bind:title="title"/>
+      <JobListView v-bind:jobList="jobs" v-bind:title="title"/>
     </b-container>
   </div>
 </template>
@@ -15,12 +15,12 @@
 
   @Component({
     components: {
-      JobListView,
-      NavBarView
+      'JobListView': JobListView,
+      'NavBarView': NavBarView
     },
   })
   export default class App extends Vue {
-    jobList: Array<JobItem> = [
+    jobs: Array<JobItem> = [
       {
         id: "1",
         endDate: "28/03/2020",
@@ -66,9 +66,9 @@
     title = 'Job List';
 
     credentials: Credentials = {
-      Username:"",
-      Password:"",
-      Uni:""
+      Username: "",
+      Password: "",
+      Uni: ""
     };
     
   }
