@@ -15,7 +15,7 @@ from server.services.calendarMake import generateCalendarDeadlines, createCalend
 app = Flask(__name__)
 api = Api(app).namespace('', description='Uni Job Scraper APIs')
 
-from server.routes import searchRoute, calendarRoute
+from server.routes import scrapeRoute, calendarRoute
 
 if __name__ == '__main__':
   print("Running job webscraper...")
