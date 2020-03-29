@@ -12,44 +12,8 @@ search_model = api.model('Search_Model', {
   'Location': fields.String,
 }, required=True)
 
-login_model = api.model('Login_Model', {
-  'Username': fields.String,
-  'Password': fields.String,
-  'Uni': fields.String,
-}, required=True)
-
-@api.route('/jobs/login')
-class UnswLogin(Resource):
-  @api.expect(login_model, validate=True)
-  @api.doc(description='Login UNSW website.')
-  @api.response(200, 'login successfully.')
-  @api.response(400, 'Invalid Credentials or Uni selected.')
-  @api.response(404, 'Error connecting to data source.')
-  def post(self):
-    credentials = request.get_json()
-    username, password, uni = credentials.values()
-
-    if uni not in [portal.name for portal in SupportedPortals]:
-      return {'message': 'Error, functionalities for {} not supported.'.format(uni)}, 400
-      
-    if uni == SupportedPortals.UNSW.name:
-      portal = UnswScraper(username = username, password = password)
-      login = portal.login
-
-    try:
-      login()
-    except ConnectionError:
-      return {'message': 'Error connecting to data source.'}, 404
-    except ValueError:
-      return {'message': 'Invalid username or password.'}, 400
-    except:
-      return {'message': 'Error logging in.'}, 400
-
-    return {'data': True}, 200
-
-
 @api.route('/jobs')
-class SearchJobs(Resource):
+class ScrapeRoute(Resource):
   @api.expect(search_model, validate=True)
   @api.doc(description='Extract job data using login credentials and search parameters.')
   @api.response(400, 'Invalid input or error processing data encountered.')
