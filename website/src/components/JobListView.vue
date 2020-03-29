@@ -10,20 +10,20 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import { JobItem } from '../interfaces/bindingModels';
-import JobItemView from '../components/JobItemView.vue';
+  import { Component, Prop, Vue } from 'vue-property-decorator';
+  import { JobItem } from '../interfaces/bindingModels';
+  import JobItemView from '../components/JobItemView.vue';
 
-@Component({
-  components: {
-    JobItemView,
-  },
-})
-export default class JobList extends Vue {
-  @Prop() private title!: string;
-  @Prop() private jobList!: Array<JobItem>;
+  @Component({
+    components: {
+      JobItemView,
+    },
+  })
+  export default class JobList extends Vue {
+    @Prop() private title!: string;
+    @Prop() private jobList!: Array<JobItem>;
 
-}
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
