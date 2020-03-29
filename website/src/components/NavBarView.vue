@@ -14,7 +14,7 @@
           <b-nav-item-dropdown right>
             <!-- Using 'button-content' slot -->
             <template v-slot:button-content>
-              <em><b>Hi, User</b></em>
+              <em class="user"><b>Hi, User</b></em>
             </template>
             <b-dropdown-item href="#">Sign Out</b-dropdown-item>
           </b-nav-item-dropdown>
@@ -25,15 +25,17 @@
 </template>
 
 <script lang="ts">
-  import { Vue, Component } from 'vue-property-decorator';
+  import { Vue, Component, Prop } from 'vue-property-decorator';
 
   @Component
   export default class NavBarView extends Vue {
-    
+    @Prop() private isLoggedIn!: string;
   }
 </script>
 
 
 <style scoped>
-
+  .user {
+    color: white;
+  } 
 </style>

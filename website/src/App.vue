@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <NavBarView/>
+    <NavBarView v-bind:isLoggedIn="loggedIn"/>
     <b-container>
       <JobListView v-bind:jobList="jobs" v-bind:title="title"/>
     </b-container>
@@ -65,10 +65,13 @@
 
     title = 'Job List';
 
+    loggedIn = false;
+
+    // Set the uni as UNSW for now
     credentials: Credentials = {
       Username: "",
       Password: "",
-      Uni: ""
+      Uni: "UNSW"
     };
     
   }
