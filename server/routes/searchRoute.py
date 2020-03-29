@@ -31,10 +31,13 @@ class UnswLogin(Resource):
 
     if uni not in [portal.name for portal in SupportedPortals]:
       return {'message': 'Error, functionalities for {} not supported.'.format(uni)}, 400
-
+      
+    if uni == SupportedPortals.UNSW.name:
       portal = UnswScraper(username = username, password = password)
+      login = portal.login
+
     try:
-      portal.login()
+      login()
     except ConnectionError:
       return {'message': 'Error connecting to data source.'}, 404
     except ValueError:
