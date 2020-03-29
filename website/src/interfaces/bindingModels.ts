@@ -14,6 +14,12 @@ export interface JobItem {
     jobUrl: string;
 }
 
+export interface Credentials {
+    Username: string;
+    Password: string;
+    Uni: string;
+}
+
 // List of job items
 export interface JobItemList {
     jobList: JobItem[];
