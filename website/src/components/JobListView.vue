@@ -19,7 +19,7 @@
       JobItemView,
     },
   })
-  export default class JobList extends Vue {
+  export default class JobListView extends Vue {
     @Prop() private title!: string;
     @Prop() private jobList!: Array<JobItem>;
 
