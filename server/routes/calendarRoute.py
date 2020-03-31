@@ -2,7 +2,7 @@ from flask import Flask, request, send_file
 from flask_restx import Resource, Api, fields, marshal
 from server.app import api, app, token_parser
 from server.services.calendarMake import generateCalendarDeadlines, createCalendar
-from server.utils.helpers import convertJobsFromListDicts
+from server.utils import convertJobsFromListDicts
 from server.utils.SupportedPortals import SupportedPortals
 import jwt
 

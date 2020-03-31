@@ -18,6 +18,22 @@ npm run website-install
 npm run website-start
 ```
 
+### Setting up database
+
+1) Ensure postgresql installed
+
+2) Configure database permissions
+
+```bash
+sudo su - postgres
+```
+
+3) Create database
+
+```bash
+psql < ./server/dbsetup.sql
+```
+
 ### Setting up server
 
 1) Open up another terminal
@@ -43,8 +59,8 @@ pipenv run python3 -m server
 
 ### If using WSL
 
+```bash
 pipenv install --python={{Path_To_Python}}
-
 {{Path_To_Python}} = which Python
-
 pipenv run python3 -m server
+```

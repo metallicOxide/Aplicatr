@@ -2,7 +2,7 @@ from requests_html import HTMLSession
 from bs4 import BeautifulSoup
 from typing import List, Dict, Any, Text
 from abc import ABCMeta, abstractmethod
-from server.models.ScraperSession import ScraperSession
+from server.utils.ScraperSession import ScraperSession
 from server.utils.Jobs import JobsList, Job
 from server.utils.SupportedPortals import SupportedPortals
 from datetime import datetime

@@ -17,6 +17,9 @@ requests = "*"
 ics = "*"
 typing = "*"
 pyjwt = "*"
+sqlalchemy = "*"
+alembic = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.7"
