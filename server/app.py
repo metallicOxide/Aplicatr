@@ -1,10 +1,10 @@
 from flask import Flask, request, send_file
-from flask_restx import Resource, Api, fields
+from flask_restx import Resource, Api, fields, reqparse
 import sys
 from pprint import pprint
 import os
 import getpass
-
+import jwt
 if __name__ == '__main__':
   # to get imports working properly when running app.py directly
   sys.path.insert(0, './..')
@@ -16,6 +16,9 @@ app = Flask(__name__)
 api = Api(app).namespace('', description='Uni Job Scraper APIs')
 
 from server.routes import scrapeRoute, calendarRoute
+
+token_parser = reqparse.RequestParser().add_argument('token', type = str, required = True)
+
 
 if __name__ == '__main__':
   print("Running job webscraper...")
