@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NavBarView v-bind:isLoggedIn="loggedIn"/>
+    <LoginModal />
     <b-container>
       <JobListView v-bind:jobList="jobs" v-bind:title="title"/>
     </b-container>
@@ -12,11 +13,13 @@
   import JobListView from './components/JobListView.vue';
   import { JobItem, Credentials } from './interfaces/bindingModels';
   import NavBarView from './components/NavBarView.vue';
+  import LoginModal from './components/LoginModalView.vue';
 
   @Component({
     components: {
       'JobListView': JobListView,
-      'NavBarView': NavBarView
+      'NavBarView': NavBarView,
+      'LoginModal': LoginModal
     },
   })
   export default class App extends Vue {
@@ -85,9 +88,28 @@
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #ddd;
 }
 
 #app {
   margin-top: 0px;
 }
+
+/* scroll bar styling */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #00d2ff;
+  background-image: linear-gradient(to top, #00d2ff 0%, #3a7bd5 100%);
+}
+
 </style>
