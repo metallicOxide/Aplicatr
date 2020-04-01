@@ -2,7 +2,6 @@ from sqlalchemy import Column, String, Integer, ForeignKey, Boolean
 from server.models.Base import Base
 from server.models import DeclarativeBase
 from sqlalchemy.orm import relationship
-from server import db_session
 
 class Searches(DeclarativeBase, Base):
   __tablename__ = "searches"

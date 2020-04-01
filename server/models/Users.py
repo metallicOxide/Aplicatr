@@ -2,7 +2,6 @@ from sqlalchemy import Column, String, Integer
 from server.models import DeclarativeBase
 from server.models.Base import Base
 from sqlalchemy.orm import relationship
-from server import db_session
 
 class Users(DeclarativeBase, Base):
   __tablename__ = "users"
