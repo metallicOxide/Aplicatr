@@ -2,21 +2,23 @@ from requests_html import HTMLSession
 from bs4 import BeautifulSoup
 from typing import List, Dict, Any, Text
 from abc import ABCMeta, abstractmethod
+from datetime import datetime
+from requests.sessions import RequestsCookieJar
+
 from server.utils.ScraperSession import ScraperSession
 from server.utils.Jobs import JobsList, Job
 from server.utils.SupportedPortals import SupportedPortals
-from datetime import datetime
 
 class UnswScraper(ScraperSession):
   '''
   UNSW Careers Online scraping functions
   '''
-  def __init__(self, username, password):
-    ScraperSession.__init__(self, username, password)
+  def __init__(self):
+    ScraperSession.__init__(self)
     
-  def login(self):
+  def login(self, username = '', password = ''):
     '''
-    Login to uni career portal and sets session property if successful.
+    Login to uni career portal.
     
     :param username: A valid portal username.
     :param password: A corresponding valid password.
@@ -32,8 +34,8 @@ class UnswScraper(ScraperSession):
     soup = BeautifulSoup(loginPage.content, "html.parser")
     requestVerificationToken = soup.find("input", {'name': '__RequestVerificationToken'}).get('value')
     loginPayload = {
-      'LDAPUsername': self.username, 
-      'LDAPPassword': self.password,
+      'LDAPUsername': username, 
+      'LDAPPassword': password,
       '__RequestVerificationToken': requestVerificationToken
     }
     
@@ -44,10 +46,9 @@ class UnswScraper(ScraperSession):
     if not login.ok: 
       raise ValueError
     
-    self.session = sesh
     return sesh
 
-  def extractData(self, keywords: Text = '', location: Text = '') -> (JobsList):
+  def extractData(self, cookies: RequestsCookieJar = {}, keywords: Text = '', location: Text = '', username: Text = '') -> (JobsList):
     '''
     Extract job data from the uni career portal.
     
@@ -58,11 +59,10 @@ class UnswScraper(ScraperSession):
     
     :returns: JobsList.  
     '''
-    if not isinstance(self.session, HTMLSession):
-      raise AttributeError
-    jobBoard = self.session.get('https://careersonline.unsw.edu.au/students/jobs/Search?text={}&location={}&page=1&take=1000'.format(
+    sesh = HTMLSession()
+    jobBoard = sesh.get('https://careersonline.unsw.edu.au/students/jobs/Search?text={}&location={}&page=1&take=1000'.format(
       keywords, location
-    ))
+    ), cookies=cookies)
     if not jobBoard.ok:
       raise ConnectionError
     

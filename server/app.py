@@ -1,9 +1,7 @@
-from flask import Flask, request, send_file
-from flask_restx import Resource, Api, fields, reqparse
+from flask import Flask
+from flask_restx import Api, reqparse
 import sys
 import os
-import jwt
-from sqlalchemy.orm import sessionmaker
 
 if __name__ == '__main__':
   '''  
@@ -12,8 +10,7 @@ if __name__ == '__main__':
   imports working.
   '''
   sys.path.insert(0, './..')
-  
-from server.models import engine
+
 from server.utils import logicScript
 
 if __name__ == '__main__':
@@ -23,11 +20,9 @@ if __name__ == '__main__':
   logicScript()
 
 
-''' Server global variables '''
-
-db_session = sessionmaker(bind=engine) # to be used for any database session
-
 app = Flask(__name__)
 api = Api(app).namespace('', description='Uni Job Scraper APIs')
-  
+
 token_parser = reqparse.RequestParser().add_argument('token', type = str, required = True)
+
+from server.routes import calendarRoute,loginRoute,scrapeRoute

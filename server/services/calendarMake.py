@@ -1,6 +1,7 @@
 from ics import Calendar, Event
 from typing import List, Dict, Any, IO
 from datetime import datetime, timedelta
+
 from server.utils.Jobs import JobsList, Job
 
 def generateCalendarDeadlines(jobs: JobsList) -> (Calendar):

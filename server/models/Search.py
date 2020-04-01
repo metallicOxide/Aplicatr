@@ -3,14 +3,12 @@ from server.models.Base import Base
 from server.models import DeclarativeBase
 from sqlalchemy.orm import relationship
 
-class Searches(DeclarativeBase, Base):
-  __tablename__ = "searches"
-  id = Column(Integer, primary_key=True)
-  user_id = Column(Integer, ForeignKey('users.id'))
-  user = relationship("Users", back_populates = 'searches')
+class Search(Base, DeclarativeBase):
+  __tablename__ = "search"
+  user_id = Column(Integer, ForeignKey('user.id'))
+  user = relationship("User", back_populates='searches')
   keywords = Column('keywords', String)
   location = Column('location', String)
-  generated_calendar = Column('generated_calendar', Boolean)
 
   def __repr__(self):
     return '<Searches model {}>'.format(self.id)
