@@ -6,11 +6,12 @@ from typing import List, Dict, Text
 
 from server.config import scraper_token_key
 from server.services.UnswScraper import UnswScraper
-from server.services.calendarMake import generateCalendarDeadlines, createCalendar
+from server.services.calendarMake import generateCalendarDeadlines
 from server.utils.Jobs import JobsList, Job
-from server.utils.SupportedPortals import SupportedPortals
+from server.services import SupportedPortals
 from server.models import db_session
 from server.models.User import User
+import uuid
 
 def authentication(token: Text) -> (Dict):
   '''
@@ -68,8 +69,12 @@ def logicScript():
   print('Generating application deadline data...')
   myCalendar = generateCalendarDeadlines(jobs)
   print('Creating application deadline ics file...')
-  createCalendar(myCalendar)
-  print('Successfully created ics file!')
+  
+  file_name = 'deadlines_{}.ics'.format(uuid.uuid4().hex)
+  with open('./misc/{}'.format(file_name), 'w') as calendarFile:
+    calendarFile.writelines(myCalendar)
+  
+  print("Successfully created ics file '{}' in ./misc!".format(file_name))
 
 def convertJobsFromListDicts(jobs: List[Dict]) -> (JobsList):
   '''
