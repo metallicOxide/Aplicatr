@@ -1,13 +1,13 @@
 import jwt
 import json
 
-from flask import Flask, send_file, request
+from flask import Flask, send_file, request, make_response
 from flask_restx import Resource, Api, fields
 
 from server.app import api, app, token_parser
-from server.services.calendarMake import generateCalendarDeadlines, createCalendar
+from server.services.calendarMake import generateCalendarDeadlines
 from server.utils import convertJobsFromListDicts, authentication
-from server.utils.SupportedPortals import SupportedPortals
+from server.services import SupportedPortals
 
 jobs_model = api.model('Jobs_Model', {
   'jobs': fields.List(fields.Raw(
@@ -48,10 +48,8 @@ class CalendarRoute(Resource):
       calendar = generateCalendarDeadlines(processedJobs)
     except:
       return {'message': 'Error generating calendar from jobs.'}, 400
-    
-    try:
-      calendarFile = createCalendar(calendar)
-    except:
-      return {'message': 'Error creating calendar file.'}, 400
+
+    response = make_response(calendar)
+    response.headers["Content-Disposition"] = "attachment; filename=calendar.ics"
         
-    return send_file(calendarFile, attachment_filename='myJobDeadlines.ics'), 200
+    return response, 200
