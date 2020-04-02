@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 
 from server.app import api, app
 from server.services.UnswScraper import UnswScraper
-from server.utils.SupportedPortals import SupportedPortals
+from server.services import SupportedPortals
 from server.config import scraper_token_key
 
 from server.models import db_session

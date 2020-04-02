@@ -1,6 +1,6 @@
 
 from typing import List, Dict, Text
-from server.utils.SupportedPortals import SupportedPortals
+from server.services import SupportedPortals
 
 class Job:
   '''

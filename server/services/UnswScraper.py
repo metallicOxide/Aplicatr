@@ -6,8 +6,8 @@ from datetime import datetime
 from requests.sessions import RequestsCookieJar
 
 from server.utils.ScraperSession import ScraperSession
+from server.services import SupportedPortals
 from server.utils.Jobs import JobsList, Job
-from server.utils.SupportedPortals import SupportedPortals
 
 class UnswScraper(ScraperSession):
   '''

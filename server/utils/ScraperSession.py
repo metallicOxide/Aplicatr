@@ -2,7 +2,6 @@ from requests_html import HTMLSession
 from abc import ABCMeta, abstractmethod
 from requests.sessions import RequestsCookieJar
 from typing import List, Dict, Any, Text
-
 from server.utils.Jobs import JobsList, Job
 
 class ScraperSession(metaclass=ABCMeta):

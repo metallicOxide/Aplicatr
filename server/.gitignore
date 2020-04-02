@@ -1,5 +1,8 @@
 # Python .gitignore template from https://github.com/github/gitignore/blob/master/Python.gitignore
 
+# Ignore everything in misc folder
+misc/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

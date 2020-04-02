@@ -11,7 +11,7 @@ from server.models import db_session
 from server.models.User import User
 from server.models.Search import Search
 from server.utils import authentication
-from server.utils.SupportedPortals import SupportedPortals
+from server.services import SupportedPortals
 
 search_model = api.model('Search_Model', {
   'Keywords': fields.String,
