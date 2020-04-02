@@ -21,16 +21,15 @@ search_model = api.model('Search_Model', {
 @api.route('/jobs')
 class ScrapeRoute(Resource):
   @api.expect(token_parser, search_model, validate=True)
-  @api.doc(description='Extract job data using login credentials and search parameters.')
+  @api.doc(description='''
+    Scrape portal for job listings using provided search terms and a cookie 
+    previously stored in the db. Search terms will then be stored in the db 
+    then return the resulting list of jobs.
+    ''')
   @api.response(400, 'Invalid input or error processing data encountered.')
   @api.response(404, 'Error connecting to data source.')
   @api.response(200, 'Data sucessfully processed and returned.')
   def post(self):
-    '''
-    Scrape portal for job listings using provided search terms and a cookie 
-    previously stored in the db. Search terms will then be stored in the db 
-    then return the resulting list of jobs.
-    '''
     search = request.get_json()
     keywords, location = search.values()
     

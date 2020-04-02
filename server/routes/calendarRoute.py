@@ -12,26 +12,24 @@ from server.utils.SupportedPortals import SupportedPortals
 jobs_model = api.model('Jobs_Model', {
   'jobs': fields.List(fields.Raw(
     description='''
-    {
       title: string,
       link: string,
       summary: string.
       chosen_date: string (datetime),
       location: string
-    }'''))
+    '''))
 }, required=True)
 
 @api.route('/jobs/calendar')
 class CalendarRoute(Resource):
   @api.expect(token_parser, jobs_model, validate=True)
-  @api.doc(description="Generate ics file from jobs. This assumes the front-end would have processed all the jobs by user preferences for file generation.")
+  @api.doc(description='''
+    Generates a calendar file from given list of jobs after processing, then
+    sends back an ics file.
+    ''')
   @api.response(400, 'Invalid input or error processing data encountered.')
   @api.response(200, 'Data sucessfully processed and ics file generated.')
   def post(self):
-    '''
-    Generates a calendar file from given list of jobs after processing, then
-    sends back an ics file.
-    '''
     args = token_parser.parse_args()
     token = args.get('token')
     try:

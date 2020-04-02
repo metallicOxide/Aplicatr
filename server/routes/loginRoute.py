@@ -22,14 +22,12 @@ login_model = api.model('Login_Model', {
 @api.route('/jobs/login')
 class LoginRoute(Resource):
   @api.expect(login_model, validate=True)
-  @api.doc(description='Provide a valid username and password for a supported online job portal.')
+  @api.doc(description='''
+    Attempts to log into to portal with provided credentials. If successful, 
+    then we upsert the user info (not password), and portal cookie into database. 
+    We then return a jwt token to maintain user session on our application.
+    ''')
   def post(self):
-    '''
-    Attempts to log into to portal with provided credentials. 
-    
-    If successful, then we upsert the user info (not password), and portal 
-    cookie into database. We then return a jwt token.
-    '''
     login = request.get_json()
     username, password, uni = login.values()
     
