@@ -8,38 +8,47 @@
       title="Login"
       header-bg-variant="primary"
       header-text-variant="light"
-      centered = "true"
+      centered
+      ok-only
       @show="resetModal"
       @hidden="resetModal"
-      @ok="handleOk"
+      @ok="postLoginModalData"
     >
-      <form ref="form" @submit.stop.prevent="handleSubmit">
+      <form ref="loginForm" @submit.stop.prevent="handleSubmit">
+        <b-form-group>
+          <b-alert v-model="errorMessage" v-show="errorMessage !== ''" variant="danger" fade dismissible>
+            {{errorMessage}}
+          </b-alert>
+        </b-form-group>
+
         <b-form-group
-          :state="nameState"
           label="Login Name"
           label-for="id-input"
           invalid-feedback="Login Name is required"
         >
           <b-form-input
             id="id-input"
-            v-model="name"
-            :state="nameState"
+            v-model="credentials.Username"
+            :state="formState.nameState"
+            placeholder="Login Name"
             required
           ></b-form-input>
         </b-form-group>
+
         <b-form-group
-          :state="nameState"
-          label="Login Name"
+          label="Password"
           label-for="id-input"
-          invalid-feedback="Login Name is required"
+          invalid-feedback="Login Password is required"
         >
           <b-form-input
             id="id-input"
-            v-model="name"
-            :state="nameState"
+            v-model="credentials.Password"
+            :state="formState.passwordState"
+            placeholder="Password"
             required
           ></b-form-input>
         </b-form-group>
+
       </form>
     </b-modal>
   </div>
@@ -47,14 +56,83 @@
 
 <script lang="ts">
   import { Component, Prop, Vue } from 'vue-property-decorator';
+  import { Credentials, JobRequestBindingModel } from '../interfaces/bindingModels';
+  import { errorMessages } from '../interfaces/messages';
+  import axios from 'axios';
 
   @Component
   export default class LoginModal extends Vue {
-    @Prop() private username!: string;
-    @Prop() private password!: string;
+    @Prop() private credentials!: Credentials;
+
+    errorMessage = "";
+
+    formState = {
+      nameState: true,
+      passwordState: true
+    };
+
+    generateJobRequest(): JobRequestBindingModel {
+      const bindingModel: JobRequestBindingModel = {
+        Username: this.credentials.Username,
+        Password: this.credentials.Password,
+        Uni: this.credentials.Uni,
+        Keywords: "",
+        Location: ""
+      }
+
+      return bindingModel;
+    }
+
+    async postLoginModalData(e: any): Promise<void> {
+      e.preventDefault();
+      this.errorMessage = "";
+
+      if (!this.checkLoginModalValidity()) {
+        return;
+      }
+
+      const isSuccess = await this.LoginAsync();
+      console.log('isSuccess', isSuccess);
+      if (isSuccess) {
+        this.closeModal();
+      }
+    }
+
+    checkLoginModalValidity(): boolean {
+        const isValidUser = !(!this.credentials.Username);
+        const isvalidPass = !(!this.credentials.Password);
+        this.formState = {
+          nameState: isValidUser,
+          passwordState: isvalidPass
+        }
+        return isValidUser && isvalidPass
+    }
+
+    async LoginAsync() {
+      const bindingModel: JobRequestBindingModel = this.generateJobRequest();
+      const apiBase: string = process.env.VUE_APP_API_URL;
+      try {
+        const response = await axios.post(`${apiBase}/jobs`, bindingModel)
+        return true;
+      } catch (error) {
+        if (error.response.data.message) {
+          this.errorMessage = error.response.data.message;
+          console.log(this.errorMessage, error.response.data.message);
+        } else {
+          this.errorMessage = errorMessages.loginErrorMessage;
+        }
+        return false;
+      }
+    }
+
+    closeModal() {
+      this.$nextTick(() => {
+        this.$bvModal.hide('modal-login');
+      })
+    }
 
     resetModal() {
-      console.log("OPen modal");
+      console.log("credentials", this.credentials, this.credentials.Username, this.credentials.Password);
     }
   }
 </script>
