@@ -20,6 +20,14 @@ export interface Credentials {
     Uni: string;
 }
 
+export interface JobRequestBindingModel {
+    Username: string;
+    Password: string;
+    Uni: string;
+    Keywords: string;
+    Location: string;
+}
+
 // List of job items
 export interface JobItemList {
     jobList: JobItem[];
