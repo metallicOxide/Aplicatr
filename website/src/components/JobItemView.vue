@@ -1,15 +1,44 @@
 <template>
   <div class="JobItem">
-    <b-card :title="formattedJobTitle" :sub-title="dayLeftMsg" :class="getPiorityStyling">
-      <b-card-text>
-        {{jobItem.jobDes}}
-      </b-card-text>
-      <b-card-text>
-        <b-icon-map></b-icon-map>
-        {{jobItem.jobLoc}}
-      </b-card-text>
-      <a :href="jobItem.jobUrl" class="card-link">Link to Job</a>
-    </b-card>
+    <div :class="getPiorityStyling + ' job-card'">
+      <b-row class="job-item-element job-heading-container">
+        <b-col cols="10">
+          <div class="job-heading float-left">
+            {{formattedJobTitle}}
+          </div>
+        </b-col>
+        <b-col cols="2">
+          <b-icon-bookmark class="bookmark-icon" 
+            font-scale="1.8"
+            ></b-icon-bookmark>
+        </b-col>
+        <b-col cols="10">
+          <div class="job-days-left float-left">
+            {{dayLeftMsg}}
+          </div>
+        </b-col>
+      </b-row>
+      <b-row class="job-item-element">
+        <b-col sm="10">
+          <div class="float-left job-description">
+            {{jobItem.jobDes}}
+          </div>
+        </b-col>
+      </b-row>
+      <b-row class="job-item-element">
+        <b-col sm="10">
+          <div class="job-location float-left">
+            <b-icon-map></b-icon-map>
+            {{jobItem.jobLoc}}
+          </div>
+        </b-col>
+        <b-col sm="2">
+          <div class="float-left">
+            <a :href="jobItem.jobUrl" class="card-link">Link to Job</a>
+          </div>
+        </b-col>
+      </b-row>
+    </div>
   </div>
 </template>
 
@@ -23,6 +52,12 @@
     @Prop() private jobItem!: JobItem;
     // styling array to decide what style the cards should be 
     stylingArr: string[] = ["low-pior", "med-pior", "high-pior", "expired-pior"];
+
+    mounted() {
+      const cred: JobItem = this.jobItem;
+
+      console.log("credentials", cred, cred.endDate, cred.jobCompany);
+    }
 
     get formattedJobTitle (): string {
       const job: JobItem = this.jobItem;
@@ -39,11 +74,11 @@
       const days = this.daysTillExpiry;
       // if the floor is >= 3 then return 2 (low pior)
       // floor is <= 0 then return 0 (high pior)
-      if (days >=30) {
+      if (days >= 30) {
         return this.stylingArr[0];
-      } else if (days >= 20) {
+      } else if (days >= 15) {
         return this.stylingArr[1];
-      } else if (days >= 10) {
+      } else if (days > 0) {
         return this.stylingArr[2];
       } else {
         return this.stylingArr[3];
@@ -66,23 +101,9 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .JobItem {
-    margin-bottom: 10px;
-    font-weight: bold;
+    padding-bottom: 10px;
   }
-
-  .card-subtitle, .card-title {
-    font-weight: bold;
-  }
-
-  .card {
-    border:1px solid #ccc!important;
-    border-radius: 16px;
-  }
-
-  .card-subtitle {
-    color: inherit !important;
-  }
-
+  /*Job Item priority styling*/
   .low-pior {
     background-color: #28a745;
     color: #fff;
@@ -102,9 +123,49 @@
     background-color: #6c757d;
     color: #fff;
   }
+  /*Job Item priority styling*/
+
+  .job-card {
+    border-radius: 20px;
+  }
+
+  .job-item-element {
+    padding-left: 5%;
+    padding-bottom: 10px;
+  }
 
   a {
     text-decoration: underline;
     color: #fff;
+  }
+
+  a:hover {
+    color:aqua;
+  }
+
+  .bookmark-icon:hover {
+    color:aqua;
+  }
+
+  .job-heading-container {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+
+  .job-heading {
+    font-weight: bold;
+  }
+
+  .job-description {
+    text-align: left;
+  }
+
+  .job-days-left {
+    font-size: 12px;
+    font-weight: bolder;
+  }
+
+  .job-location {
+    font-weight: bold;
   }
 </style>
