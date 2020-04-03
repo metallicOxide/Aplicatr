@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <NavBarView v-bind:isLoggedIn="loggedIn"/>
-    <LoginModal />
+    <LoginModal v-bind:credentials="credentials"/>
+    <SearchBar v-bind:searchTerm="searchTerm"/>
     <b-container>
       <JobListView v-bind:jobList="jobs" v-bind:title="title"/>
     </b-container>
@@ -31,7 +32,7 @@
         jobCompany: "@lassian",
         jobType: "Computer Science",
         jobLoc: "Sydney",
-        jobDes: "Join our team of fun loving people",
+        jobDes: "Jane Street is a proprietary trading firm that operates around the clock and around the globe. We bring a deep understanding of markets, a scientific approach, and innovative technology to bear on the problem of trading profitably in the world's highly competitive financial markets.",
         jobUrl: "//www.google.com",
       }, 
       {
@@ -70,10 +71,12 @@
 
     loggedIn = false;
 
+    searchTerm = "poop";
+
     // Set the uni as UNSW for now
     credentials: Credentials = {
-      Username: "",
-      Password: "",
+      Username: "qwe",
+      Password: "qwe",
       Uni: "UNSW"
     };
     
@@ -88,7 +91,6 @@
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  background-color: #ddd;
 }
 
 #app {
@@ -108,8 +110,8 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 1rem;
-  background-color: #00d2ff;
-  background-image: linear-gradient(to top, #00d2ff 0%, #3a7bd5 100%);
+  background-color: #3a7bd5;
+  background-image: linear-gradient(to top, #3a7bd5 0%, #00d2ff 100%);
 }
 
 </style>
