@@ -1,5 +1,6 @@
 from flask import Flask, request, send_file
 from flask_restx import Resource, Api, fields
+from flask_cors import CORS
 import sys
 from pprint import pprint
 import os
@@ -13,6 +14,7 @@ from server.services.UnswScraper import UnswScraper
 from server.services.calendarMake import generateCalendarDeadlines, createCalendar
 
 app = Flask(__name__)
+CORS(app)
 api = Api(app).namespace('', description='Uni Job Scraper APIs')
 
 from server.routes import scrapeRoute, calendarRoute
