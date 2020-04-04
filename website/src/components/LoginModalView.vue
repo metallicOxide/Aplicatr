@@ -97,7 +97,6 @@
       }
 
       const isSuccess = await this.LoginAsync();
-      console.log('isSuccess', isSuccess);
       if (isSuccess) {
         this.closeModal();
       }

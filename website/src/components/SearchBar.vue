@@ -20,6 +20,8 @@
     @Prop() private jobSearch!: SearchBindingModel;
     @Prop() private jwtToken!: string;
 
+
+    //TODO Error handling of token expiring etc
     async submitSearchRequest(): Promise<void> {
       // if token is undefined or empty
       // it means that they haven't logged in
@@ -37,6 +39,7 @@
         );
         this.$emit('jobs', response.data.jobs);
       } 
+      // should handle error in token expiring here
       catch (error) 
       {
         console.log(error);

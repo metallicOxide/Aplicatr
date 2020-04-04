@@ -78,8 +78,6 @@
     get daysTillExpiry(): number {
       const now = moment();
       const endDate = moment(this.jobItem.closing_date, "YYYY-MM-DD HH:mm:ss");
-      console.log(this.jobItem.closing_Date);
-      console.log(endDate);
       return endDate.diff(now, 'days');
     }
 

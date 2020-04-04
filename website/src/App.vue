@@ -81,17 +81,14 @@
     jwtToken = "";
 
     getToken(token: string) {
-      console.log(token);
       this.jwtToken = token;
     }
 
     getJobs(allJobs: Array<JobItem>) {
-      console.log(allJobs);
       this.jobs = allJobs;
     }
 
     handleLoginRequest() {
-      console.log("opening Modal for login");
       this.$root.$emit('login');
     }
     
