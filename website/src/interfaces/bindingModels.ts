@@ -20,10 +20,13 @@ export interface Credentials {
     Uni: string;
 }
 
-export interface JobRequestBindingModel {
+export interface LoginBindingModel {
     Username: string;
     Password: string;
     Uni: string;
+}
+
+export interface SearchBindingModel {
     Keywords: string;
     Location: string;
 }
