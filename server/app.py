@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_restx import Api, reqparse
+from flask_cors import CORS
 import sys
 import os
 
@@ -21,6 +22,7 @@ if __name__ == '__main__':
 
 
 app = Flask(__name__)
+CORS(app)
 api = Api(app).namespace('', description='Uni Job Scraper APIs')
 
 token_parser = reqparse.RequestParser().add_argument('token', type = str, required = True)

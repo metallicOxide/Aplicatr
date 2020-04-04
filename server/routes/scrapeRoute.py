@@ -60,7 +60,6 @@ class ScrapeRoute(Resource):
     except:
       return {'message': 'Error extracting data'}, 400
     
-    # search db by username, add information search term keywords and location
     session = db_session()
     session.add(Search(user_id = user.id, keywords = keywords, location = location))
     session.commit()
