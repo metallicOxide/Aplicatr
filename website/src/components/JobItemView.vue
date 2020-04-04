@@ -21,7 +21,7 @@
       <b-row class="job-item-element">
         <b-col sm="10">
           <div class="float-left job-description">
-            {{jobItem.jobDes}}
+            {{description}}
           </div>
         </b-col>
       </b-row>
@@ -29,12 +29,12 @@
         <b-col sm="10">
           <div class="job-location float-left">
             <b-icon-map></b-icon-map>
-            {{jobItem.jobLoc}}
+            {{location}}
           </div>
         </b-col>
         <b-col sm="2">
           <div class="float-left">
-            <a :href="jobItem.jobUrl" class="card-link">Link to Job</a>
+            <a :href="url" class="card-link">Link to Job</a>
           </div>
         </b-col>
       </b-row>
@@ -53,20 +53,32 @@
     // styling array to decide what style the cards should be 
     stylingArr: string[] = ["low-pior", "med-pior", "high-pior", "expired-pior"];
 
-    mounted() {
-      const cred: JobItem = this.jobItem;
-
-      console.log("credentials", cred, cred.endDate, cred.jobCompany);
+    get formattedJobTitle (): string {
+      // const job: JobItem = this.jobItem;
+      // return `${job.jobTitle} - ${job.jobCompany}`;
+      const job: JobItem = this.jobItem;
+      return job.title;
     }
 
-    get formattedJobTitle (): string {
+    get location(): string {
       const job: JobItem = this.jobItem;
-      return `${job.jobTitle} - ${job.jobCompany}`;
+      return job.location;
+    }
+
+    get description (): string {
+      const job: JobItem = this.jobItem;
+      return job.summary;
+    }
+
+    get url (): string {
+      const job: JobItem = this.jobItem;
+      return job.link;
     }
 
     get daysTillExpiry(): number {
       const now = moment();
-      const endDate = moment(this.jobItem.endDate, "DD/MM/YYYY");
+      console.log(this.jobItem.closingDate);
+      const endDate = moment(this.jobItem.closingDate);
       return endDate.diff(now, 'days');
     }
 
@@ -87,11 +99,13 @@
 
     get dayLeftMsg(): string {
       const days = this.daysTillExpiry;
-
+      const endDateObj = moment(this.jobItem.closingDate);
+      const endDate = endDateObj.format("DD/MM/YYYY");
+      console.log(endDate);
       if (days >= 0) {
-        return `${this.jobItem.endDate} - ${this.daysTillExpiry} days left!`;
+        return `${endDate} - ${this.daysTillExpiry} days left!`;
       } else {
-        return `${this.jobItem.endDate} - Expired :'(`;
+        return `${endDate} - Expired :'(`;
       }
     }
 

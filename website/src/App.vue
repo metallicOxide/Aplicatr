@@ -29,44 +29,32 @@
   export default class App extends Vue {
     jobs: Array<JobItem> = [
       {
-        id: "1",
-        endDate: "28/03/2020",
-        jobTitle: "Full stacc dev",
-        jobCompany: "@lassian",
-        jobType: "Computer Science",
-        jobLoc: "Sydney",
-        jobDes: "Jane Street is a proprietary trading firm that operates around the clock and around the globe. We bring a deep understanding of markets, a scientific approach, and innovative technology to bear on the problem of trading profitably in the world's highly competitive financial markets.",
-        jobUrl: "//www.google.com",
+        closingDate: "2020-03-28 12:00:00",
+        title: "Full stacc dev",
+        location: "Sydney",
+        summary: "Jane Street is a proprietary trading firm that operates around the clock and around the globe. We bring a deep understanding of markets, a scientific approach, and innovative technology to bear on the problem of trading profitably in the world's highly competitive financial markets.",
+        link: "//www.google.com",
       }, 
       {
-        id: "2",
-        endDate: "11/04/2020",
-        jobTitle: "Python dev",
-        jobCompany: "Maccas",
-        jobType: "Computer Science",
-        jobLoc: "Canada",
-        jobDes: "We need some good ppls",
-        jobUrl: "//www.google.com",
+        closingDate: "2020-04-11 12:00:00",
+        title: "Python dev",
+        location: "Canada",
+        summary: "We need some good ppls",
+        link: "//www.google.com",
       },
       {
-        id: "3",
-        endDate: "05/03/2020",
-        jobTitle: "Frontend dev",
-        jobCompany: "NASA",
-        jobType: "Computer Science",
-        jobLoc: "Sydney",
-        jobDes: "Angular experience preferred",
-        jobUrl: "//www.google.com",
+        closingDate: "2020-03-05 12:00:00",
+        title: "Frontend dev",
+        location: "Sydney",
+        summary: "Angular experience preferred",
+        link: "//www.google.com",
       }, 
       {
-        id: "4",
-        endDate: "16/12/2020",
-        jobTitle: "Backend dev",
-        jobCompany: "Canva",
-        jobType: "Computer Science",
-        jobLoc: "Sydney",
-        jobDes: "C# Asp.Net Dev",
-        jobUrl: "//www.google.com",
+        closingDate: "2020-12-16 12:00:00",
+        title: "Backend dev",
+        location: "Sydney",
+        summary: "C# Asp.Net Dev",
+        link: "//www.google.com",
       }
     ];
 
@@ -81,7 +69,7 @@
       Uni: "UNSW"
     };
 
-    getToken(token: any) {
+    getToken(token: string) {
       console.log(token);
       this.jwtToken = token;
     }
@@ -118,6 +106,12 @@
   border-radius: 1rem;
   background-color: #3a7bd5;
   background-image: linear-gradient(to top, #3a7bd5 0%, #00d2ff 100%);
+}
+
+@media (min-width: 1500px) {
+    .container{
+        max-width: 1250px !important;
+    }
 }
 
 </style>
