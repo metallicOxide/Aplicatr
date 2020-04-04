@@ -77,8 +77,7 @@
 
     get daysTillExpiry(): number {
       const now = moment();
-      console.log(this.jobItem.closingDate);
-      const endDate = moment(this.jobItem.closingDate);
+      const endDate = moment(this.jobItem.closing_Date);
       return endDate.diff(now, 'days');
     }
 
@@ -99,9 +98,8 @@
 
     get dayLeftMsg(): string {
       const days = this.daysTillExpiry;
-      const endDateObj = moment(this.jobItem.closingDate);
+      const endDateObj = moment(this.jobItem.closing_Date);
       const endDate = endDateObj.format("DD/MM/YYYY");
-      console.log(endDate);
       if (days >= 0) {
         return `${endDate} - ${this.daysTillExpiry} days left!`;
       } else {

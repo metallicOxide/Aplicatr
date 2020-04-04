@@ -56,14 +56,14 @@
 
 <script lang="ts">
   import { Component, Prop, Vue } from 'vue-property-decorator';
-  import { Credentials, LoginBindingModel } from '../interfaces/bindingModels';
+  import { LoginBindingModel } from '../interfaces/bindingModels';
   import { errorMessages } from '../interfaces/messages';
   import { ApiRoutes } from '../interfaces/apiRoutes';
   import axios from 'axios';
 
   @Component
   export default class LoginModal extends Vue {
-    @Prop() private credentials!: Credentials;
+    @Prop() private credentials!: LoginBindingModel;
 
     errorMessage = "";
 
