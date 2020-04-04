@@ -56,8 +56,9 @@
 
 <script lang="ts">
   import { Component, Prop, Vue } from 'vue-property-decorator';
-  import { Credentials, JobRequestBindingModel } from '../interfaces/bindingModels';
+  import { Credentials, LoginBindingModel } from '../interfaces/bindingModels';
   import { errorMessages } from '../interfaces/messages';
+  import { ApiRoutes } from '../interfaces/apiRoutes';
   import axios from 'axios';
 
   @Component
@@ -72,13 +73,11 @@
     };
 
     // Generates job request object to post to backend
-    generateJobRequest(): JobRequestBindingModel {
-      const bindingModel: JobRequestBindingModel = {
+    generateLoginRequest(): LoginBindingModel {
+      const bindingModel: LoginBindingModel = {
         Username: this.credentials.Username,
         Password: this.credentials.Password,
-        Uni: this.credentials.Uni,
-        Keywords: "",
-        Location: ""
+        Uni: this.credentials.Uni
       }
 
       return bindingModel;
@@ -113,13 +112,13 @@
 
     // handles login and emitting of jobs to APP.vue
     async LoginAsync() {
-      const bindingModel: JobRequestBindingModel = this.generateJobRequest();
-      // get the api route
-      const apiBase: string = process.env.VUE_APP_API_URL;
+      // create login model
+      const bindingModel: LoginBindingModel = this.generateLoginRequest();
+      const loginUrl: string = ApiRoutes.loginRoute;
       try {
-        const response = await axios.post(`${apiBase}/jobs`, bindingModel);
+        const response = await axios.post(loginUrl, bindingModel);
         // emit the scrapped job items back
-        this.$emit('jobItems', response.data.jobs);
+        this.$emit('token', response.data.token);
         return true;
       } catch (error) {
         if (error.response.data.message) {
