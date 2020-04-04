@@ -84,7 +84,7 @@
     }
 
     // 
-    async postLoginModalData(e: any): Promise<void> {
+    async postLoginModalData(e: Event): Promise<void> {
       e.preventDefault();
       this.errorMessage = "";
 
