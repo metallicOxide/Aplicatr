@@ -1,7 +1,7 @@
 <template>
   <div class="JobList">
     <b-row>
-      <b-col md="12" v-bind:key="jobItem.id" v-for="jobItem in jobList">
+      <b-col md="9" v-for="(jobItem, index) in jobList" v-bind:key="`job-${index}`">
         <JobItemView v-bind:jobItem="jobItem"/>
       </b-col >
     </b-row>
