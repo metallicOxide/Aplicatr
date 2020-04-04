@@ -1,6 +1,5 @@
 <template>
   <div class="LoginModal">
-    <b-button v-b-modal.modal-login>Open Modal</b-button>
     <b-modal
       id="modal-login"
       ref="modal"
@@ -42,6 +41,7 @@
         >
           <b-form-input
             id="id-input"
+            type="password"
             v-model="credentials.Password"
             :state="formState.passwordState"
             placeholder="Password"
@@ -71,6 +71,10 @@
       nameState: true,
       passwordState: true
     };
+
+    mounted() {
+      this.$root.$on('login', this.openModal);
+    }
 
     // Generates job request object to post to backend
     generateLoginRequest(): LoginBindingModel {
@@ -115,12 +119,15 @@
       // create login model
       const bindingModel: LoginBindingModel = this.generateLoginRequest();
       const loginUrl: string = ApiRoutes.loginRoute;
-      try {
+      try 
+      {
         const response = await axios.post(loginUrl, bindingModel);
         // emit the scrapped job items back
         this.$emit('token', response.data.token);
         return true;
-      } catch (error) {
+      } 
+      catch (error) 
+      {
         if (error.response.data.message) {
           this.errorMessage = error.response.data.message;
           console.log(this.errorMessage, error.response.data.message);
@@ -131,6 +138,13 @@
       }
     }
 
+    // opens the modal
+    openModal() {
+      this.$nextTick(() => {
+        this.$bvModal.show('modal-login');
+      })
+    }
+
     // closes the modal
     closeModal() {
       this.$nextTick(() => {
@@ -138,9 +152,10 @@
       })
     }
 
+    // currently only resets the password
     //TODO: see ifwe need to reset the username and password fields after
     resetModal() {
-      console.log("credentials", this.credentials, this.credentials.Username, this.credentials.Password);
+      this.credentials.Password = "";
     }
   }
 </script>

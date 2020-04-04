@@ -3,11 +3,15 @@
     <b-container>
       <NavBarView/>
       <LoginModal @token="getToken" 
-        v-bind:credentials="credentials" 
-        v-bind:isLoggedIn="loggedIn"
+        v-bind:credentials="credentials"
+        ref="loginModal"
       />
-      <SearchBar v-bind:searchTerm="searchTerm" v-bind:token="jwtToken"/>
-      <JobListView v-bind:jobList="jobs" v-bind:title="title"/>
+      <SearchBar v-bind:jobSearch="jobSearch" 
+        v-bind:jwtToken="jwtToken"
+        @jobs="getJobs"
+        @login="handleLoginRequest"
+      />
+      <JobListView v-bind:jobList="jobs"/>
     </b-container>
   </div>
 </template>
@@ -15,15 +19,17 @@
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
   import JobListView from './components/JobListView.vue';
-  import { JobItem, LoginBindingModel } from './interfaces/bindingModels';
+  import { JobItem, LoginBindingModel, SearchBindingModel } from './interfaces/bindingModels';
   import NavBarView from './components/NavBarView.vue';
   import LoginModal from './components/LoginModalView.vue';
+  import SearchBar from './components/SearchBar.vue';
 
   @Component({
     components: {
       'JobListView': JobListView,
       'NavBarView': NavBarView,
-      'LoginModal': LoginModal
+      'LoginModal': LoginModal,
+      'SearchBar': SearchBar
     },
   })
   export default class App extends Vue {
@@ -58,20 +64,35 @@
       }
     ];
 
-    jwtToken = "";
-    loggedIn = false;
-    searchTerm = "";
+    cart: Array<JobItem> = [];
+
+    jobSearch: SearchBindingModel = {
+      Keywords: "",
+      Location: ""
+    };
 
     // Set the uni as UNSW for now
     credentials: LoginBindingModel = {
-      Username: "qwe",
-      Password: "qwe",
+      Username: "",
+      Password: "",
       Uni: "UNSW"
     };
+
+    jwtToken = "";
 
     getToken(token: string) {
       console.log(token);
       this.jwtToken = token;
+    }
+
+    getJobs(allJobs: Array<JobItem>) {
+      console.log(allJobs);
+      this.jobs = allJobs;
+    }
+
+    handleLoginRequest() {
+      console.log("opening Modal for login");
+      this.$root.$emit('login');
     }
     
   }
