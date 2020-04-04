@@ -2,7 +2,7 @@ export interface JobItem {
     title: string;
     link: string;
     summary: string;
-    closing_Date: string;
+    closing_date: string;
     location: string;
 }
 
