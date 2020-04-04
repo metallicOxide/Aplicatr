@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavBarView v-bind:isLoggedIn="loggedIn"/>
-    <LoginModal v-bind:credentials="credentials"/>
+    <LoginModal @jobItems="populateJobs" v-bind:credentials="credentials"/>
     <SearchBar v-bind:searchTerm="searchTerm"/>
     <b-container>
       <JobListView v-bind:jobList="jobs" v-bind:title="title"/>
@@ -71,7 +71,7 @@
 
     loggedIn = false;
 
-    searchTerm = "poop";
+    searchTerm = "";
 
     // Set the uni as UNSW for now
     credentials: Credentials = {
@@ -79,6 +79,11 @@
       Password: "qwe",
       Uni: "UNSW"
     };
+
+    populateJobs(jobs: any) {
+      console.log(jobs);
+      this.jobs = jobs;
+    }
     
   }
 </script>
