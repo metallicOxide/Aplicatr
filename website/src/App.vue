@@ -1,9 +1,12 @@
 <template>
   <div id="app">
-    <NavBarView v-bind:isLoggedIn="loggedIn"/>
-    <LoginModal @jobItems="populateJobs" v-bind:credentials="credentials"/>
-    <SearchBar v-bind:searchTerm="searchTerm"/>
     <b-container>
+      <NavBarView/>
+      <LoginModal @token="getToken" 
+        v-bind:credentials="credentials" 
+        v-bind:isLoggedIn="loggedIn"
+      />
+      <SearchBar v-bind:searchTerm="searchTerm" v-bind:token="jwtToken"/>
       <JobListView v-bind:jobList="jobs" v-bind:title="title"/>
     </b-container>
   </div>
@@ -67,10 +70,8 @@
       }
     ];
 
-    title = 'Job List';
-
+    jwtToken = "";
     loggedIn = false;
-
     searchTerm = "";
 
     // Set the uni as UNSW for now
@@ -80,9 +81,9 @@
       Uni: "UNSW"
     };
 
-    populateJobs(jobs: any) {
-      console.log(jobs);
-      this.jobs = jobs;
+    getToken(token: any) {
+      console.log(token);
+      this.jwtToken = token;
     }
     
   }
