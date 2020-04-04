@@ -1,6 +1,5 @@
 <template>
   <div class="JobList">
-    <h1>{{ title }}</h1>
     <b-row>
       <b-col md="12" v-bind:key="jobItem.id" v-for="jobItem in jobList">
         <JobItemView v-bind:jobItem="jobItem"/>
