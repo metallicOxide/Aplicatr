@@ -100,9 +100,12 @@ class UnswScraper(ScraperSession):
     if not jobDetail.ok:
       raise ConnectionError
     
-    jobDetailSoup = BeautifulSoup(jobDetail.content, features='html.parser')
+    try:
+      jobDetailSoup = BeautifulSoup(jobDetail.content, features='html.parser')
+      procedure = jobDetailSoup.find('div', {'id': 'procedures'}).prettify()
+      description = jobDetailSoup.find('div', {'class': 'job-details'}).get_text().strip()
+    except:
+      raise KeyError
     
-    detail = JobDetail(description='', procedure='')
-    
-    return detail
+    return JobDetail(description=description, procedure=procedure)
     

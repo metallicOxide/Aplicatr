@@ -2,7 +2,7 @@ from requests_html import HTMLSession
 from abc import ABCMeta, abstractmethod
 from requests.sessions import RequestsCookieJar
 from typing import List, Dict, Any, Text
-from server.utils.Jobs import JobsList, Job
+from server.utils.Jobs import JobsList, Job, JobDetail
 
 class ScraperSession(metaclass=ABCMeta):
   '''
@@ -36,7 +36,7 @@ class ScraperSession(metaclass=ABCMeta):
     pass
   
   @abstractmethod
-  def extractJobDetails(self, cookies: RequestsCookieJar = {}, link: Text = ''):
+  def extractJobDetails(self, cookies: RequestsCookieJar = {}, link: Text = '') -> (JobDetail):
     '''
     Abstract method for extracting details of a particular job listing from the online data source.
     '''
