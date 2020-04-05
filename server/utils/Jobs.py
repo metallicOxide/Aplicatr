@@ -2,6 +2,20 @@
 from typing import List, Dict, Text
 from server.services import SupportedPortals
 
+class JobDetail:
+  '''
+  Representation of a job's details.
+  '''
+  def __init__(self, description, procedure):
+    self.description = description
+    self.procedure = procedure
+  
+  def serialize(self):
+    return {
+      'description': self.description,
+      'procedure': self.procedure
+    }
+  
 class Job:
   '''
   Representation of a job's key information.

@@ -63,11 +63,11 @@ def logicScript():
   keywords = input('Enter search keywords: ')
   location = input('Enter location: ')
   print('Searching for jobs and extracting data...')
-  jobs = portal.extractData(cookies=sesh.cookies, keywords=keywords, location=location, username=username)
+  jobs = portal.extractJobs(cookies=sesh.cookies, keywords=keywords, location=location, username=username)
   pprint(jobs.serialize())
   
   print('Generating application deadline data...')
-  myCalendar = generateCalendarDeadlines(jobs)
+  myCalendar = generateCalendarDeadlines(jobs, cookies=sesh.cookies, portal=portal)
   print('Creating application deadline ics file...')
   
   file_name = 'deadlines_{}.ics'.format(uuid.uuid4().hex)

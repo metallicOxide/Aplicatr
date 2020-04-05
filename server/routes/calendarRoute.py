@@ -45,7 +45,7 @@ class CalendarRoute(Resource):
     jobs = body.get('jobs')
     try:
       processedJobs = convertJobsFromListDicts(jobs)
-      calendar = generateCalendarDeadlines(processedJobs)
+      calendar = generateCalendarDeadlines(jobs=processedJobs, cookies=cookies, portal=portal)
     except:
       return {'message': 'Error generating calendar from jobs.'}, 400
 

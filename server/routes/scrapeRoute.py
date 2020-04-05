@@ -46,7 +46,7 @@ class ScrapeRoute(Resource):
       return {'message': 'Error fetching data from database.'}, 400
 
     try:
-      jobs = portal.extractData(UnswScraper, 
+      jobs = portal.extractJobs(portal, 
                                 cookies = cookies, 
                                 keywords = keywords, 
                                 location = location, 

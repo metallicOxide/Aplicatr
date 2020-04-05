@@ -7,7 +7,7 @@ from requests.sessions import RequestsCookieJar
 
 from server.utils.ScraperSession import ScraperSession
 from server.services import SupportedPortals
-from server.utils.Jobs import JobsList, Job
+from server.utils.Jobs import JobsList, Job, JobDetail
 
 class UnswScraper(ScraperSession):
   '''
@@ -48,7 +48,7 @@ class UnswScraper(ScraperSession):
     
     return sesh
 
-  def extractData(self, cookies: RequestsCookieJar = {}, keywords: Text = '', location: Text = '', username: Text = '') -> (JobsList):
+  def extractJobs(self, cookies: RequestsCookieJar = {}, keywords: Text = '', location: Text = '', username: Text = '') -> (JobsList):
     '''
     Extract job data from the uni career portal.
     
@@ -87,3 +87,22 @@ class UnswScraper(ScraperSession):
       raise KeyError
     
     return jobs
+  
+  def extractJobDetails(self, cookies: RequestsCookieJar = {}, link: Text = '') -> (JobDetail):
+    '''
+    Extract details of a job listing from the uni career portal.
+    '''
+    sesh = HTMLSession()
+    if '/students/jobs/detail/' not in link:
+      raise ValueError
+    
+    jobDetail = sesh.get('https://careersonline.unsw.edu.au{}'.format(link))
+    if not jobDetail.ok:
+      raise ConnectionError
+    
+    jobDetailSoup = BeautifulSoup(jobDetail.content, features='html.parser')
+    
+    detail = JobDetail(description='', procedure='')
+    
+    return detail
+    

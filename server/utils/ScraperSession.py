@@ -25,7 +25,7 @@ class ScraperSession(metaclass=ABCMeta):
     pass
   
   @abstractmethod
-  def extractData(self, cookies: RequestsCookieJar = {}, keywords: Text = '', location: Text = '', username: Text = '') -> (JobsList):
+  def extractJobs(self, cookies: RequestsCookieJar = {}, keywords: Text = '', location: Text = '', username: Text = '') -> (JobsList):
     '''
     Abstract method for extracting data from the online data source.
     
@@ -34,3 +34,10 @@ class ScraperSession(metaclass=ABCMeta):
     :returns: JobsList
     '''
     pass
+  
+  @abstractmethod
+  def extractJobDetails(self, cookies: RequestsCookieJar = {}, link: Text = ''):
+    '''
+    Abstract method for extracting details of a particular job listing from the online data source.
+    '''
+  
