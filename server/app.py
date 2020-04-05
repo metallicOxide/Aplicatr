@@ -20,6 +20,7 @@ if __name__ == '__main__':
   '''
   logicScript()
 
+# TODO: verify all error codes mechanism, and chat with frontend on how to best interface with errors
 
 app = Flask(__name__)
 CORS(app)
