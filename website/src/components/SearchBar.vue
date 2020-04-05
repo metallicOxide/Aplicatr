@@ -1,7 +1,7 @@
 <template>
   <div class="SearchBar">
     <b-input-group>
-      <b-form-input v-model="jobSearch.Keywords"></b-form-input>
+      <b-form-input placeholder="Please enter your search term" v-model="jobSearch.Keywords"></b-form-input>
       <b-input-group-append>
         <b-button @click="submitSearchRequest" variant="primary">Search</b-button>
       </b-input-group-append>
@@ -44,9 +44,7 @@
       {
         console.log(error);
       }
-    }
-
-    
+    }    
   }
 </script>
 

@@ -160,6 +160,7 @@
   }
 
   .job-heading-container {
+    text-align: left;
     padding-top: 10px;
     font-size: 20px;
   }
