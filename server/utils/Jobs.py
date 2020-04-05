@@ -21,8 +21,9 @@ class Job:
   Representation of a job's key information.
   '''
   
-  def __init__(self, title, link, summary, closing_date, location):
+  def __init__(self, company, title, link, summary, closing_date, location):
     self.title = title
+    self.company = company
     self.link = link
     self.summary = summary
     self.closing_date = closing_date
@@ -31,6 +32,7 @@ class Job:
   def serialize(self):
     return {
       'title': self.title,
+      'company': self.company,
       'link': self.link,
       'summary': self.summary,
       'closing_date': self.closing_date,

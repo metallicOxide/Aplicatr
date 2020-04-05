@@ -77,8 +77,9 @@ class UnswScraper(ScraperSession):
           day, monthWord, year = closingDateText.split(' ')
           closingDate = datetime(int(year), months[monthWord], int(day), hour=12)
           jobs.addJob(job = Job(
-            title = listing.find('a').get_text().replace('\\r\\n', '').strip(),
-            link = listing.find('a')['href'],
+            title = listing.find('a').get_text().replace('\r\n', '').strip(),
+            company = listing.find('h5').get_text().replace('\r\n', '').strip(),
+            link = "https://careersonline.unsw.edu.au{}".format(listing.find('a')['href']),
             summary = listing.find('p', {'class': 'job-list-summary'}).get_text(strip=True),
             closing_date = str(closingDate),
             location = listing.find('div', {'class': 'job-list-location'}).get_text(strip=True)
@@ -96,16 +97,21 @@ class UnswScraper(ScraperSession):
     if '/students/jobs/detail/' not in link:
       raise ValueError
     
-    jobDetail = sesh.get('https://careersonline.unsw.edu.au{}'.format(link))
+    jobDetail = sesh.get(link, cookies=cookies)
     if not jobDetail.ok:
       raise ConnectionError
     
     try:
       jobDetailSoup = BeautifulSoup(jobDetail.content, features='html.parser')
-      procedure = jobDetailSoup.find('div', {'id': 'procedures'}).prettify()
+      procedureSoup = jobDetailSoup.find('div', {'id': 'procedures'})
+      procedure = procedureSoup.get_text().replace('Application Procedures', '').replace('\r', '').replace('\t', '').strip() + '\n[' + procedureSoup.find('a')['href'] + ']'
+    except:
+      procedure = ''
+    
+    try:
       description = jobDetailSoup.find('div', {'class': 'job-details'}).get_text().strip()
     except:
-      raise KeyError
+      description = ''
     
     return JobDetail(description=description, procedure=procedure)
     

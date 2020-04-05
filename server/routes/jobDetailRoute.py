@@ -18,10 +18,10 @@ job_detail_model = api.model('Job_Detail_Model', {
 }, required=True)
 
 @api.route('/jobs/detail')
-class ScrapeRoute(Resource):
+class JobDetail(Resource):
   @api.expect(token_parser, job_detail_model, validate=True)
   @api.doc(description='''
-    Scrape portal the of a particular job listing accessed with the link
+    Scrape portal for extra details of a particular job listing using the link
     provided by user in the request payload. 
     ''')
   @api.response(400, 'Invalid input or error processing data encountered.')
@@ -29,7 +29,6 @@ class ScrapeRoute(Resource):
   @api.response(200, 'Data sucessfully processed and returned.')
   def post(self):
     link = request.get_json().get('link')
-    
     token = token_parser.parse_args().get('token')
 
     try:
@@ -41,15 +40,15 @@ class ScrapeRoute(Resource):
     except:
       return {'message': 'Error fetching data from database.'}, 400
 
-    try:
-      detail = portal.extractJobDetails(portal, cookies=cookies, link=link)
-    except ValueError:
-      return {'message': 'Invalid inputs.'}, 400
-    except ConnectionError:
-      return {'message': 'Error connecting to data source.'}, 404
-    except KeyError:
-      return {'message': 'Error processing extracted data.'}, 400
-    except:
-      return {'message': 'Error extracting data'}, 400
+    # try:
+    detail = portal.extractJobDetails(portal, cookies=cookies, link=link)
+    # except ValueError:
+    #   return {'message': 'Invalid link.'}, 400
+    # except ConnectionError:
+    #   return {'message': 'Error connecting to data source.'}, 404
+    # except KeyError:
+    #   return {'message': 'Error processing extracted data.'}, 400
+    # except:
+    #   return {'message': 'Error extracting data'}, 400
     
     return {'detail': detail.serialize()}, 200

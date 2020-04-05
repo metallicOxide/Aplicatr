@@ -5,7 +5,7 @@ from flask import Flask, send_file, request, make_response
 from flask_restx import Resource, Api, fields
 
 from server.app import api, app, token_parser
-from server.services.calendarMake import generateCalendarDeadlines
+from server.services.calendarMake import generateCalendarSummarized
 from server.utils import convertJobsFromListDicts, authentication
 from server.services import SupportedPortals
 
@@ -13,6 +13,7 @@ jobs_model = api.model('Jobs_Model', {
   'jobs': fields.List(fields.Raw(
     description='''
       title: string,
+      company: string.
       link: string,
       summary: string.
       chosen_date: string (datetime),
@@ -45,7 +46,7 @@ class CalendarRoute(Resource):
     jobs = body.get('jobs')
     try:
       processedJobs = convertJobsFromListDicts(jobs)
-      calendar = generateCalendarDeadlines(jobs=processedJobs, cookies=cookies, portal=portal)
+      calendar = generateCalendarSummarized(jobs=processedJobs)
     except:
       return {'message': 'Error generating calendar from jobs.'}, 400
 

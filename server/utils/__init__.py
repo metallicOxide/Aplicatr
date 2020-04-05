@@ -6,7 +6,7 @@ from typing import List, Dict, Text
 
 from server.config import scraper_token_key
 from server.services.UnswScraper import UnswScraper
-from server.services.calendarMake import generateCalendarDeadlines
+from server.services.calendarMake import generateCalendarSummarized
 from server.utils.Jobs import JobsList, Job
 from server.services import SupportedPortals
 from server.models import db_session
@@ -24,11 +24,12 @@ def authentication(token: Text) -> (Dict):
   session with the requested portal, so we don't need to always log them in 
   to the requested job portal site when needing to webscrape. 
   
-  :returns: a tuple of (user, portal, cookies), where:
+  :returns: a tuple of (user, portal), where:
     * user is the db model User, 
-    * portal is a subclass of PortalSessions, and 
-    * cookies is a Cookie Jar.
+    * portal is a subclass of PortalSessions, instantiated with the last stored 
+      cookies as the object attribute.
   '''
+  #TODO: make this into a decorator?
   decoded = jwt.decode(token.encode(), key=scraper_token_key, algorithms='HS256')
   username = decoded.get('username')
 
@@ -67,7 +68,7 @@ def logicScript():
   pprint(jobs.serialize())
   
   print('Generating application deadline data...')
-  myCalendar = generateCalendarDeadlines(jobs, cookies=sesh.cookies, portal=portal)
+  myCalendar = generateCalendarSummarized(jobs)
   print('Creating application deadline ics file...')
   
   file_name = 'deadlines_{}.ics'.format(uuid.uuid4().hex)
@@ -85,6 +86,7 @@ def convertJobsFromListDicts(jobs: List[Dict]) -> (JobsList):
     res = JobsList()
     for job in jobs:
       res.addJob(Job(title = job['title'], 
+                company = job['company'],
                 link = job['link'], 
                 summary = job['summary'], 
                 closing_date = job['closing_date'], 

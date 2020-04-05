@@ -8,10 +8,9 @@ class ScraperSession(metaclass=ABCMeta):
   '''
   Abstract class for supported online scraping functionalities
   '''
-  # def __init__(self, username, password):
-  #   self.username = username
-  #   self.password = password
-  #   self.session = None
+  def __init__(self):
+    # add any shared attributes here.
+    pass
     
   @abstractmethod
   def login(self, username: Text = '', password: Text = '') -> (HTMLSession):

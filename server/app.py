@@ -27,4 +27,4 @@ api = Api(app).namespace('', description='Uni Job Scraper APIs')
 
 token_parser = reqparse.RequestParser().add_argument('token', type = str, required = True)
 
-from server.routes import calendarRoute,loginRoute,scrapeRoute
+from server.routes import calendarRoute, loginRoute, scrapeRoute, jobDetailRoute
