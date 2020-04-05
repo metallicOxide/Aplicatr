@@ -7,7 +7,7 @@ from requests.sessions import RequestsCookieJar
 from server.utils.Jobs import JobsList, Job
 from server.services import SupportedPortals, UnswScraper
 
-## TODO: explore generating more comprehensive calendar events descriptions, whether the extra info is worth the extra wait time.
+## TODO: explore generating more comprehensive calendar events descriptions, whether the extra info is worth the significantly greater wait time.
 
 # def generateCalendarDescriptive(jobs: JobsList, cookies: RequestsCookieJar, portal: SupportedPortals) -> (Calendar):
 #   applicationDeadlines = Calendar()
@@ -25,6 +25,7 @@ from server.services import SupportedPortals, UnswScraper
 def generateCalendarSummarized(jobs: JobsList) -> (Calendar):
   applicationDeadlines = Calendar()
   for job in jobs.getJobs():
+    #TODO: make events span as an all_day event
     e = Event(name=job.title, 
               description=job.company + "\n\n" + job.summary + "\n\nView listing on " + job.link, 
               location=job.location, 
