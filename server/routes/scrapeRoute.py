@@ -14,8 +14,8 @@ from server.utils import authentication
 from server.services import SupportedPortals
 
 search_model = api.model('Search_Model', {
-  'Keywords': fields.String,
-  'Location': fields.String,
+  'keywords': fields.String,
+  'location': fields.String,
 }, required=True)
 
 @api.route('/jobs')
