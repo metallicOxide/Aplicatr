@@ -2,39 +2,19 @@
   <div class="CartItem">
     <div :class="getPiorityStyling + ' job-card'">
       <b-row class="job-item-element job-heading-container">
-        <b-col cols="10">
+        <b-col cols="9">
           <div class="job-heading float-left">
             {{formattedJobTitle}}
           </div>
         </b-col>
-        <b-col cols="2">
-          <b-icon-bookmark class="bookmark-icon" 
-            font-scale="1.8"
-            ></b-icon-bookmark>
+        <b-col cols="3">
+          <b-icon-trash class="trash-icon" 
+            font-scale="1.6"
+            ></b-icon-trash>
         </b-col>
         <b-col cols="10">
           <div class="job-days-left float-left">
             {{dayLeftMsg}}
-          </div>
-        </b-col>
-      </b-row>
-      <b-row class="job-item-element">
-        <b-col sm="10">
-          <div class="float-left job-description">
-            {{description}}
-          </div>
-        </b-col>
-      </b-row>
-      <b-row class="job-item-element">
-        <b-col sm="10">
-          <div class="job-location float-left">
-            <b-icon-map></b-icon-map>
-            {{location}}
-          </div>
-        </b-col>
-        <b-col sm="2">
-          <div class="float-left">
-            <a :href="url" class="card-link">Link to Job</a>
           </div>
         </b-col>
       </b-row>
@@ -63,16 +43,6 @@
     get location(): string {
       const job: JobItem = this.jobItem;
       return job.location;
-    }
-
-    get description (): string {
-      const job: JobItem = this.jobItem;
-      return job.summary;
-    }
-
-    get url (): string {
-      const job: JobItem = this.jobItem;
-      return job.link;
     }
 
     get daysTillExpiry(): number {
@@ -136,11 +106,6 @@
     color: #fff;
   }
   /*Job Item priority styling*/
-
-  .job-card {
-    border-radius: 20px;
-  }
-
   .job-item-element {
     padding-left: 5%;
     padding-bottom: 10px;
@@ -155,29 +120,22 @@
     color:aqua;
   }
 
-  .bookmark-icon:hover {
+  .trash-icon:hover {
     color:aqua;
   }
 
   .job-heading-container {
+    text-align: left;
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .job-heading {
     font-weight: bold;
   }
 
-  .job-description {
-    text-align: left;
-  }
-
   .job-days-left {
     font-size: 12px;
     font-weight: bolder;
-  }
-
-  .job-location {
-    font-weight: bold;
   }
 </style>

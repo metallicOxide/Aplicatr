@@ -10,9 +10,7 @@
         </div>
       </b-col >
       <b-col md="4">
-        <div class="cart" v-for="(cartItem, index) in cart" v-bind:key="`job-${index}`">
-          <JobItemView v-bind:jobItem="cartItem"/>
-        </div>
+          <CartView class="cart" v-bind:cart="cart"/>
       </b-col >
     </b-row>
   </div>
@@ -22,10 +20,13 @@
   import { Component, Prop, Vue } from 'vue-property-decorator';
   import { JobItem } from '../interfaces/bindingModels';
   import JobItemView from '../components/JobItemView.vue';
+  import CartView from '../components/CartView.vue';
+  
 
   @Component({
     components: {
       JobItemView,
+      CartView
     },
   })
   export default class CombinedJobCartView extends Vue {
