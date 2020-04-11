@@ -7,7 +7,7 @@ from requests.sessions import RequestsCookieJar
 
 from server.utils.ScraperSession import ScraperSession
 from server.services import SupportedPortals
-from server.utils.Jobs import JobsList, Job
+from server.utils.Jobs import JobsList, Job, JobDetail
 
 class UnswScraper(ScraperSession):
   '''
@@ -48,7 +48,7 @@ class UnswScraper(ScraperSession):
     
     return sesh
 
-  def extractData(self, cookies: RequestsCookieJar = {}, keywords: Text = '', location: Text = '', username: Text = '') -> (JobsList):
+  def extractJobs(self, cookies: RequestsCookieJar = {}, keywords: Text = '', location: Text = '', username: Text = '') -> (JobsList):
     '''
     Extract job data from the uni career portal.
     
@@ -77,8 +77,9 @@ class UnswScraper(ScraperSession):
           day, monthWord, year = closingDateText.split(' ')
           closingDate = datetime(int(year), months[monthWord], int(day), hour=12)
           jobs.addJob(job = Job(
-            title = listing.find('a').get_text().replace('\\r\\n', '').strip(),
-            link = listing.find('a')['href'],
+            title = listing.find('a').get_text().replace('\r\n', '').strip(),
+            company = listing.find('h5').get_text().replace('\r\n', '').strip(),
+            link = "https://careersonline.unsw.edu.au{}".format(listing.find('a')['href']),
             summary = listing.find('p', {'class': 'job-list-summary'}).get_text(strip=True),
             closing_date = str(closingDate),
             location = listing.find('div', {'class': 'job-list-location'}).get_text(strip=True)
@@ -87,3 +88,30 @@ class UnswScraper(ScraperSession):
       raise KeyError
     
     return jobs
+  
+  def extractJobDetails(self, cookies: RequestsCookieJar = {}, link: Text = '') -> (JobDetail):
+    '''
+    Extract details of a job listing from the uni career portal.
+    '''
+    sesh = HTMLSession()
+    if '/students/jobs/detail/' not in link:
+      raise ValueError
+    
+    jobDetail = sesh.get(link, cookies=cookies)
+    if not jobDetail.ok:
+      raise ConnectionError
+    
+    try:
+      jobDetailSoup = BeautifulSoup(jobDetail.content, features='html.parser')
+      procedureSoup = jobDetailSoup.find('div', {'id': 'procedures'})
+      procedure = procedureSoup.get_text().replace('Application Procedures', '').replace('\r', '').replace('\t', '').strip() + '\n[' + procedureSoup.find('a')['href'] + ']'
+    except:
+      procedure = ''
+    
+    try:
+      description = jobDetailSoup.find('div', {'class': 'job-details'}).get_text().strip()
+    except:
+      description = ''
+    
+    return JobDetail(description=description, procedure=procedure)
+    

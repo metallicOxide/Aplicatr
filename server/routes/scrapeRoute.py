@@ -14,8 +14,8 @@ from server.utils import authentication
 from server.services import SupportedPortals
 
 search_model = api.model('Search_Model', {
-  'Keywords': fields.String,
-  'Location': fields.String,
+  'keywords': fields.String,
+  'location': fields.String,
 }, required=True)
 
 @api.route('/jobs')
@@ -46,7 +46,7 @@ class ScrapeRoute(Resource):
       return {'message': 'Error fetching data from database.'}, 400
 
     try:
-      jobs = portal.extractData(UnswScraper, 
+      jobs = portal.extractJobs(portal, 
                                 cookies = cookies, 
                                 keywords = keywords, 
                                 location = location, 

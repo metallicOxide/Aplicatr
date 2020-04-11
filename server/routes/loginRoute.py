@@ -14,9 +14,9 @@ from server.models import db_session
 from server.models.User import User
 
 login_model = api.model('Login_Model', {
-  'Username': fields.String,
-  'Password': fields.String,
-  'Uni': fields.String,
+  'username': fields.String,
+  'password': fields.String,
+  'uni': fields.String,
 }, required=True)
 
 @api.route('/jobs/login')

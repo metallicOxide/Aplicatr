@@ -20,6 +20,7 @@ if __name__ == '__main__':
   '''
   logicScript()
 
+# TODO: verify all error codes mechanism, and chat with frontend on how to best interface with errors
 
 app = Flask(__name__)
 CORS(app)
@@ -27,4 +28,4 @@ api = Api(app).namespace('', description='Uni Job Scraper APIs')
 
 token_parser = reqparse.RequestParser().add_argument('token', type = str, required = True)
 
-from server.routes import calendarRoute,loginRoute,scrapeRoute
+from server.routes import calendarRoute, loginRoute, scrapeRoute, jobDetailRoute

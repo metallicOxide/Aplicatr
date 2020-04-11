@@ -6,6 +6,8 @@ from sqlalchemy.orm import sessionmaker
 
 DeclarativeBase = declarative_base()
 
+#TODO: implement migrations support with new database updates (using alembic?)
+
 """
 Performs database connection using database settings from config.py.
 Returns sqlalchemy engine instance.
@@ -22,5 +24,6 @@ from server.models.User import User
 '''
 Creates database tables from models attached to DeclarativeBase
 '''
+# TODO: create a script to reset database / run migrations
 print("Creating database tables...")
 DeclarativeBase.metadata.create_all(engine)
