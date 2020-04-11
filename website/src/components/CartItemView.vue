@@ -9,6 +9,7 @@
         </b-col>
         <b-col cols="3">
           <b-icon-trash class="trash-icon" 
+            @click="deleteFromCart"
             font-scale="1.6"
             ></b-icon-trash>
         </b-col>
@@ -75,6 +76,10 @@
       } else {
         return `${endDate} - Expired :'(`;
       }
+    }
+
+    deleteFromCart() {
+      this.$emit('removeFromCart', this.jobItem);
     }
 
   }

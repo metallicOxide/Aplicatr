@@ -10,6 +10,7 @@
         <b-col cols="2">
           <b-icon-bookmark class="bookmark-icon" 
             font-scale="1.8"
+            @click="saveJob"
             ></b-icon-bookmark>
         </b-col>
         <b-col cols="10">
@@ -105,6 +106,10 @@
       } else {
         return `${endDate} - Expired :'(`;
       }
+    }
+
+    saveJob() {
+      this.$emit('saveJobClick', this.jobItem);
     }
 
   }

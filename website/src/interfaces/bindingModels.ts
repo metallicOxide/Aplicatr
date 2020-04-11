@@ -10,8 +10,12 @@ export interface CalendarItemBindingModel {
     title: string;
     link: string;
     summary: string;
-    chosen_Date: string;
+    chosen_date: string;
     location: string;
+}
+
+export interface CalendarBindingModel {
+    jobs: Array<CalendarItemBindingModel>;
 }
 
 export interface LoginBindingModel {
