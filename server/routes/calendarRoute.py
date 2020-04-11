@@ -16,7 +16,7 @@ jobs_model = api.model('Jobs_Model', {
       company: string.
       link: string,
       summary: string.
-      chosen_date: string (datetime),
+      closing_date: string (datetime),
       location: string
     '''))
 }, required=True)
