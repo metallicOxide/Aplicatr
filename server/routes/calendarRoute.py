@@ -52,7 +52,9 @@ class CalendarRoute(Resource):
     except:
       return {'message': 'Error generating calendar from jobs.'}, 400
 
-    response = make_response(pickle.loads(str(calendar)))
-        
-    response.headers["Content-Disposition"] = "attachment; filename=calendar.ics"
-    return response, 200
+    # TODO: Change the backend to serve the calendar file instead of the calendar string 
+    calendarObj = {'calendar': str(calendar)}
+    return calendarObj, 200
+    # response = make_response(pickle.loads(str(calendar)))
+    # response.headers["Content-Disposition"] = "attachment; filename=calendar.ics"
+    # return response, 200
