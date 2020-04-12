@@ -63,6 +63,10 @@
       this.$emit('removeFromCart', jobItem);
     }
 
+    clearCart(){
+      this.cart = [];
+    }
+
     async postJobCart() {
       console.log("post jobs");
       this.showAlert = false;
@@ -84,9 +88,13 @@
         this.$emit('login');
       }
 
+      const calendarCart = this.getCalendarItemsFromJobCart();
+
       const calenderBindingModel: CalendarBindingModel = {
-        jobs: this.cart
+        jobs: calendarCart
       };
+
+      console.log("about ot post", calenderBindingModel);
 
       const calendarRoute = ApiRoutes.calendarRoute;
 
@@ -96,13 +104,35 @@
           calenderBindingModel,
           {params: {"token": this.jwtToken}}
         );
-        console.log(response);
+        console.log(response.data.calendar);
+        this.createDownloadCalender(response.data.calendar);
+        this.clearCart();
       } 
 
       catch (error) 
       {
         console.log(error);
+        this.showAlert = true;
+        this.error = error.data.message;
       }
+    }
+
+    // create a deep clone of the
+    // cart and change date to choosen date
+    getCalendarItemsFromJobCart() {
+      // create a deep clone
+      const cartClone: Array<JobItem> = JSON.parse(JSON.stringify(this.cart));
+      cartClone.map(job => job.closing_date = this.selectedDate);
+      return cartClone;
+    }
+
+    createDownloadCalender(calendarString: string) {
+        const blob = new Blob([calendarString], { type: 'text/calender' })
+        const link = document.createElement('a')
+        link.href = URL.createObjectURL(blob)
+        link.download= "calendar.ics"
+        link.click()
+        URL.revokeObjectURL(link.href)
     }
   }
 </script>
