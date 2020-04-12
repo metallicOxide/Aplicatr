@@ -47,6 +47,7 @@ class CalendarRoute(Resource):
     jobs = body.get('jobs')
     try:
       processedJobs = convertJobsFromListDicts(jobs)
+      print("processed jobs", processedJobs);
       calendar = generateCalendarSummarized(jobs=processedJobs)
     except:
       return {'message': 'Error generating calendar from jobs.'}, 400

@@ -14,6 +14,11 @@
             ></b-icon-bookmark>
         </b-col>
         <b-col cols="10">
+          <div class="job-company float-left">
+            {{company}}
+          </div>
+        </b-col>
+        <b-col cols="10">
           <div class="job-days-left float-left">
             {{dayLeftMsg}}
           </div>
@@ -69,6 +74,11 @@
     get description (): string {
       const job: JobItem = this.jobItem;
       return job.summary;
+    }
+
+    get company (): string {
+      const job: JobItem = this.jobItem;
+      return job.company;
     }
 
     get url (): string {
@@ -172,6 +182,12 @@
 
   .job-heading {
     font-weight: bold;
+  }
+
+  .job-company {
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: -13px;
   }
 
   .job-description {

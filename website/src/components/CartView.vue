@@ -41,7 +41,7 @@
 
 <script lang="ts">
   import { Vue, Component, Prop } from 'vue-property-decorator';
-  import { JobItem, CalendarItemBindingModel, CalendarBindingModel } from '../interfaces/bindingModels';
+  import { JobItem, CalendarBindingModel } from '../interfaces/bindingModels';
   import CartItemView from '../components/CartItemView.vue';
   import { ApiRoutes } from '../interfaces/apiRoutes';
   import axios from 'axios';
@@ -61,17 +61,6 @@
 
     removeFromCart(jobItem: JobItem) {
       this.$emit('removeFromCart', jobItem);
-    }
-
-    convertJobItemToCalendarItem (jobItem: JobItem): CalendarItemBindingModel {
-      const model: CalendarItemBindingModel = {
-        title: jobItem.title,
-        link: jobItem.link,
-        summary: jobItem.summary,
-        chosen_date: jobItem.closing_date,
-        location: jobItem.location
-      } 
-      return model;
     }
 
     async postJobCart() {
@@ -95,19 +84,18 @@
         this.$emit('login');
       }
 
-      const calendarItemList: Array<CalendarItemBindingModel> = this.cart.map((c) => this.convertJobItemToCalendarItem(c));
       const calenderBindingModel: CalendarBindingModel = {
-        jobs: calendarItemList
+        jobs: this.cart
       };
 
       const calendarRoute = ApiRoutes.calendarRoute;
-      try {
 
+      try 
+      {
         const response = await axios.post(calendarRoute,
           calenderBindingModel,
           {params: {"token": this.jwtToken}}
         );
-
         console.log(response);
       } 
 
@@ -116,7 +104,6 @@
         console.log(error);
       }
     }
-
   }
 </script>
 
