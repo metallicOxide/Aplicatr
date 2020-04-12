@@ -53,6 +53,6 @@ class CalendarRoute(Resource):
       return {'message': 'Error generating calendar from jobs.'}, 400
 
     response = make_response(pickle.loads(str(calendar)))
-    response.headers["Content-Disposition"] = "attachment; filename=calendar.ics"
         
+    response.headers["Content-Disposition"] = "attachment; filename=calendar.ics"
     return response, 200
