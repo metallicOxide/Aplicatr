@@ -1,5 +1,6 @@
 import jwt
 import json
+import pickle
 
 from flask import Flask, send_file, request, make_response
 from flask_restx import Resource, Api, fields
@@ -50,7 +51,7 @@ class CalendarRoute(Resource):
     except:
       return {'message': 'Error generating calendar from jobs.'}, 400
 
-    response = make_response(calendar)
+    response = make_response(pickle.loads(str(calendar)))
     response.headers["Content-Disposition"] = "attachment; filename=calendar.ics"
         
     return response, 200
