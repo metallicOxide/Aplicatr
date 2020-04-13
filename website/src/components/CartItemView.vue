@@ -14,6 +14,11 @@
             ></b-icon-trash>
         </b-col>
         <b-col cols="10">
+          <div class="job-company float-left">
+            {{company}}
+          </div>
+        </b-col>
+        <b-col cols="10">
           <div class="job-days-left float-left">
             {{dayLeftMsg}}
           </div>
@@ -51,6 +56,12 @@
       const endDate = moment(this.jobItem.closing_date, "YYYY-MM-DD HH:mm:ss");
       return endDate.diff(now, 'days');
     }
+
+    get company (): string {
+      const job: JobItem = this.jobItem;
+      return job.company;
+    }
+
 
     get getPiorityStyling(): string {
       const days = this.daysTillExpiry;
@@ -142,5 +153,12 @@
   .job-days-left {
     font-size: 12px;
     font-weight: bolder;
+  }
+
+  .job-company {
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: -5px;
+    padding-bottom: 5px;
   }
 </style>

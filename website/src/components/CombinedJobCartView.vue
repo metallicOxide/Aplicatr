@@ -55,7 +55,7 @@
     }
 
     genJobItemPrimeKey(job: JobItem) {
-      return job.title + job.location;
+      return job.title + job.location + job.company + job.closing_date;
     }
 
     emitLoginRequest() {

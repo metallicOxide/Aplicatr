@@ -45,6 +45,7 @@
     jobs: Array<JobItem> = [
       {
         closing_date: "2020-03-28 12:00:00",
+        company: "Jane street",
         title: "Full stacc dev",
         location: "Sydney",
         summary: "Jane Street is a proprietary trading firm that operates around the clock and around the globe. We bring a deep understanding of markets, a scientific approach, and innovative technology to bear on the problem of trading profitably in the world's highly competitive financial markets.",
@@ -53,6 +54,7 @@
       {
         closing_date: "2020-04-11 12:00:00",
         title: "Python dev",
+        company: "Atlassian",
         location: "Canada",
         summary: "We need some good ppls",
         link: "//www.google.com",
@@ -60,6 +62,7 @@
       {
         closing_date: "2020-03-05 12:00:00",
         title: "Frontend dev",
+        company: "Atlassian",
         location: "Sydney",
         summary: "Angular experience preferred",
         link: "//www.google.com",
@@ -67,6 +70,7 @@
       {
         closing_date: "2020-12-16 12:00:00",
         title: "Backend dev",
+        company: "Atlassian",
         location: "Sydney",
         summary: "C# Asp.Net Dev",
         link: "//www.google.com",
@@ -74,6 +78,7 @@
       {
         closing_date: "2020-03-28 12:00:00",
         title: "Full stacc dev",
+        company: "Atlassian",
         location: "Sydney",
         summary: "Jane Street is a proprietary trading firm that operates around the clock and around the globe. We bring a deep understanding of markets, a scientific approach, and innovative technology to bear on the problem of trading profitably in the world's highly competitive financial markets.",
         link: "//www.google.com",
@@ -81,50 +86,9 @@
       {
         closing_date: "2020-04-11 12:00:00",
         title: "Python dev",
+        company: "Jane Street",
         location: "Canada",
         summary: "We need some good ppls",
-        link: "//www.google.com",
-      },
-      {
-        closing_date: "2020-03-05 12:00:00",
-        title: "Frontend dev",
-        location: "Sydney",
-        summary: "Angular experience preferred",
-        link: "//www.google.com",
-      }, 
-      {
-        closing_date: "2020-12-16 12:00:00",
-        title: "Backend dev",
-        location: "Sydney",
-        summary: "C# Asp.Net Dev",
-        link: "//www.google.com",
-      },
-      {
-        closing_date: "2020-03-28 12:00:00",
-        title: "Full stacc dev",
-        location: "Sydney",
-        summary: "Jane Street is a proprietary trading firm that operates around the clock and around the globe. We bring a deep understanding of markets, a scientific approach, and innovative technology to bear on the problem of trading profitably in the world's highly competitive financial markets.",
-        link: "//www.google.com",
-      }, 
-      {
-        closing_date: "2020-04-11 12:00:00",
-        title: "Python dev",
-        location: "Canada",
-        summary: "We need some good ppls",
-        link: "//www.google.com",
-      },
-      {
-        closing_date: "2020-03-05 12:00:00",
-        title: "Frontend dev",
-        location: "Sydney",
-        summary: "Angular experience preferred",
-        link: "//www.google.com",
-      }, 
-      {
-        closing_date: "2020-12-16 12:00:00",
-        title: "Backend dev",
-        location: "Sydney",
-        summary: "C# Asp.Net Dev",
         link: "//www.google.com",
       }
     ];
