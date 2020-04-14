@@ -47,11 +47,19 @@ class CalendarRoute(Resource):
     jobs = body.get('jobs')
     try:
       processedJobs = convertJobsFromListDicts(jobs)
+      print("processed jobs", processedJobs);
       calendar = generateCalendarSummarized(jobs=processedJobs)
     except:
       return {'message': 'Error generating calendar from jobs.'}, 400
 
-    response = make_response(pickle.dumps(str(calendar)))
-    response.headers["Content-Disposition"] = "attachment; filename=calendar.ics"
+    # response = make_response(pickle.dumps(str(calendar)))
+    # response.headers["Content-Disposition"] = "attachment; filename=calendar.ics"
         
-    return response, 200
+    # return response, 200
+    
+    # TODO: Change the backend to serve the calendar file instead of the calendar string 
+    calendarObj = {'calendar': str(calendar)}
+    return calendarObj, 200
+    # response = make_response(pickle.loads(str(calendar)))
+    # response.headers["Content-Disposition"] = "attachment; filename=calendar.ics"
+    # return response, 200

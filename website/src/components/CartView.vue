@@ -41,7 +41,7 @@
 
 <script lang="ts">
   import { Vue, Component, Prop } from 'vue-property-decorator';
-  import { JobItem, CalendarItemBindingModel, CalendarBindingModel } from '../interfaces/bindingModels';
+  import { JobItem, CalendarBindingModel } from '../interfaces/bindingModels';
   import CartItemView from '../components/CartItemView.vue';
   import { ApiRoutes } from '../interfaces/apiRoutes';
   import axios from 'axios';
@@ -63,15 +63,8 @@
       this.$emit('removeFromCart', jobItem);
     }
 
-    convertJobItemToCalendarItem (jobItem: JobItem): CalendarItemBindingModel {
-      const model: CalendarItemBindingModel = {
-        title: jobItem.title,
-        link: jobItem.link,
-        summary: jobItem.summary,
-        chosen_date: jobItem.closing_date,
-        location: jobItem.location
-      } 
-      return model;
+    clearCart(){
+      this.cart = [];
     }
 
     async postJobCart() {
@@ -95,28 +88,52 @@
         this.$emit('login');
       }
 
-      const calendarItemList: Array<CalendarItemBindingModel> = this.cart.map((c) => this.convertJobItemToCalendarItem(c));
+      const calendarCart = this.getCalendarItemsFromJobCart();
+
       const calenderBindingModel: CalendarBindingModel = {
-        jobs: calendarItemList
+        jobs: calendarCart
       };
 
-      const calendarRoute = ApiRoutes.calendarRoute;
-      try {
+      console.log("about ot post", calenderBindingModel);
 
+      const calendarRoute = ApiRoutes.calendarRoute;
+
+      try 
+      {
         const response = await axios.post(calendarRoute,
           calenderBindingModel,
           {params: {"token": this.jwtToken}}
         );
-
-        console.log(response);
+        console.log(response.data.calendar);
+        this.createDownloadCalender(response.data.calendar);
+        this.clearCart();
       } 
 
       catch (error) 
       {
         console.log(error);
+        this.showAlert = true;
+        this.error = error.data.message;
       }
     }
 
+    // create a deep clone of the
+    // cart and change date to choosen date
+    getCalendarItemsFromJobCart() {
+      // create a deep clone
+      const cartClone: Array<JobItem> = JSON.parse(JSON.stringify(this.cart));
+      cartClone.map(job => job.closing_date = this.selectedDate);
+      return cartClone;
+    }
+
+    createDownloadCalender(calendarString: string) {
+        const blob = new Blob([calendarString], { type: 'text/calender' })
+        const link = document.createElement('a')
+        link.href = URL.createObjectURL(blob)
+        link.download= "calendar.ics"
+        link.click()
+        URL.revokeObjectURL(link.href)
+    }
   }
 </script>
 
