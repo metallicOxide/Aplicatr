@@ -1,4 +1,4 @@
-# job-scrapper serve
+# Aplicatr Server
 
 ## Install Pipenv
 

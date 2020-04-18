@@ -1,2 +1,2 @@
-CREATE USER jobscraper WITH PASSWORD 'jobscraper';
-CREATE DATABASE jobscraper;
+CREATE USER aplicatr WITH PASSWORD 'aplicatr';
+CREATE DATABASE aplicatr;
