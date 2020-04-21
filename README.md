@@ -37,6 +37,7 @@ npm run website-start
 ### Setting up database
 
 > Ensure postgresql installed
+
 > Configure database permissions
 
 ```bash
