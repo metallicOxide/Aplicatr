@@ -15,27 +15,11 @@
             <CartItemView @removeFromCart="removeFromCart" v-bind:jobItem="cartItem"/>
           </div>
         </b-list-group-item>
-        <b-list-group-item>
-          <div>
-              <label for="datepicker-buttons"><b>Pick a Date to be Reminded</b></label>
-              <b-form-datepicker
-              id="datepicker-buttons"
-              reset-button
-              close-button
-              locale="en"
-              v-model="selectedDate"
-              required
-              ></b-form-datepicker>
-          </div>
-        </b-list-group-item>
       </b-list-group>
-
       <b-card-footer>
           <b-button variant="outline-primary" @click="postJobCart">Generate Jobs</b-button>
       </b-card-footer>
-
     </b-card>
-
   </div>
 </template>
 
@@ -56,7 +40,7 @@
     @Prop () private jwtToken!: string;
 
     showAlert = false;
-    selectedDate = null;
+    selectedDate = "";
     error = "";
 
     removeFromCart(jobItem: JobItem) {
@@ -77,13 +61,7 @@
         this.error = "Please select at least one Job";
         return;
       }
-
-      if (this.selectedDate === null) {
-        this.showAlert = true;
-        this.error = "Please select a day to be alerted";
-        return;
-      }
-
+      
       if (!this.jwtToken) {
         this.$emit('login');
       }
@@ -122,6 +100,9 @@
     getCalendarItemsFromJobCart() {
       // create a deep clone
       const cartClone: Array<JobItem> = JSON.parse(JSON.stringify(this.cart));
+      if (cartClone === null) {
+        return [];
+      }
       cartClone.map(job => job.closing_date = this.selectedDate);
       return cartClone;
     }
@@ -145,6 +126,6 @@
     
     .scrollable {
         max-height: 350px;
-        overflow-y: scroll;
+        overflow:scroll;
     }
 </style>

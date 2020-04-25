@@ -18,13 +18,50 @@
             {{company}}
           </div>
         </b-col>
-        <b-col cols="10">
+        <b-col cols="11">
           <div class="job-days-left float-left">
             {{dayLeftMsg}}
           </div>
         </b-col>
+        <b-col cols= "11" class="time-picker">
+          <b-button @click="openModal" 
+            variant="outline-primary"
+            class="btn-edit-reminder-date">
+            Edit Reminder Date
+          </b-button>
+        </b-col>
       </b-row>
     </div>
+
+    <b-modal
+      v-bind:id="modalId"
+      size="md"
+      title="Edit Calendar Reminder Time"
+      header-bg-variant="primary"
+      header-text-variant="light"
+      centered
+      ok-only
+      @show="closeModal"
+      @hidden="closeModal"
+      @ok="closeModal"
+    >
+      <b-row>
+        <b-col cols= "11" class="time-picker">
+          <label><b>Please pick a date to be reminded for this job</b></label>
+          <b-form-datepicker
+              size="sm"
+              class="time-picker-input"
+              reset-button
+              close-button
+              :min="min_date"
+              boundary="window"
+              locale="en"
+              v-model="jobItem.closing_date">
+          </b-form-datepicker>
+        </b-col>
+      </b-row>
+    </b-modal>
+
   </div>
 </template>
 
@@ -38,6 +75,9 @@
     @Prop() private jobItem!: JobItem;
     // styling array to decide what style the cards should be 
     stylingArr: string[] = ["low-pior", "med-pior", "high-pior", "expired-pior"];
+    min_date = new Date();
+
+    modalId = "EditDateModal" + this.jobItem.title + this.jobItem.company
 
     get formattedJobTitle (): string {
       // const job: JobItem = this.jobItem;
@@ -83,14 +123,26 @@
       const endDateObj = moment(this.jobItem.closing_date);
       const endDate = endDateObj.format("DD/MM/YYYY");
       if (days >= 0) {
-        return `${endDate} - ${this.daysTillExpiry} days left!`;
+        return `Reminder Set on ${endDate} - in ${this.daysTillExpiry} days`;
       } else {
-        return `${endDate} - Expired :'(`;
+        return `${endDate} - Job expired`;
       }
     }
 
     deleteFromCart() {
       this.$emit('removeFromCart', this.jobItem);
+    }
+
+    openModal() {
+      this.$nextTick(() => {
+        this.$bvModal.show(this.modalId);
+      })
+    }
+
+    closeModal() {
+      this.$nextTick(() => {
+        this.$bvModal.hide(this.modalId);
+      })
     }
 
   }
@@ -160,5 +212,18 @@
     text-decoration: underline;
     margin-top: -5px;
     padding-bottom: 5px;
+  }
+
+  .time-picker {
+    margin-top: 10px;
+  }
+
+  .CartItem {
+    margin-bottom: 10px;
+  }
+
+  .btn-edit-reminder-date {
+    color: white;
+    border-color: inherit;
   }
 </style>

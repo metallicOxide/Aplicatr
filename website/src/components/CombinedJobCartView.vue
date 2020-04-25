@@ -42,8 +42,13 @@
     localJobList = this.jobList;
 
     @Watch('jobList', { immediate: true, deep: true })
-    onCartChanged(val: Array<JobItem>) {
+    onJobListChanged(val: Array<JobItem>) {
       this.localJobList = val;
+    }
+
+    @Watch('localCart', { immediate: true, deep: true })
+    onCartChanged(val: Array<JobItem>) {
+      this.cart = val;
     }
 
     saveJobClick(jobItem: JobItem) {
@@ -52,6 +57,8 @@
       this.localCart = this.localCart.filter( (j) => this.genJobItemPrimeKey(j) !== this.genJobItemPrimeKey(jobItem));
 
       this.localCart.push(jobItem); 
+
+      this.$emit("updateJobList", this.localJobList);
     }
 
     removeFromCart(jobItem: JobItem) {
@@ -60,16 +67,17 @@
       this.localJobList = this.localJobList.filter( (j) => this.genJobItemPrimeKey(j) !== this.genJobItemPrimeKey(jobItem));
 
       this.localJobList.push(jobItem); 
+
+      this.$emit("updateJobList", this.localJobList);
     }
 
     genJobItemPrimeKey(job: JobItem) {
-      return job.title + job.location + job.company + job.closing_date;
+      return job.title + job.location + job.company;
     }
 
     emitLoginRequest() {
       this.$emit("login");
     }
-
   }
 </script>
 

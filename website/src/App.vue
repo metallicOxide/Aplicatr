@@ -14,7 +14,8 @@
         <CombinedJobCartView v-bind:jwtToken="jwtToken" 
           v-bind:jobList="jobs" 
           v-bind:cart="cart"
-          @login="handleLoginRequest"/>
+          @login="handleLoginRequest"
+          @updateJobList="updateJobList"/>
       </b-container>
       <Footer />
   </div>
@@ -118,6 +119,10 @@
 
     handleLoginRequest() {
       this.$root.$emit('login');
+    }
+
+    updateJobList(jobList: Array<JobItem>) {
+      this.jobs = jobList;
     }
     
   }
