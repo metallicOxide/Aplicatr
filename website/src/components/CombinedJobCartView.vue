@@ -94,7 +94,7 @@
   }
 
   .fixed-height-job-items {
-    max-height: 40rem;
+    max-height: 30rem;
     overflow-y: scroll;
   }
 
