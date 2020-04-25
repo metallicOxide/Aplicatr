@@ -2,10 +2,10 @@
   <div class="JobList">
     <b-row>
       <b-col md="8" class="fixed-height-job-items">
-        <div class="text-center" v-if="jobList.length < 1">
+        <div class="text-center" v-if="localJobList.length < 1">
           <b-spinner class="large-spinner" variant="primary" label="Text Centered">Fetching Jobs</b-spinner>
         </div>
-        <div v-for="(jobItem, index) in jobList" v-bind:key="`job-${index}`">
+        <div v-for="(jobItem, index) in localJobList" v-bind:key="`job-${index}`">
           <JobItemView @saveJobClick="saveJobClick" v-bind:jobItem="jobItem"/>
         </div>
       </b-col >
@@ -13,7 +13,7 @@
           <CartView class="cart"
             @removeFromCart="removeFromCart"
             @login="emitLoginRequest"  
-            v-bind:cart="cart"
+            v-bind:cart="localCart"
             v-bind:jwtToken="jwtToken"/>
       </b-col >
     </b-row>
@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts">
-  import { Component, Prop, Vue } from 'vue-property-decorator';
+  import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
   import { JobItem } from '../interfaces/bindingModels';
   import JobItemView from '../components/JobItemView.vue';
   import CartView from '../components/CartView.vue';
@@ -38,20 +38,28 @@
     @Prop() private cart!: Array<JobItem>;
     @Prop() private jwtToken!: string;
 
+    localCart = this.cart;
+    localJobList = this.jobList;
+
+    @Watch('jobList', { immediate: true, deep: true })
+    onCartChanged(val: Array<JobItem>) {
+      this.localJobList = val;
+    }
+
     saveJobClick(jobItem: JobItem) {
-      this.jobList = this.jobList.filter( (j) => this.genJobItemPrimeKey(j) !== this.genJobItemPrimeKey(jobItem));
+      this.localJobList = this.localJobList.filter( (j) => this.genJobItemPrimeKey(j) !== this.genJobItemPrimeKey(jobItem));
 
-      this.cart = this.cart.filter( (j) => this.genJobItemPrimeKey(j) !== this.genJobItemPrimeKey(jobItem));
+      this.localCart = this.localCart.filter( (j) => this.genJobItemPrimeKey(j) !== this.genJobItemPrimeKey(jobItem));
 
-      this.cart.push(jobItem); 
+      this.localCart.push(jobItem); 
     }
 
     removeFromCart(jobItem: JobItem) {
-      this.cart = this.cart.filter( (j) => this.genJobItemPrimeKey(j) !== this.genJobItemPrimeKey(jobItem));
+      this.localCart = this.localCart.filter( (j) => this.genJobItemPrimeKey(j) !== this.genJobItemPrimeKey(jobItem));
 
-      this.jobList = this.jobList.filter( (j) => this.genJobItemPrimeKey(j) !== this.genJobItemPrimeKey(jobItem));
+      this.localJobList = this.localJobList.filter( (j) => this.genJobItemPrimeKey(j) !== this.genJobItemPrimeKey(jobItem));
 
-      this.jobList.push(jobItem); 
+      this.localJobList.push(jobItem); 
     }
 
     genJobItemPrimeKey(job: JobItem) {
@@ -78,7 +86,7 @@
   }
 
   .fixed-height-job-items {
-    height: 40rem;
+    max-height: 40rem;
     overflow-y: scroll;
   }
 

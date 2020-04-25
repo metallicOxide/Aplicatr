@@ -1,9 +1,7 @@
 <template>
-  <div class="Footer">
-      <div class="footer">
+    <div class="footer">
 
-      </div>
-  </div>
+    </div>
 </template>
 
 <script lang="ts">
@@ -21,5 +19,6 @@
         background-color: #007bff!important;
         bottom: 0px;
         margin-top: 2%;
+        width: 100%;
     }
 </style>

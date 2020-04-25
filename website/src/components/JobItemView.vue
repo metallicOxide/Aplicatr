@@ -187,7 +187,7 @@
   .job-company {
     font-size: 14px;
     text-decoration: underline;
-    margin-top: -13px;
+    margin-top: -8px;
   }
 
   .job-description {

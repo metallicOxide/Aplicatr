@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <b-container>
       <NavBarView/>
-      <div>
-
+      <b-container>
         <LoginModal @token="getToken" 
           v-bind:credentials="credentials"
           ref="loginModal"
@@ -17,9 +15,8 @@
           v-bind:jobList="jobs" 
           v-bind:cart="cart"
           @login="handleLoginRequest"/>
-      </div>
+      </b-container>
       <Footer />
-    </b-container>
   </div>
 </template>
 
@@ -41,6 +38,7 @@
       Footer
     },
   })
+
   export default class App extends Vue {
     jobs: Array<JobItem> = [
       {
@@ -139,8 +137,8 @@
   margin-top: 0px;
 }
 
-.body-width {
-  max-width: 90%;
+html, body {
+  height: 100%;
 }
 
 /* scroll bar styling */
