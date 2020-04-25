@@ -40,7 +40,6 @@
     @Prop () private jwtToken!: string;
 
     showAlert = false;
-    selectedDate = "";
     error = "";
 
     removeFromCart(jobItem: JobItem) {
@@ -61,12 +60,12 @@
         this.error = "Please select at least one Job";
         return;
       }
-      
+
       if (!this.jwtToken) {
         this.$emit('login');
       }
 
-      const calendarCart = this.getCalendarItemsFromJobCart();
+      const calendarCart = this.cart;
 
       const calenderBindingModel: CalendarBindingModel = {
         jobs: calendarCart
@@ -94,19 +93,7 @@
         this.error = error.data.message;
       }
     }
-
-    // create a deep clone of the
-    // cart and change date to choosen date
-    getCalendarItemsFromJobCart() {
-      // create a deep clone
-      const cartClone: Array<JobItem> = JSON.parse(JSON.stringify(this.cart));
-      if (cartClone === null) {
-        return [];
-      }
-      cartClone.map(job => job.closing_date = this.selectedDate);
-      return cartClone;
-    }
-
+    
     createDownloadCalender(calendarString: string) {
         const blob = new Blob([calendarString], { type: 'text/calender' })
         const link = document.createElement('a')
