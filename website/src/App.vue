@@ -114,6 +114,13 @@
 
     jwtToken = "";
 
+    mounted() {
+      // if jwt token is not there, ask to login
+      if (!this.jwtToken) {
+        this.$root.$emit('login');
+      }
+    }
+
     getToken(token: string) {
       this.jwtToken = token;
     }
