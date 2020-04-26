@@ -1,11 +1,18 @@
 <template>
   <div class="LoginModal">
+    <loading :active.sync="showBlockUi" 
+      :can-cancel="false"
+      transition="fade"
+      :is-full-page="true"
+      color="#303f9f"
+      >
+    </loading>
+
     <b-modal
       id="modal-login"
       ref="modal"
       size="lg"
       title="Login"
-      header-bg-variant="primary"
       header-text-variant="light"
       centered
       ok-only
@@ -59,13 +66,20 @@
   import { LoginBindingModel } from '../interfaces/bindingModels';
   import { errorMessages } from '../interfaces/messages';
   import { ApiRoutes } from '../interfaces/apiRoutes';
+  import Loading from 'vue-loading-overlay';
+  import 'vue-loading-overlay/dist/vue-loading.css';
   import axios from 'axios';
 
-  @Component
+  @Component({
+    components: {
+      Loading
+    }
+  })
   export default class LoginModal extends Vue {
     @Prop() private credentials!: LoginBindingModel;
 
     errorMessage = "";
+    showBlockUi = false;
 
     formState = {
       nameState: true,
@@ -116,6 +130,7 @@
     // handles login and emitting of jobs to APP.vue
     async LoginAsync() {
       // create login model
+      this.showBlockUi=true;
       const bindingModel: LoginBindingModel = this.generateLoginRequest();
       const loginUrl: string = ApiRoutes.loginRoute;
       try 
@@ -123,6 +138,7 @@
         const response = await axios.post(loginUrl, bindingModel);
         // emit the scrapped job items back
         this.$emit('token', response.data.token);
+        this.showBlockUi=false;
         return true;
       } 
       catch (error) 
@@ -133,6 +149,7 @@
         } else {
           this.errorMessage = errorMessages.loginErrorMessage;
         }
+        this.showBlockUi=false;
         return false;
       }
     }
