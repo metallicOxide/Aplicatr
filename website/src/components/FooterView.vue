@@ -15,8 +15,8 @@
 
 <style scoped>
     .footer {
-        height: 60px;
-        background-color: #007bff!important;
+        height: 45px;
+        background-color: #303f9f !important;
         bottom: 0;
         margin-top: 2%;
         width: 100%;

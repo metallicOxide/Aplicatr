@@ -158,3 +158,10 @@
     }
   }
 </script>
+
+<style>
+  .modal-header {
+    background-color: #303f9f !important;
+  }
+
+</style>

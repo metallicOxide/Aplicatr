@@ -98,4 +98,9 @@
     overflow-y: scroll;
   }
 
+  @media (max-width: 765px) {
+    .cart {
+      padding-top: 20px;
+    }
+}
 </style>

@@ -109,10 +109,11 @@
 <style scoped>
     .card-header {
         font-weight: bold;
+        background-color: #303f9f !important;
     }
     
     .scrollable {
-        max-height: 350px;
+        max-height: 300px;
         overflow:scroll;
     }
 </style>

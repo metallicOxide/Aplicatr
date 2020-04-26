@@ -1,22 +1,24 @@
 <template>
   <div id="app">
       <NavBarView/>
-      <b-container>
-        <LoginModal @token="getToken" 
-          v-bind:credentials="credentials"
-          ref="loginModal"
-        />
-        <SearchBar v-bind:jobSearch="jobSearch" 
-          v-bind:jwtToken="jwtToken"
-          @jobs="getJobs"
-          @login="handleLoginRequest"
-        />
-        <CombinedJobCartView v-bind:jwtToken="jwtToken" 
-          v-bind:jobList="jobs" 
-          v-bind:cart="cart"
-          @login="handleLoginRequest"
-          @updateJobList="updateJobList"/>
-      </b-container>
+      <main id="page-wrap">
+        <b-container>
+          <LoginModal @token="getToken" 
+            v-bind:credentials="credentials"
+            ref="loginModal"
+          />
+          <SearchBar v-bind:jobSearch="jobSearch" 
+            v-bind:jwtToken="jwtToken"
+            @jobs="getJobs"
+            @login="handleLoginRequest"
+          />
+          <CombinedJobCartView v-bind:jwtToken="jwtToken" 
+            v-bind:jobList="jobs" 
+            v-bind:cart="cart"
+            @login="handleLoginRequest"
+            @updateJobList="updateJobList"/>
+        </b-container>
+      </main>
       <Footer class="footer" />
   </div>
 </template>
@@ -93,7 +95,6 @@
     // ];
 
     jobs: Array<JobItem> = [
-
     ];
 
     cart: Array<JobItem> = [
@@ -150,6 +151,10 @@ html, body {
   height: 100%;
 }
 
+html, body {
+  background-color: #fff;
+}
+
 .footer {
   bottom:0;
   position:absolute;
@@ -172,9 +177,19 @@ html, body {
   background-image: linear-gradient(to top, #3a7bd5 0%, #00d2ff 100%);
 }
 
+.bm-overlay {
+  background: #fff;
+}
+
 @media (min-width: 1500px) {
     .container{
         max-width: 1250px !important;
+    }
+}
+
+@media (max-width: 765px) {
+    .footer {
+      display: none;
     }
 }
 
