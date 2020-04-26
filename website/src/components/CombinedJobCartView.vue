@@ -3,7 +3,7 @@
     <b-row>
       <b-col md="8" class="fixed-height-job-items">
         <div class="text-center" v-if="localJobList.length < 1">
-          <b-spinner class="large-spinner" variant="primary" label="Text Centered">Fetching Jobs</b-spinner>
+          No Jobs matching description found, try again with a different search term :)
         </div>
         <div v-for="(jobItem, index) in localJobList" v-bind:key="`job-${index}`">
           <JobItemView @saveJobClick="saveJobClick" v-bind:jobItem="jobItem"/>

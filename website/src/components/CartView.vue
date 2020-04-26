@@ -11,6 +11,9 @@
     >
       <b-list-group flush>
         <b-list-group-item class="scrollable">
+          <div class="text-center" v-if="cart.length < 1">
+            Cart is empty!
+          </div>
           <div v-for="(cartItem, index) in cart" v-bind:key="`job-${index}`">
             <CartItemView @removeFromCart="removeFromCart" v-bind:jobItem="cartItem"/>
           </div>
