@@ -4,10 +4,19 @@
     <div class="header">
       <ButtonAnimation width="300">
         <a id="about-us" href="#">
-          <span>About Us</span>
+          <span>About Aplicatr</span>
         </a>
         <a id="job-portals" href="#">
           <span>Job Portals</span>
+        </a>
+        <a id="contact" href="#">
+          <span>Get in Contact</span>
+        </a>
+        <a id="contribute" href="#">
+          <span>Contribute</span>
+        </a>
+        <a id="report-bug" href="#">
+          <span>Report a Bug</span>
         </a>
       </ButtonAnimation>
       <a class="MainTitle" href="#">Aplicatr</a>

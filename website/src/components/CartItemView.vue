@@ -56,7 +56,7 @@
               :min="min_date"
               boundary="window"
               locale="en"
-              v-model="jobItem.closing_date">
+              v-model="jobItem.reminder_date">
           </b-form-datepicker>
         </b-col>
       </b-row>
@@ -93,7 +93,7 @@
 
     get daysTillExpiry(): number {
       const now = moment();
-      const endDate = moment(this.jobItem.closing_date, "YYYY-MM-DD HH:mm:ss");
+      const endDate = moment(this.jobItem.reminder_date, "YYYY-MM-DD HH:mm:ss");
       return endDate.diff(now, 'days');
     }
 
@@ -120,7 +120,7 @@
 
     get dayLeftMsg(): string {
       const days = this.daysTillExpiry;
-      const endDateObj = moment(this.jobItem.closing_date);
+      const endDateObj = moment(this.jobItem.reminder_date);
       const endDate = endDateObj.format("DD/MM/YYYY");
       if (days >= 0) {
         return `Reminder Set on ${endDate} - in ${this.daysTillExpiry} days`;

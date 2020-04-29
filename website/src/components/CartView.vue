@@ -20,7 +20,7 @@
         </b-list-group-item>
       </b-list-group>
       <b-card-footer>
-          <b-button variant="outline-primary" @click="postJobCart">Generate Jobs</b-button>
+          <b-button variant="outline-primary" @click="postJobCart">Generate Calendar</b-button>
       </b-card-footer>
     </b-card>
   </div>

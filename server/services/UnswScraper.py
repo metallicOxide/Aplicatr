@@ -81,7 +81,7 @@ class UnswScraper(ScraperSession):
             company = listing.find('h5').get_text().replace('\r\n', '').strip(),
             link = "https://careersonline.unsw.edu.au{}".format(listing.find('a')['href']),
             summary = listing.find('p', {'class': 'job-list-summary'}).get_text(strip=True),
-            closing_date = str(closingDate),
+            reminder_date = str(closingDate),
             location = listing.find('div', {'class': 'job-list-location'}).get_text(strip=True)
           ))
     except:

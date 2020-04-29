@@ -3,7 +3,7 @@ export interface JobItem {
     company: string;
     link: string;
     summary: string;
-    closing_date: string;
+    reminder_date: string;
     location: string;
 }
 

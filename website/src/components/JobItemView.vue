@@ -88,7 +88,7 @@
 
     get daysTillExpiry(): number {
       const now = moment();
-      const endDate = moment(this.jobItem.closing_date, "YYYY-MM-DD HH:mm:ss");
+      const endDate = moment(this.jobItem.reminder_date, "YYYY-MM-DD HH:mm:ss");
       return endDate.diff(now, 'days');
     }
 
@@ -109,7 +109,7 @@
 
     get dayLeftMsg(): string {
       const days = this.daysTillExpiry;
-      const endDateObj = moment(this.jobItem.closing_date);
+      const endDateObj = moment(this.jobItem.reminder_date);
       const endDate = endDateObj.format("DD/MM/YYYY");
       if (days >= 0) {
         return `${endDate} - ${this.daysTillExpiry} days left!`;

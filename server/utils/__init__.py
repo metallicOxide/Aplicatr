@@ -89,7 +89,7 @@ def convertJobsFromListDicts(jobs: List[Dict]) -> (JobsList):
                 company = job['company'],
                 link = job['link'], 
                 summary = job['summary'], 
-                closing_date = job['closing_date'], 
+                reminder_date = job['reminder_date'], 
                 location = job['location']))
   except:
     raise KeyError

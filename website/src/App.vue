@@ -45,7 +45,7 @@
   export default class App extends Vue {
     // jobs: Array<JobItem> = [
     //   {
-    //     closing_date: "2020-03-28 12:00:00",
+    //     reminder_date: "2020-03-28 12:00:00",
     //     company: "Jane street",
     //     title: "Full stacc dev",
     //     location: "Sydney",
@@ -53,7 +53,7 @@
     //     link: "//www.google.com",
     //   }, 
     //   {
-    //     closing_date: "2020-04-11 12:00:00",
+    //     reminder_date: "2020-04-11 12:00:00",
     //     title: "Python dev",
     //     company: "Atlassian",
     //     location: "Canada",
@@ -61,7 +61,7 @@
     //     link: "//www.google.com",
     //   },
     //   {
-    //     closing_date: "2020-03-05 12:00:00",
+    //     reminder_date: "2020-03-05 12:00:00",
     //     title: "Frontend dev",
     //     company: "Atlassian",
     //     location: "Sydney",
@@ -69,7 +69,7 @@
     //     link: "//www.google.com",
     //   }, 
     //   {
-    //     closing_date: "2020-12-16 12:00:00",
+    //     reminder_date: "2020-12-16 12:00:00",
     //     title: "Backend dev",
     //     company: "Atlassian",
     //     location: "Sydney",
@@ -77,7 +77,7 @@
     //     link: "//www.google.com",
     //   },      
     //   {
-    //     closing_date: "2020-03-28 12:00:00",
+    //     reminder_date: "2020-03-28 12:00:00",
     //     title: "Full stacc dev",
     //     company: "Atlassian",
     //     location: "Sydney",
@@ -85,7 +85,7 @@
     //     link: "//www.google.com",
     //   }, 
     //   {
-    //     closing_date: "2020-04-11 12:00:00",
+    //     reminder_date: "2020-04-11 12:00:00",
     //     title: "Python dev",
     //     company: "Jane Street",
     //     location: "Canada",
