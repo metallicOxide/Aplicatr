@@ -6,6 +6,10 @@ from typing import List, Dict, Text
 
 from server.config import scraper_token_key
 from server.services.UnswScraper import UnswScraper
+from server.services.UsydScraper import UsydScraper
+from server.services.WsuScraper import WsuScraper
+from server.services.MqScraper import MqScraper
+
 from server.services.calendarMake import generateCalendarSummarized
 from server.utils.Jobs import JobsList, Job
 from server.services import SupportedPortals
@@ -52,12 +56,26 @@ def logicScript():
   '''
   Runs business logic script from command line
   '''
+  print("Select uni: ")
+  uni = input('Uni (UNSW, USYD, MQ, WSU): ')
+  portal = None
+  while(portal == None):
+    if uni == 'UNSW':
+      portal = UnswScraper()
+    elif uni == 'USYD':
+      portal = UsydScraper()
+    elif uni == 'MQ':
+      portal = MqScraper()
+    elif uni == 'WSU':
+      portal = WsuScraper()
+    else:
+      print('Error, please enter a valid uni (UNSW, USYD, MQ, WSU)')
+  
   print("Running job webscraper...")
   username = input("Username: ")
   password = getpass.getpass(prompt='Password: ')
   
   print('Logging in UNSW Careers Online...')
-  portal = UnswScraper()
   sesh = portal.login(username = username, password = password)
   print('Successfully logged in UNSW Careers Online!')
   
