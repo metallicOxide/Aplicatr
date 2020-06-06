@@ -15,28 +15,34 @@ class ScraperSession(metaclass=ABCMeta):
   @abstractmethod
   def login(self, username: Text = '', password: Text = '') -> (HTMLSession):
     '''
-    Abstract method for logging into the online data source.
+    Login to uni career portal.
     
-    If successful, self.session must be assigned the HTMLSession value.
+    :param username: A valid portal username.
+    :param password: A corresponding valid password.
     
-    :returns: a valid HTMLSession if successful.
+    :returns: A valid persistent session to access the portal past the authentication screen.  
     '''
     pass
   
   @abstractmethod
-  def extractJobs(self, cookies: RequestsCookieJar = {}, keywords: Text = '', location: Text = '', username: Text = '') -> (JobsList):
+  def extractJobs(self, cookies: RequestsCookieJar = {}, keywords: Text = '', username: Text = '') -> (JobsList):
     '''
-    Abstract method for extracting data from the online data source.
+    Extract job data from the uni career portal.
     
-    The attribute self.session must be assigned to a valid HTMLSession value.
+    :param cookies: A valid session that has already been authenticated with a valid username and password.
+    :param keywords: Search for and filter relevant jobs by search keyword terms.
+    :param jobType: Search for and filter relevant jobs by a job type.
     
-    :returns: JobsList
+    :returns: JobsList.  
     '''
     pass
   
   @abstractmethod
   def extractJobDetails(self, cookies: RequestsCookieJar = {}, link: Text = '') -> (JobDetail):
     '''
-    Abstract method for extracting details of a particular job listing from the online data source.
+    Extract details of a job listing from the uni career portal.
+    
+    :param cookies: A valid session that has already been authenticated with a valid username and password.
+    :param link: URL path of the description page of the particular job
     '''
   

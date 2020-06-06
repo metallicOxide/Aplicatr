@@ -9,6 +9,7 @@ from server.services.UnswScraper import UnswScraper
 from server.services.UsydScraper import UsydScraper
 from server.services.WsuScraper import WsuScraper
 from server.services.MqScraper import MqScraper
+from server.services.UnswRibitScraper import UnswRibitScraper
 
 from server.services.calendarMake import generateCalendarSummarized
 from server.utils.Jobs import JobsList, Job
@@ -57,7 +58,7 @@ def logicScript():
   Runs business logic script from command line
   '''
   print("Select uni: ")
-  uni = input('Uni (UNSW, USYD, MQ, WSU): ')
+  uni = input('Uni (UNSW, USYD, MQ, WSU, UNSWRibit): ')
   portal = None
   while(portal == None):
     if uni == 'UNSW':
@@ -68,6 +69,8 @@ def logicScript():
       portal = MqScraper()
     elif uni == 'WSU':
       portal = WsuScraper()
+    elif uni == 'UNSWRibit':
+      portal = UnswRibitScraper()
     else:
       print('Error, please enter a valid uni (UNSW, USYD, MQ, WSU)')
   
@@ -80,9 +83,8 @@ def logicScript():
   print('Successfully logged in UNSW Careers Online!')
   
   keywords = input('Enter search keywords: ')
-  location = input('Enter location: ')
   print('Searching for jobs and extracting data...')
-  jobs = portal.extractJobs(cookies=sesh.cookies, keywords=keywords, location=location, username=username)
+  jobs = portal.extractJobs(cookies=sesh.cookies, keywords=keywords, username=username)
   pprint(jobs.serialize())
   
   print('Generating application deadline data...')

@@ -13,7 +13,7 @@ pipenv install [package]
 pipenv lock
 ```
 
-## Run program script
+## Run program script locally (good for testing)
 
 ```bash
 pipenv run python3 app.py

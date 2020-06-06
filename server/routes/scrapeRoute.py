@@ -49,7 +49,6 @@ class ScrapeRoute(Resource):
       jobs = portal.extractJobs(portal, 
                                 cookies = cookies, 
                                 keywords = keywords, 
-                                location = location, 
                                 username = user.username)
     except ValueError:
       return {'message': 'Invalid inputs.'}, 400

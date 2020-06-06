@@ -48,20 +48,19 @@ class UnswScraper(ScraperSession):
     
     return sesh
 
-  def extractJobs(self, cookies: RequestsCookieJar = {}, keywords: Text = '', location: Text = '', username: Text = '') -> (JobsList):
+  def extractJobs(self, cookies: RequestsCookieJar = {}, keywords: Text = '', username: Text = '') -> (JobsList):
     '''
     Extract job data from the uni career portal.
     
-    :param sesh: A valid session that has already been authenticated with a valid username and password.
+    :param cookies: A valid session that has already been authenticated with a valid username and password.
     :param keywords: Search for and filter relevant jobs by search keyword terms.
     :param jobType: Search for and filter relevant jobs by a job type.
-    :param location: Search for and filter relevant jobs by location. 
     
     :returns: JobsList.  
     '''
     sesh = HTMLSession()
-    jobBoard = sesh.get('https://careersonline.unsw.edu.au/students/jobs/Search?text={}&location={}&page=1&take=1000'.format(
-      keywords, location
+    jobBoard = sesh.get('https://careersonline.unsw.edu.au/students/jobs/Search?text={}&page=1&take=1000'.format(
+      keywords
     ), cookies=cookies)
     if not jobBoard.ok:
       raise ConnectionError
@@ -92,6 +91,9 @@ class UnswScraper(ScraperSession):
   def extractJobDetails(self, cookies: RequestsCookieJar = {}, link: Text = '') -> (JobDetail):
     '''
     Extract details of a job listing from the uni career portal.
+    
+    :param cookies: A valid session that has already been authenticated with a valid username and password.
+    :param link: URL path of the description page of the particular job
     '''
     sesh = HTMLSession()
     if '/students/jobs/detail/' not in link:
